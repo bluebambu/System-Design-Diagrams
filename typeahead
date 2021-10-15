@@ -1,1 +1,81 @@
-<mxfile host="app.diagrams.net" modified="2021-10-15T10:51:02.048Z" agent="5.0 (Windows)" version="15.5.2" etag="pFdpn4UpxF7VRvlW0lTv" type="github"><diagram id="U7bogKleJuu07k-sXHEA">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-10-15T11:28:28.409Z" agent="5.0 (Windows)" etag="0ZXApEzc8svOP79UHsA7" version="15.5.2" type="github">
+  <diagram id="U7bogKleJuu07k-sXHEA" name="Page-1">
+    <mxGraphModel dx="1433" dy="536" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="a5kKYPI09SS8CgxuJL7n-1" value="&lt;p style=&quot;margin: 0in ; font-family: &amp;quot;microsoft yahei&amp;quot; ; font-size: 11.0pt&quot;&gt;&lt;span lang=&quot;en-US&quot;&gt;Typehead&lt;/span&gt;&lt;span lang=&quot;zh-CN&quot;&gt;：&lt;/span&gt;&lt;/p&gt;&#xa;&#xa;&lt;ol style=&quot;direction: ltr ; unicode-bidi: embed ; margin-top: 0in ; margin-bottom: 0in ; font-family: &amp;quot;microsoft yahei&amp;quot; ; font-size: 11.0pt ; font-weight: normal ; font-style: normal&quot; type=&quot;1&quot;&gt;&#xa; &lt;li style=&quot;margin-top: 0 ; margin-bottom: 0 ; vertical-align: middle&quot; value=&quot;1&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;calibri&amp;quot; ; font-size: 11.0pt ; font-weight: normal ; font-style: normal ; font-family: &amp;quot;calibri&amp;quot; ; font-size: 11.0pt&quot;&gt;Functional:&lt;/span&gt;&lt;/li&gt;&#xa; &lt;ol style=&quot;direction: ltr ; unicode-bidi: embed ; margin-top: 0in ; margin-bottom: 0in ; font-family: &amp;quot;microsoft yahei&amp;quot; ; font-size: 11.0pt ; font-weight: normal ; font-style: normal&quot; type=&quot;a&quot;&gt;&#xa;  &lt;li style=&quot;margin-top: 0 ; margin-bottom: 0 ; vertical-align: middle&quot; value=&quot;1&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;calibri&amp;quot; ; font-size: 11.0pt ; font-weight: normal ; font-style: normal ; font-family: &amp;quot;calibri&amp;quot; ; font-size: 11.0pt&quot;&gt;Suggestions&lt;/span&gt;&lt;/li&gt;&#xa;  &lt;li style=&quot;margin-top: 0 ; margin-bottom: 0 ; vertical-align: middle&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;calibri&amp;quot; ; font-size: 11.0pt&quot;&gt;Record history big data&lt;/span&gt;&lt;/li&gt;&#xa; &lt;/ol&gt;&#xa; &lt;li style=&quot;margin-top: 0 ; margin-bottom: 0 ; vertical-align: middle&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;calibri&amp;quot; ; font-size: 11.0pt&quot;&gt;No functional:&lt;/span&gt;&lt;/li&gt;&#xa; &lt;ol style=&quot;direction: ltr ; unicode-bidi: embed ; margin-top: 0in ; margin-bottom: 0in ; font-family: &amp;quot;microsoft yahei&amp;quot; ; font-size: 11.0pt ; font-weight: normal ; font-style: normal&quot; type=&quot;a&quot;&gt;&#xa;  &lt;li style=&quot;margin-top: 0 ; margin-bottom: 0 ; vertical-align: middle&quot; value=&quot;1&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;calibri&amp;quot; ; font-size: 11.0pt ; font-weight: normal ; font-style: normal ; font-family: &amp;quot;calibri&amp;quot; ; font-size: 11.0pt&quot;&gt;Scale big &lt;/span&gt;&lt;/li&gt;&#xa;  &lt;li style=&quot;margin-top: 0 ; margin-bottom: 0 ; vertical-align: middle&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;calibri&amp;quot; ; font-size: 11.0pt&quot;&gt;Availability : low&lt;/span&gt;&lt;/li&gt;&#xa;  &lt;li style=&quot;margin-top: 0 ; margin-bottom: 0 ; vertical-align: middle&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;calibri&amp;quot; ; font-size: 11.0pt&quot;&gt;Consistency: low&lt;/span&gt;&lt;/li&gt;&#xa;  &lt;li style=&quot;margin-top: 0 ; margin-bottom: 0 ; vertical-align: middle&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;calibri&amp;quot; ; font-size: 11.0pt&quot;&gt;Latency: super low&lt;/span&gt;&lt;/li&gt;&#xa;  &lt;li style=&quot;margin-top: 0 ; margin-bottom: 0 ; vertical-align: middle&quot;&gt;&lt;span style=&quot;font-family: &amp;quot;calibri&amp;quot; ; font-size: 11.0pt&quot;&gt;Data durability : low&lt;/span&gt;&lt;/li&gt;&#xa; &lt;/ol&gt;&#xa;&lt;/ol&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="30" width="240" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="a5kKYPI09SS8CgxuJL7n-2" value="&lt;div&gt;OK, now lets list all topics we wan tot cove :&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;api&lt;/div&gt;&lt;div&gt;capacity&lt;/div&gt;&lt;div&gt;architect&lt;/div&gt;&lt;div&gt;database&lt;/div&gt;&lt;div&gt;other topics&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-40" y="500" width="240" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="a5kKYPI09SS8CgxuJL7n-3" value="&lt;div&gt;so I&#39;ll start w/ api, what do you think? &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;api: &lt;br&gt;&lt;/div&gt;&lt;div&gt;get(typed_words, u_id, ts) -&amp;gt; list of suggestion&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;so I&#39;ll talk about acapacity,, is it KO? &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;capacity big&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;so I&#39;ll start with architect&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-50" y="650" width="250" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="a5kKYPI09SS8CgxuJL7n-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="a5kKYPI09SS8CgxuJL7n-4" target="a5kKYPI09SS8CgxuJL7n-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a5kKYPI09SS8CgxuJL7n-4" value="type words" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-65" y="870" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="a5kKYPI09SS8CgxuJL7n-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="a5kKYPI09SS8CgxuJL7n-5" target="a5kKYPI09SS8CgxuJL7n-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a5kKYPI09SS8CgxuJL7n-5" value="gw" style="whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="60" y="850" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="a5kKYPI09SS8CgxuJL7n-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="a5kKYPI09SS8CgxuJL7n-7" target="a5kKYPI09SS8CgxuJL7n-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a5kKYPI09SS8CgxuJL7n-7" value="LB" style="whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="170" y="850" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="a5kKYPI09SS8CgxuJL7n-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="a5kKYPI09SS8CgxuJL7n-9" target="a5kKYPI09SS8CgxuJL7n-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a5kKYPI09SS8CgxuJL7n-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#6a00ff;strokeColor=#3700CC;" edge="1" parent="1" target="a5kKYPI09SS8CgxuJL7n-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="10" y="1020" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="a5kKYPI09SS8CgxuJL7n-9" value="tpSvc" style="whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="235" y="850" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="a5kKYPI09SS8CgxuJL7n-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="a5kKYPI09SS8CgxuJL7n-11" target="a5kKYPI09SS8CgxuJL7n-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a5kKYPI09SS8CgxuJL7n-11" value="typeWordsDB" style="whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="435" y="850" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="a5kKYPI09SS8CgxuJL7n-13" value="DB" style="ellipse;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="635" y="850" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="a5kKYPI09SS8CgxuJL7n-15" value="REAd" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-140" y="840" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="a5kKYPI09SS8CgxuJL7n-16" value="write" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-140" y="930" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="a5kKYPI09SS8CgxuJL7n-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fillColor=#6a00ff;strokeColor=#3700CC;startArrow=none;" edge="1" parent="1" source="a5kKYPI09SS8CgxuJL7n-21" target="a5kKYPI09SS8CgxuJL7n-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="a5kKYPI09SS8CgxuJL7n-17" value="write svc" style="whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="235" y="990" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="a5kKYPI09SS8CgxuJL7n-20" value="search word" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-75" y="1010" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="a5kKYPI09SS8CgxuJL7n-21" value="processor" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="414" y="1000" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="a5kKYPI09SS8CgxuJL7n-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fillColor=#6a00ff;strokeColor=#3700CC;endArrow=none;" edge="1" parent="1" source="a5kKYPI09SS8CgxuJL7n-17" target="a5kKYPI09SS8CgxuJL7n-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="355" y="1005" as="sourcePoint" />
+            <mxPoint x="495" y="910" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
