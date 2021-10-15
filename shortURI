@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-10-15T15:15:43.933Z" agent="5.0 (Windows)" etag="x1eUMq7cmSl8ya-AeLwS" version="15.5.2" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-15T19:29:17.369Z" agent="5.0 (Windows)" etag="IrRlwLZzRboWdhCyM92m" version="15.5.2" type="github">
   <diagram id="0QHoa02Gse8fzCu7EYRN" name="Page-1">
     <mxGraphModel dx="820" dy="536" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -10,8 +10,44 @@
         <mxCell id="nQy1c1cdLtIA_GvGmKj--7" value="OK, then lets start. I&#39;ll cover these topics&lt;br&gt;&lt;br&gt;&lt;div&gt;scenario&lt;/div&gt;&lt;div&gt;data model&lt;/div&gt;&lt;div&gt;api&lt;/div&gt;&lt;div&gt;capacity&lt;/div&gt;&lt;div&gt;architect&lt;/div&gt;&lt;div&gt;database&lt;/div&gt;&lt;div&gt;others&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry y="510" width="260" height="390" as="geometry" />
         </mxCell>
-        <mxCell id="nQy1c1cdLtIA_GvGmKj--8" value="&lt;div&gt;scenario&lt;/div&gt;&lt;div&gt;1. long to short ( mapping, similar to hashmap)&lt;/div&gt;&lt;div&gt;2. short to long (http redirect, reversed hashmap)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;data model&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="195" y="550" width="270" height="100" as="geometry" />
+        <mxCell id="nQy1c1cdLtIA_GvGmKj--8" value="&lt;div&gt;scenario&lt;/div&gt;&lt;div&gt;1. long to short ( mapping, similar to hashmap)&lt;/div&gt;&lt;div&gt;2. short to long (http redirect, reversed hashmap)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;data model&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;short url | long url | created ts | expire ts | &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;api&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;capacity&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;architect&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="300" y="550" width="270" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="nQy1c1cdLtIA_GvGmKj--11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nQy1c1cdLtIA_GvGmKj--9" target="nQy1c1cdLtIA_GvGmKj--10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nQy1c1cdLtIA_GvGmKj--9" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="250" y="930" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nQy1c1cdLtIA_GvGmKj--14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nQy1c1cdLtIA_GvGmKj--10" target="nQy1c1cdLtIA_GvGmKj--13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nQy1c1cdLtIA_GvGmKj--10" value="&lt;div&gt;createSvc&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;verticalAlign=top;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="315" y="930" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nQy1c1cdLtIA_GvGmKj--12" value="create " style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="125" y="910" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="nQy1c1cdLtIA_GvGmKj--13" value="database" style="ellipse;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="515" y="930" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nQy1c1cdLtIA_GvGmKj--17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nQy1c1cdLtIA_GvGmKj--15" target="nQy1c1cdLtIA_GvGmKj--16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nQy1c1cdLtIA_GvGmKj--15" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="240" y="1050" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nQy1c1cdLtIA_GvGmKj--18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="nQy1c1cdLtIA_GvGmKj--16" target="nQy1c1cdLtIA_GvGmKj--13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nQy1c1cdLtIA_GvGmKj--16" value="read svc" style="whiteSpace=wrap;html=1;verticalAlign=top;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="305" y="1050" width="125" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nQy1c1cdLtIA_GvGmKj--20" value="&lt;div&gt;api&lt;/div&gt;&lt;div&gt;&amp;nbsp;create (original_url ) --&amp;gt; shortUrl&lt;/div&gt;&lt;div&gt;read (shortUrl) --&amp;gt; original URL&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="20" y="1210" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="nQy1c1cdLtIA_GvGmKj--21" value="&lt;div&gt;database: &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;mysql :&amp;nbsp;&amp;nbsp; shortUrl | longUrl | expire | create_ts&lt;/div&gt;&lt;div&gt;iindex : shortUrl&amp;nbsp; longUrl &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;nosql:&amp;nbsp;&amp;nbsp;&amp;nbsp; heavy read, few write&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;primary: shorturl&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;id: &lt;br&gt;&lt;/div&gt;&lt;div&gt;1. uuid&lt;/div&gt;&lt;div&gt;2. global snowflake&lt;/div&gt;&lt;div&gt;3.&amp;nbsp; auto incre w/ sharding host&lt;/div&gt;&lt;div&gt;4. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;scale : &lt;br&gt;&lt;/div&gt;&lt;div&gt;multi region:&amp;nbsp;&amp;nbsp; since it is read heavy, so we can do w/&amp;nbsp; caching strategy. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;security: &lt;br&gt;&lt;/div&gt;&lt;div&gt;1. id not auto_incr, UUID is better .&amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;div&gt;2. DDos: rate limiter&lt;/div&gt;&lt;div&gt;3. malicious URL detection:&amp;nbsp; ModSeurity, OWASP. &lt;br&gt;&lt;/div&gt;&lt;div&gt;4. &lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="170" y="1135" width="380" height="450" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
