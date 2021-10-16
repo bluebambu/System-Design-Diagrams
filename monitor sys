@@ -1,1 +1,60 @@
-<mxfile host="app.diagrams.net" modified="2021-10-16T13:56:53.185Z" agent="5.0 (Windows)" version="15.5.4" etag="H6aSfMGqjQTymYqUMTvf" type="github"><diagram id="jwoRrX_K2zXr594WyxiM">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-10-16T15:03:24.456Z" agent="5.0 (Windows)" etag="GCNTBLgu39ToQmlYjHi1" version="15.5.4" type="github">
+  <diagram id="jwoRrX_K2zXr594WyxiM" name="Page-1">
+    <mxGraphModel dx="703" dy="536" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="gCwAwENRwB76lVUCKTnF-1" value="&lt;div&gt;OK, I&#39;ll cover these topics: &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;scenario&lt;/div&gt;&lt;div&gt;data model&lt;/div&gt;&lt;div&gt;api&lt;/div&gt;&lt;div&gt;capacity&lt;/div&gt;&lt;div&gt;arch&lt;/div&gt;&lt;div&gt;database&lt;/div&gt;&lt;div&gt;other&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="20" y="10" width="150" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="gCwAwENRwB76lVUCKTnF-2" value="&lt;div&gt;scenario:&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;many host, send multi keys to monitor sys:&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;addCount( nCount, ts )&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;span style=&quot;white-space: pre&quot;&gt;&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;data model:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;service : host : recent_1min : countN&amp;nbsp;&amp;nbsp; (can aggregate)&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;data pattern: heavy write, light read. &lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;api:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;capacity:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;raw qps:&amp;nbsp; 10 services, 100qps each, -&amp;gt; multi K qps.&amp;nbsp; easily go to 100K qps. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;optimized: client do optimization:&amp;nbsp; 10s per flush&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;100 service -&amp;gt; 10 clients each -&amp;gt; 100qps &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;arch&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="30" y="160" width="430" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="gCwAwENRwB76lVUCKTnF-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="gCwAwENRwB76lVUCKTnF-3" target="gCwAwENRwB76lVUCKTnF-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gCwAwENRwB76lVUCKTnF-3" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="480" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gCwAwENRwB76lVUCKTnF-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="gCwAwENRwB76lVUCKTnF-4" target="gCwAwENRwB76lVUCKTnF-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gCwAwENRwB76lVUCKTnF-4" value="collector svc" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="125" y="480" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gCwAwENRwB76lVUCKTnF-6" value="metrics db" style="ellipse;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="400" y="550" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gCwAwENRwB76lVUCKTnF-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="gCwAwENRwB76lVUCKTnF-8" target="gCwAwENRwB76lVUCKTnF-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gCwAwENRwB76lVUCKTnF-8" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="680" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gCwAwENRwB76lVUCKTnF-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.342;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="gCwAwENRwB76lVUCKTnF-9" target="gCwAwENRwB76lVUCKTnF-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gCwAwENRwB76lVUCKTnF-9" value="query svc" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="210" y="680" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gCwAwENRwB76lVUCKTnF-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.6;entryY=0.967;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="gCwAwENRwB76lVUCKTnF-12" target="gCwAwENRwB76lVUCKTnF-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gCwAwENRwB76lVUCKTnF-12" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="860" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gCwAwENRwB76lVUCKTnF-14" value="alert svc" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="210" y="870" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="gCwAwENRwB76lVUCKTnF-15" value="&lt;div&gt;database&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;1. file based :&amp;nbsp; 1 key 1 file, keep appending at the end of file.&amp;nbsp; fast enough. Need to have a big table. &lt;br&gt;&lt;/div&gt;&lt;div&gt;2. Column based: key, value is a series of record.&amp;nbsp; sort key is time. &lt;br&gt;&lt;/div&gt;&lt;div&gt;3. time series db&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;head block, in-memory, disk mapping memory, write ahead log, block reach size threshold and then persist to disk. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;When searching, search on time first, and then on key. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;For each block, there is a key-value structure on :&amp;nbsp; service: host --&amp;gt; count. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;When reading, read in-memory block first , and then disk block, to get the real time result. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="45" y="950" width="630" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="gCwAwENRwB76lVUCKTnF-16" value="&lt;div&gt;optimization: &lt;br&gt;&lt;/div&gt;&lt;div&gt;1. front end: &lt;br&gt;&lt;/div&gt;&lt;div&gt;query mode: get result in time range&lt;/div&gt;&lt;div&gt;sync mode: get current result. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;query:&amp;nbsp; query cache, eviction: LRU&lt;/div&gt;&lt;div&gt;sync mode: keep taking data from TS db in-memory block. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2. distributed&lt;/div&gt;&lt;div&gt;TSDB:&amp;nbsp; sharding ?&amp;nbsp;&amp;nbsp; shard by key. &lt;br&gt;&lt;/div&gt;&lt;div&gt;alert: in-memory service, maintain a queue of a timerange, keep updating the metrics. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="65" y="1180" width="575" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
