@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-10-22T12:21:19.075Z" agent="5.0 (Windows)" etag="LDl0uka4nN8brQuOVfSJ" version="15.5.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-23T03:29:43.595Z" agent="5.0 (Windows)" etag="cUPO8t_e-d6NFyRaU-RD" version="15.5.4" type="github">
   <diagram id="sGMA8CiQqHpx6HqLVTpV" name="Page-1">
-    <mxGraphModel dx="620" dy="536" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1032" dy="536" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -43,8 +43,75 @@
         <mxCell id="_VPf4UvQDeNvCzMjxYVt-12" value="topK results. UI, query" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="827" y="315" width="110" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="_VPf4UvQDeNvCzMjxYVt-13" value="&lt;div&gt;now data model:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;topK data:&amp;nbsp; {&lt;/div&gt;&lt;blockquote&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;timeRange: [12:00:00, 12:00:01], &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;topK: [&lt;/div&gt;&lt;blockquote&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	{&lt;/span&gt;key: k1, count: c1},&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	{&lt;/span&gt;key: k2, count: c2},&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;]&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;storage:&amp;nbsp; key, count, ts. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;so we need to store data w/ ts, and query w/ ts. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;query pattern: &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;query current topK (real time)  --&amp;gt; streaming &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;query history topK ( not real time)&amp;nbsp; --&amp;gt; db query &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="70" y="420" width="400" height="490" as="geometry" />
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-13" value="&lt;div&gt;now data model:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;topK data:&amp;nbsp; {&lt;/div&gt;&lt;blockquote&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;timeRange: [12:00:00, 12:00:01], &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;topK: [&lt;/div&gt;&lt;blockquote&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	{&lt;/span&gt;key: k1, count: c1},&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;span&gt;	{&lt;/span&gt;key: k2, count: c2},&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;]&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;storage:&amp;nbsp; key, count, ts. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;so we need to store data w/ ts, and query w/ ts. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;query pattern: &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;query current topK (real time)  --&amp;gt; streaming &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;query history topK ( not real time)&amp;nbsp; --&amp;gt; db query &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;external api:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;capacity: &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;arch:&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="430" width="400" height="490" as="geometry" />
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-14" value="write:" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="990" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-18" value="service" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;gradientColor=none;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1070" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-19" value="service" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;gradientColor=none;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="80" y="1090" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="_VPf4UvQDeNvCzMjxYVt-21" target="_VPf4UvQDeNvCzMjxYVt-24">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330" y="1125" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-21" value="service" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;gradientColor=none;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="100" y="1110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-22" value="service" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;gradientColor=none;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="120" y="1130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.05;entryY=0.567;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="_VPf4UvQDeNvCzMjxYVt-24" target="_VPf4UvQDeNvCzMjxYVt-25">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="1130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-24" value="&lt;div&gt;Storage: &lt;br&gt;{&lt;/div&gt;&lt;div&gt;&amp;nbsp; key: xx, count: xx, ts: xx;&lt;/div&gt;&lt;div&gt;key: xx, count: xx, ts: xx;&lt;/div&gt;&lt;div&gt;...&lt;/div&gt;&lt;div&gt;}&lt;br&gt; &lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="310" y="1050" width="190" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_VPf4UvQDeNvCzMjxYVt-25" target="_VPf4UvQDeNvCzMjxYVt-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-25" value="real-time topK" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;gradientColor=none;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="630" y="990" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_VPf4UvQDeNvCzMjxYVt-26" target="_VPf4UvQDeNvCzMjxYVt-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-26" value="&lt;div&gt;integration platform:&lt;/div&gt;&lt;div&gt;temp DB;&lt;/div&gt;&lt;div&gt;MQ;&lt;/div&gt;&lt;div&gt;server push; &lt;br&gt;&lt;/div&gt;&lt;div&gt;dataware house&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;gradientColor=none;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="827" y="960" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-28" value="" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;rounded=0;align=left;verticalAlign=top;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="980" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-30" value="&lt;div&gt;read&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="80" y="1275" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_VPf4UvQDeNvCzMjxYVt-31" target="_VPf4UvQDeNvCzMjxYVt-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-31" value="client" style="whiteSpace=wrap;html=1;rounded=0;fillColor=none;gradientColor=none;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_VPf4UvQDeNvCzMjxYVt-32" target="_VPf4UvQDeNvCzMjxYVt-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_VPf4UvQDeNvCzMjxYVt-32" target="_VPf4UvQDeNvCzMjxYVt-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-32" value="query engine" style="whiteSpace=wrap;html=1;rounded=0;fillColor=none;gradientColor=none;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="260" y="1320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_VPf4UvQDeNvCzMjxYVt-34" target="_VPf4UvQDeNvCzMjxYVt-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-34" value="cache" style="whiteSpace=wrap;html=1;rounded=0;fillColor=none;gradientColor=none;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="460" y="1320" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
