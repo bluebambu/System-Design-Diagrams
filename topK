@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-10-23T03:34:12.278Z" agent="5.0 (Windows)" etag="Nl4-NsMwqVg2Pbr7fIMi" version="15.5.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-23T15:48:12.352Z" agent="5.0 (Windows)" etag="FYEi19ZvsncBCCdE3NbA" version="15.5.4" type="github">
   <diagram id="sGMA8CiQqHpx6HqLVTpV" name="Page-1">
-    <mxGraphModel dx="1032" dy="536" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="500" dy="536" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -71,7 +71,7 @@
             <mxPoint x="570" y="1130" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="_VPf4UvQDeNvCzMjxYVt-24" value="&lt;div&gt;Storage: &lt;br&gt;{&lt;/div&gt;&lt;div&gt;&amp;nbsp; key: xx, count: xx, ts: xx;&lt;/div&gt;&lt;div&gt;key: xx, count: xx, ts: xx;&lt;/div&gt;&lt;div&gt;...&lt;/div&gt;&lt;div&gt;}&lt;br&gt; &lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-24" value="&lt;div&gt;Storage on GFS: &lt;br&gt;{&lt;/div&gt;&lt;div&gt;&amp;nbsp; key: xx, count: xx, ts: xx;&lt;/div&gt;&lt;div&gt;key: xx, count: xx, ts: xx;&lt;/div&gt;&lt;div&gt;...&lt;/div&gt;&lt;div&gt;}&lt;br&gt; &lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="310" y="1050" width="190" height="160" as="geometry" />
         </mxCell>
         <mxCell id="_VPf4UvQDeNvCzMjxYVt-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_VPf4UvQDeNvCzMjxYVt-25" target="_VPf4UvQDeNvCzMjxYVt-26">
@@ -112,6 +112,119 @@
         </mxCell>
         <mxCell id="_VPf4UvQDeNvCzMjxYVt-34" value="cache" style="whiteSpace=wrap;html=1;rounded=0;fillColor=none;gradientColor=none;align=left;verticalAlign=top;" vertex="1" parent="1">
           <mxGeometry x="460" y="1320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-38" value="想要求的是动态的slide&lt;br/&gt;window（如算24小时内的top k，他的意思是从现在开始，往前回溯24小时。）" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="1490" width="540" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_VPf4UvQDeNvCzMjxYVt-39" target="_VPf4UvQDeNvCzMjxYVt-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-39" value="data" style="shape=singleArrow;whiteSpace=wrap;html=1;arrowWidth=0.4;arrowSize=0.4;rounded=0;fillColor=none;gradientColor=none;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="10" y="1720" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="_VPf4UvQDeNvCzMjxYVt-40" target="_VPf4UvQDeNvCzMjxYVt-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=none;" edge="1" parent="1" source="_VPf4UvQDeNvCzMjxYVt-61" target="_VPf4UvQDeNvCzMjxYVt-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;startArrow=none;" edge="1" parent="1" source="_VPf4UvQDeNvCzMjxYVt-61" target="_VPf4UvQDeNvCzMjxYVt-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-40" value="mapper" style="whiteSpace=wrap;html=1;rounded=0;align=left;verticalAlign=top;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="120" y="1720" width="40" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-42" value="&lt;div&gt;A:&lt;/div&gt;&lt;div&gt;B:&lt;/div&gt;&lt;div&gt;C:&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;fillColor=none;gradientColor=none;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="370" y="1600" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-52" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_VPf4UvQDeNvCzMjxYVt-43" target="_VPf4UvQDeNvCzMjxYVt-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-43" value="&lt;div&gt;D&lt;/div&gt;&lt;div&gt;E&lt;/div&gt;&lt;div&gt;F&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;fillColor=none;gradientColor=none;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="370" y="1720" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-54" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_VPf4UvQDeNvCzMjxYVt-44" target="_VPf4UvQDeNvCzMjxYVt-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-44" value="&lt;div&gt;G&lt;/div&gt;&lt;div&gt;H&lt;/div&gt;&lt;div&gt;I&lt;br&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;fillColor=none;gradientColor=none;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="370" y="1830" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-50" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="_VPf4UvQDeNvCzMjxYVt-48" target="_VPf4UvQDeNvCzMjxYVt-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-48" value="&lt;div&gt;A: &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;00：00： 3&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;00：01： 10&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;....&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;size of 24 hours&lt;/span&gt;&lt;br&gt;&lt;/div&gt;, a list of sz 720. " style="whiteSpace=wrap;html=1;aspect=fixed;rounded=0;fillColor=none;gradientColor=none;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="490" y="1570" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="_VPf4UvQDeNvCzMjxYVt-49" target="_VPf4UvQDeNvCzMjxYVt-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-49" value="get top K" style="rhombus;whiteSpace=wrap;html=1;rounded=0;align=left;verticalAlign=top;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="740" y="1600" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="_VPf4UvQDeNvCzMjxYVt-51" target="_VPf4UvQDeNvCzMjxYVt-57">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="940" y="1750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-51" value="get top K" style="rhombus;whiteSpace=wrap;html=1;rounded=0;align=left;verticalAlign=top;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="740" y="1710" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="_VPf4UvQDeNvCzMjxYVt-53" target="_VPf4UvQDeNvCzMjxYVt-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-53" value="get top K" style="rhombus;whiteSpace=wrap;html=1;rounded=0;align=left;verticalAlign=top;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="740" y="1820" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-55" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="670" y="1900" as="sourcePoint" />
+            <mxPoint x="670" y="1540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-56" value="Every minute!" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="645" y="1530" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-57" value="reducer, get total topK" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;gradientColor=none;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="937" y="1710" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-62" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;" edge="1" parent="1" source="_VPf4UvQDeNvCzMjxYVt-40" target="_VPf4UvQDeNvCzMjxYVt-61">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="1750" as="sourcePoint" />
+            <mxPoint x="370" y="1750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-61" value="&lt;div&gt;MQ&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;rounded=0;fillColor=none;gradientColor=none;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="180" y="1720" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-63" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;endArrow=none;" edge="1" parent="1" source="_VPf4UvQDeNvCzMjxYVt-40" target="_VPf4UvQDeNvCzMjxYVt-61">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="1765" as="sourcePoint" />
+            <mxPoint x="370" y="1845" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-66" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="_VPf4UvQDeNvCzMjxYVt-68" target="_VPf4UvQDeNvCzMjxYVt-42">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="650" y="1980" as="sourcePoint" />
+            <mxPoint x="410" y="1940" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-67" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="_VPf4UvQDeNvCzMjxYVt-68" target="_VPf4UvQDeNvCzMjxYVt-43">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="630" y="1980" as="sourcePoint" />
+            <mxPoint x="410" y="1670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-68" value="config svc" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;gradientColor=none;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="600" y="1990" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-69" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.442;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="_VPf4UvQDeNvCzMjxYVt-68" target="_VPf4UvQDeNvCzMjxYVt-44">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="220" y="2090" as="sourcePoint" />
+            <mxPoint x="270" y="2040" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_VPf4UvQDeNvCzMjxYVt-70" value="&lt;div&gt;failure tolerance: &lt;br&gt;&lt;/div&gt;&lt;div&gt;1. fail on single host:&amp;nbsp;&lt;/div&gt;&lt;div&gt;flush to disk every 5 sec. restart to pick up backup file. &lt;br&gt;&lt;/div&gt;&lt;div&gt;2. too many keys: elastic scale: consistent hashing (high consistency); or stop the oiginal host, save the traffic to MQ, finish the copying, and then reopen the MQ client. &lt;br&gt;&lt;/div&gt;&lt;div&gt;3. use Database?&amp;nbsp;&amp;nbsp; yes! since here is no change to the history, we can just store it in Cassandra! ts as the sort key.&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;div&gt;4. hot standby. &lt;br&gt;&lt;/div&gt;&lt;div&gt;5. use Count min sketch: no elastic scaling at all! but loose some accuracy. &lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="2040" width="480" height="150" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
