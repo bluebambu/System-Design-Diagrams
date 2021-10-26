@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-10-24T13:12:31.282Z" agent="5.0 (Windows)" etag="18eyUocfNS5JC8CfSHB7" version="15.5.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-26T02:46:19.542Z" agent="5.0 (Windows)" etag="Q6FiufSo-3Wv3uKP5GgY" version="15.5.4" type="github">
   <diagram id="7sx-VilOBUsS6ROJ_oAf" name="Page-1">
-    <mxGraphModel dx="659" dy="536" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="875" dy="536" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -105,8 +105,8 @@
         <mxCell id="uJtz4xgNV3zaKY4kmsRK-33" value="read svc" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
           <mxGeometry x="360" y="1220" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="uJtz4xgNV3zaKY4kmsRK-35" value="&lt;div&gt;schema:&lt;/div&gt;&lt;div&gt;user | path | name | metadata | &lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="850" y="1230" width="240" height="30" as="geometry" />
+        <mxCell id="uJtz4xgNV3zaKY4kmsRK-35" value="&lt;div&gt;schema:&lt;/div&gt;&lt;div&gt;id | user | path | name| metadata&amp;nbsp; &lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="850" y="1200" width="240" height="30" as="geometry" />
         </mxCell>
         <mxCell id="uJtz4xgNV3zaKY4kmsRK-36" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;" edge="1" parent="1" target="uJtz4xgNV3zaKY4kmsRK-37">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -133,6 +133,12 @@
         </mxCell>
         <mxCell id="uJtz4xgNV3zaKY4kmsRK-45" value="&lt;div&gt;other topics:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;acid ?&amp;nbsp;&amp;nbsp; should be.&amp;nbsp; distributed lock ?&amp;nbsp; yes , and it is a must have.&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="100" y="1530" width="350" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="uJtz4xgNV3zaKY4kmsRK-46" value="chunks store" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="730" y="1240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uJtz4xgNV3zaKY4kmsRK-47" value="&lt;div&gt;schema:&lt;/div&gt;&lt;div&gt;chunkId | file ID | chunkVersion ?&amp;nbsp; | chunk order | &lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="820" y="1310" width="340" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
