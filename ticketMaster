@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-10-29T03:39:29.895Z" agent="5.0 (Windows)" etag="YwRleXc74XACLtCW5Vkb" version="15.5.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-10-29T14:09:54.233Z" agent="5.0 (Windows)" etag="3hlS0A9tDhKFdm5oc-4c" version="15.5.4" type="github">
   <diagram id="WV1M-wPJZFe6CbQ2AYyr" name="Page-1">
-    <mxGraphModel dx="1803" dy="1705" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1630" dy="1705" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -81,7 +81,10 @@
           <mxGeometry x="-10" y="570" width="160" height="30" as="geometry" />
         </mxCell>
         <mxCell id="qOHS-JpEPHCgRjc7wWcd-36" value="&lt;div&gt;fail tolerance: &lt;br&gt;&lt;/div&gt;&lt;div&gt;At order consuming, if host is down: order record should have a timeout . If pass timeout, then retry. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;if double processing: check the status of record before writing results to order db.&amp;nbsp; if already succeeded, then abondon current result. &lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="460" y="820" width="280" height="120" as="geometry" />
+          <mxGeometry x="500" y="810" width="280" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="qOHS-JpEPHCgRjc7wWcd-37" value="&lt;div&gt;database:&lt;/div&gt;&lt;div&gt;order DB:&amp;nbsp; need to bear high volume. Better use Redis and Redis queue as the MQ and order database !! &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Redis is OK here. Redis provides 2 things: &lt;br&gt;&lt;/div&gt;&lt;div&gt;1. Database to store all the orders&lt;/div&gt;&lt;div&gt;2. msg queue to que all the orders to keep an order to all of them. &lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1020" width="430" height="150" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
