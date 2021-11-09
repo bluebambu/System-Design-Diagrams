@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-11-08T19:48:26.817Z" agent="5.0 (Windows)" etag="XrGmUxcW8NLwklaxzmAI" version="15.7.0" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-11-09T00:25:33.463Z" agent="5.0 (Windows)" etag="VCwg82v8gNBnrZ6Kg2c6" version="15.7.0" type="github" pages="2">
   <diagram id="WV1M-wPJZFe6CbQ2AYyr" name="Page-1">
     <mxGraphModel dx="1865" dy="1705" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -99,7 +99,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="NHcWsB1UsIZGYemCOFWH" name="11/08">
-    <mxGraphModel dx="1483" dy="766" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="865" dy="447" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="er4XfSnG-prOIslObI-F-0" />
         <mxCell id="er4XfSnG-prOIslObI-F-1" parent="er4XfSnG-prOIslObI-F-0" />
@@ -190,6 +190,9 @@
         </mxCell>
         <mxCell id="erD1tm2PJP3HVyai_Pgp-51" value="ticket recycle svc" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="er4XfSnG-prOIslObI-F-1">
           <mxGeometry x="415" y="1580" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="erD1tm2PJP3HVyai_Pgp-52" value="&lt;div&gt;fail point: &lt;br&gt;&lt;/div&gt;&lt;div&gt;1.&amp;nbsp; too many visitor:&amp;nbsp;&amp;nbsp; UI static-lize,, front end throttling,&amp;nbsp; mq to maitain order (redis queue or mq). &lt;br&gt;&lt;/div&gt;&lt;div&gt;2.&amp;nbsp; 1 request, 1 trial of reserving ?&amp;nbsp; not, batch reserving.&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; daemon to freq query db, get all reserv, check with DB. &lt;br&gt;&lt;/div&gt;&lt;div&gt;3.&amp;nbsp; &lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="er4XfSnG-prOIslObI-F-1">
+          <mxGeometry x="75" y="1739" width="665" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
