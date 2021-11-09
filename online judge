@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-11-09T01:44:24.260Z" agent="5.0 (Windows)" etag="bIvqrR87rcryRiwTeQWJ" version="15.7.0" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2021-11-09T03:08:19.233Z" agent="5.0 (Windows)" etag="bSe5F8o3BKQBElwalwea" version="15.7.0" type="github" pages="2">
   <diagram id="P1Nfy9ik43Rcr7_-EQIV" name="Page-1">
     <mxGraphModel dx="1221" dy="631" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -89,6 +89,146 @@
       <root>
         <mxCell id="RNrTIvlm17zl9ZaFBDR7-0" />
         <mxCell id="RNrTIvlm17zl9ZaFBDR7-1" parent="RNrTIvlm17zl9ZaFBDR7-0" />
+        <mxCell id="RNrTIvlm17zl9ZaFBDR7-3" value="&lt;div&gt;online judge&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;function req:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;user can login&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;user see a list of Q&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;user coding Q&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;user coding submit and run, result: status(ok, fail, &lt;b&gt;timeout (10sec) &lt;/b&gt;), duration, memory usage, performance rank(optional). timeout. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;1 session.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;No func req:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;availability, medium &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;latency, low latency, &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;consistency, medium&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;durability&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;scale up&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;request throttling ( per user &amp;lt; 10 sub / min)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;scenario, data model, api, capacity, achitect, database and others ( throttling, security, ....)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Scenario:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;user -&amp;gt; login, get user token , SSO &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;key flow:&amp;nbsp; user typed code -&amp;gt; send code /w user info to backend -&amp;gt; compile, run thru test cases, -&amp;gt; return results, -&amp;gt; save results to db. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;data model:&lt;/div&gt;&lt;div&gt;resource: &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;user:&amp;nbsp; id | name | created_ts | pswd (encrypted) |&amp;nbsp;&amp;nbsp; --&amp;gt; encrypt(pswd + salt),&amp;nbsp;&amp;nbsp; encode : string -&amp;gt; md5, SHA256, &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;questions: id | desc | created_ts | [denomalize test cases to questions]&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;testcase: id | desc | input | output| question id |&amp;nbsp; --&amp;gt;&amp;nbsp; 1 q &amp;gt; multi test cases. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;test case 1: input : 4, output: false . &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;mycode&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;for case in (all cases for q 1):&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;input, output = case.input, case.output&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;python: input : [11,2,3]&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;java : input :&amp;nbsp; new int[]{1,2,3}&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;submission: id | usr | questions | create_ts | code | status (submitted, failed, success, compled error, timeout ) | language (python, java) | runtime | memeory usage |&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;api:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;user: CRUD&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;q: R, high lvl member: C U &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;testcase: nothing, admin: CRUD&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;submission: &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;C: uer_token, q_id, ts, code&amp;nbsp; --&amp;gt; submission id&amp;nbsp; （ server async, update status of 1 submission, keep pollng stataus) &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;restful:&amp;nbsp; POST leetcode.com&lt;b&gt;/api/v1/&lt;/b&gt;submission?token=xxx&amp;amp;&amp;amp;q_id=xxx&amp;amp;&amp;amp;ts=xxx&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	http data &lt;/span&gt;= code &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;R: polling : submission id, user_token, ts.&amp;nbsp; -&amp;gt; status of the submission.&amp;nbsp;&amp;nbsp; ---&amp;gt; use server ts insead of clients&#39; &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;capacity: &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;qusions, bounded, &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;users, &amp;lt; 100M&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;tests &amp;lt; bounded &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	DAU , 1M per day, 1ppl 50 submit/day, 1 submission, 1kb record, --&amp;gt; 1M * 50 / 10^5 = 500qps, peak 5k qps. &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;architect. &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt; &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="RNrTIvlm17zl9ZaFBDR7-1">
+          <mxGeometry x="20" y="50" width="750" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RNrTIvlm17zl9ZaFBDR7-7" value="write flow" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="RNrTIvlm17zl9ZaFBDR7-1">
+          <mxGeometry x="50" y="920" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RNrTIvlm17zl9ZaFBDR7-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="RNrTIvlm17zl9ZaFBDR7-1" source="RNrTIvlm17zl9ZaFBDR7-8" target="RNrTIvlm17zl9ZaFBDR7-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RNrTIvlm17zl9ZaFBDR7-8" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="RNrTIvlm17zl9ZaFBDR7-1">
+          <mxGeometry x="80" y="990" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RNrTIvlm17zl9ZaFBDR7-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="RNrTIvlm17zl9ZaFBDR7-1" source="RNrTIvlm17zl9ZaFBDR7-9" target="RNrTIvlm17zl9ZaFBDR7-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RNrTIvlm17zl9ZaFBDR7-9" value="GW + LB" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="RNrTIvlm17zl9ZaFBDR7-1">
+          <mxGeometry x="145" y="990" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RNrTIvlm17zl9ZaFBDR7-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="RNrTIvlm17zl9ZaFBDR7-1" source="RNrTIvlm17zl9ZaFBDR7-11" target="RNrTIvlm17zl9ZaFBDR7-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RNrTIvlm17zl9ZaFBDR7-15" value="ack, submitssion ID" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="RNrTIvlm17zl9ZaFBDR7-1" source="RNrTIvlm17zl9ZaFBDR7-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="1060" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="375" y="1070" />
+              <mxPoint x="228" y="1070" />
+              <mxPoint x="228" y="1080" />
+              <mxPoint x="110" y="1080" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RNrTIvlm17zl9ZaFBDR7-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="RNrTIvlm17zl9ZaFBDR7-1" source="RNrTIvlm17zl9ZaFBDR7-11" target="RNrTIvlm17zl9ZaFBDR7-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RNrTIvlm17zl9ZaFBDR7-11" value="acceptRunsSvc" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="RNrTIvlm17zl9ZaFBDR7-1">
+          <mxGeometry x="345" y="990" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RNrTIvlm17zl9ZaFBDR7-13" value="runDB" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;verticalAlign=top;" vertex="1" parent="RNrTIvlm17zl9ZaFBDR7-1">
+          <mxGeometry x="345" y="1120" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="RNrTIvlm17zl9ZaFBDR7-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;" edge="1" parent="RNrTIvlm17zl9ZaFBDR7-1" source="RNrTIvlm17zl9ZaFBDR7-40" target="RNrTIvlm17zl9ZaFBDR7-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RNrTIvlm17zl9ZaFBDR7-16" value="mq" style="rhombus;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="RNrTIvlm17zl9ZaFBDR7-1">
+          <mxGeometry x="565" y="980" width="175" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="RNrTIvlm17zl9ZaFBDR7-18" value="compiling &amp;amp; testRunning is slow, " style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="RNrTIvlm17zl9ZaFBDR7-1">
+          <mxGeometry x="490" y="910" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RNrTIvlm17zl9ZaFBDR7-21" value="update status " style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="RNrTIvlm17zl9ZaFBDR7-1" source="RNrTIvlm17zl9ZaFBDR7-19" target="RNrTIvlm17zl9ZaFBDR7-13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="908" y="1160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RNrTIvlm17zl9ZaFBDR7-19" value="computeSvc" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="RNrTIvlm17zl9ZaFBDR7-1">
+          <mxGeometry x="847.5" y="990" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RNrTIvlm17zl9ZaFBDR7-22" value="read flwo" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="RNrTIvlm17zl9ZaFBDR7-1">
+          <mxGeometry x="60" y="1210" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RNrTIvlm17zl9ZaFBDR7-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="RNrTIvlm17zl9ZaFBDR7-1" source="RNrTIvlm17zl9ZaFBDR7-24" target="RNrTIvlm17zl9ZaFBDR7-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RNrTIvlm17zl9ZaFBDR7-24" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="RNrTIvlm17zl9ZaFBDR7-1">
+          <mxGeometry x="90" y="1280" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RNrTIvlm17zl9ZaFBDR7-25" value="poll satus every 1~2 seconds" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="RNrTIvlm17zl9ZaFBDR7-1" source="RNrTIvlm17zl9ZaFBDR7-26" target="RNrTIvlm17zl9ZaFBDR7-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RNrTIvlm17zl9ZaFBDR7-26" value="GW + LB" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="RNrTIvlm17zl9ZaFBDR7-1">
+          <mxGeometry x="155" y="1280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RNrTIvlm17zl9ZaFBDR7-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="RNrTIvlm17zl9ZaFBDR7-1" source="RNrTIvlm17zl9ZaFBDR7-29" target="RNrTIvlm17zl9ZaFBDR7-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RNrTIvlm17zl9ZaFBDR7-29" value="acceptRunsSvc" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="RNrTIvlm17zl9ZaFBDR7-1">
+          <mxGeometry x="570" y="1280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RNrTIvlm17zl9ZaFBDR7-30" value="runDB" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;verticalAlign=top;" vertex="1" parent="RNrTIvlm17zl9ZaFBDR7-1">
+          <mxGeometry x="570" y="1410" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="RNrTIvlm17zl9ZaFBDR7-31" value="acceptRunsSvc" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="RNrTIvlm17zl9ZaFBDR7-1">
+          <mxGeometry x="354" y="1000" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RNrTIvlm17zl9ZaFBDR7-32" value="acceptRunsSvc" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="RNrTIvlm17zl9ZaFBDR7-1">
+          <mxGeometry x="370" y="1010" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RNrTIvlm17zl9ZaFBDR7-33" value="computeSvc" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="RNrTIvlm17zl9ZaFBDR7-1">
+          <mxGeometry x="870" y="1010" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RNrTIvlm17zl9ZaFBDR7-34" value="computeSvc" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="RNrTIvlm17zl9ZaFBDR7-1">
+          <mxGeometry x="880" y="1030" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RNrTIvlm17zl9ZaFBDR7-35" value="elastic scale" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="RNrTIvlm17zl9ZaFBDR7-1">
+          <mxGeometry x="890" y="900" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="RNrTIvlm17zl9ZaFBDR7-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="RNrTIvlm17zl9ZaFBDR7-1" source="RNrTIvlm17zl9ZaFBDR7-36" target="RNrTIvlm17zl9ZaFBDR7-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RNrTIvlm17zl9ZaFBDR7-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.829;entryY=0.017;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="RNrTIvlm17zl9ZaFBDR7-1" source="RNrTIvlm17zl9ZaFBDR7-36" target="RNrTIvlm17zl9ZaFBDR7-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RNrTIvlm17zl9ZaFBDR7-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.463;entryY=-0.012;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="RNrTIvlm17zl9ZaFBDR7-1" source="RNrTIvlm17zl9ZaFBDR7-36" target="RNrTIvlm17zl9ZaFBDR7-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RNrTIvlm17zl9ZaFBDR7-36" value="admin svc" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="RNrTIvlm17zl9ZaFBDR7-1">
+          <mxGeometry x="760" y="910" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RNrTIvlm17zl9ZaFBDR7-40" value="compete semophore of the task" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="RNrTIvlm17zl9ZaFBDR7-1">
+          <mxGeometry x="780" y="1000" width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="RNrTIvlm17zl9ZaFBDR7-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;" edge="1" parent="RNrTIvlm17zl9ZaFBDR7-1" source="RNrTIvlm17zl9ZaFBDR7-16" target="RNrTIvlm17zl9ZaFBDR7-40">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="740" y="1020" as="sourcePoint" />
+            <mxPoint x="847.5" y="1020" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RNrTIvlm17zl9ZaFBDR7-42" value="consumer group 实现原理" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="RNrTIvlm17zl9ZaFBDR7-1">
+          <mxGeometry x="905" y="1130" width="150" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="RNrTIvlm17zl9ZaFBDR7-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="RNrTIvlm17zl9ZaFBDR7-1" source="RNrTIvlm17zl9ZaFBDR7-43" target="RNrTIvlm17zl9ZaFBDR7-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RNrTIvlm17zl9ZaFBDR7-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="RNrTIvlm17zl9ZaFBDR7-1" source="RNrTIvlm17zl9ZaFBDR7-43">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="550" y="1020" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RNrTIvlm17zl9ZaFBDR7-43" value="retry svc" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;align=left;verticalAlign=top;" vertex="1" parent="RNrTIvlm17zl9ZaFBDR7-1">
+          <mxGeometry x="510" y="1070" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="RNrTIvlm17zl9ZaFBDR7-46" value="&lt;div&gt;each q: its own timeout 10s&lt;/div&gt;&lt;div&gt;1 run in db, original status: started, 3sec, stil started, retry it.&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;some code, it is running for 4 sec. &lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="RNrTIvlm17zl9ZaFBDR7-1">
+          <mxGeometry x="587" y="1025" width="240" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="RNrTIvlm17zl9ZaFBDR7-48" value="write &amp;lt; read,shard by submission id, " style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="RNrTIvlm17zl9ZaFBDR7-1">
+          <mxGeometry x="340" y="1220" width="230" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
