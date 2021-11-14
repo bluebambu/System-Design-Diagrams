@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-11-14T02:08:25.697Z" agent="5.0 (Windows)" etag="oDzJGH3sscka-JB4L8zC" version="15.7.0" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-11-14T02:15:18.645Z" agent="5.0 (Windows)" etag="IgUQpdkKWP27R3CRSOdW" version="15.7.0" type="github" pages="3">
   <diagram id="WV1M-wPJZFe6CbQ2AYyr" name="Page-1">
     <mxGraphModel dx="2105" dy="1705" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -201,17 +201,17 @@
     </mxGraphModel>
   </diagram>
   <diagram id="xN6LhDHEUVU5FgG2BZHp" name="Page-3">
-    <mxGraphModel dx="1753" dy="671" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1181" dy="671" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="q6kuXPGmdFiTF4jW_8sn-0" />
         <mxCell id="q6kuXPGmdFiTF4jW_8sn-1" parent="q6kuXPGmdFiTF4jW_8sn-0" />
         <mxCell id="q6kuXPGmdFiTF4jW_8sn-11" value="transaction" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="q6kuXPGmdFiTF4jW_8sn-1" source="q6kuXPGmdFiTF4jW_8sn-8" target="q6kuXPGmdFiTF4jW_8sn-14">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="550" y="490" as="targetPoint" />
+            <mxPoint x="570" y="550" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="q6kuXPGmdFiTF4jW_8sn-8" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;align=left;verticalAlign=top;" vertex="1" parent="q6kuXPGmdFiTF4jW_8sn-1">
-          <mxGeometry x="334" y="450" width="80" height="80" as="geometry" />
+          <mxGeometry x="354" y="510" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="q6kuXPGmdFiTF4jW_8sn-2" value="&lt;div&gt;500k qps, 50k ticket&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;if each ticket is unique? &lt;br&gt;&lt;/div&gt;&lt;div&gt;- No&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Can client reserve first and then checkout ? &lt;br&gt;&lt;/div&gt;&lt;div&gt;- Yes&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;How long does client need to wait for a result ? &lt;br&gt;&lt;/div&gt;&lt;div&gt;- 1min max. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;How long does 1 reservation last? &lt;br&gt;&lt;/div&gt;&lt;div&gt;- 30 min&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="q6kuXPGmdFiTF4jW_8sn-1">
           <mxGeometry x="30" y="30" width="1000" height="30" as="geometry" />
@@ -222,35 +222,79 @@
         <mxCell id="q6kuXPGmdFiTF4jW_8sn-16" value="read" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="q6kuXPGmdFiTF4jW_8sn-1" source="q6kuXPGmdFiTF4jW_8sn-3" target="q6kuXPGmdFiTF4jW_8sn-6">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="95" y="490" />
+              <mxPoint x="115" y="550" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="q6kuXPGmdFiTF4jW_8sn-3" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="q6kuXPGmdFiTF4jW_8sn-1">
-          <mxGeometry x="80" y="320" width="30" height="60" as="geometry" />
+          <mxGeometry x="100" y="380" width="30" height="60" as="geometry" />
         </mxCell>
         <mxCell id="q6kuXPGmdFiTF4jW_8sn-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="q6kuXPGmdFiTF4jW_8sn-1" source="q6kuXPGmdFiTF4jW_8sn-4" target="q6kuXPGmdFiTF4jW_8sn-6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="q6kuXPGmdFiTF4jW_8sn-4" value="reserve svc" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="q6kuXPGmdFiTF4jW_8sn-1">
-          <mxGeometry x="240" y="320" width="120" height="60" as="geometry" />
+          <mxGeometry x="260" y="380" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="q6kuXPGmdFiTF4jW_8sn-6" value="reserve db" style="ellipse;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="q6kuXPGmdFiTF4jW_8sn-1">
-          <mxGeometry x="240" y="460" width="120" height="60" as="geometry" />
+          <mxGeometry x="260" y="520" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="q6kuXPGmdFiTF4jW_8sn-9" value="batch search for PENDING ticket" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="q6kuXPGmdFiTF4jW_8sn-1">
-          <mxGeometry x="369" y="410" width="90" height="50" as="geometry" />
+          <mxGeometry x="389" y="470" width="90" height="50" as="geometry" />
         </mxCell>
         <mxCell id="q6kuXPGmdFiTF4jW_8sn-15" value="update reservation status" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.583;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="q6kuXPGmdFiTF4jW_8sn-1" source="q6kuXPGmdFiTF4jW_8sn-14" target="q6kuXPGmdFiTF4jW_8sn-6">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="640" y="630" />
-              <mxPoint x="310" y="630" />
+              <mxPoint x="660" y="690" />
+              <mxPoint x="330" y="690" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="q6kuXPGmdFiTF4jW_8sn-14" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; ticket DB" style="ellipse;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="q6kuXPGmdFiTF4jW_8sn-1">
-          <mxGeometry x="580" y="450" width="120" height="80" as="geometry" />
+        <mxCell id="q6kuXPGmdFiTF4jW_8sn-14" value="&lt;div&gt;ticket DB&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;concert table&lt;/div&gt;&lt;div&gt;ticket table&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" vertex="1" parent="q6kuXPGmdFiTF4jW_8sn-1">
+          <mxGeometry x="600" y="510" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wmaeNKIAT3VEBeK-VpLI-0" value="reserve and check flow: " style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="q6kuXPGmdFiTF4jW_8sn-1">
+          <mxGeometry x="20" y="310" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wmaeNKIAT3VEBeK-VpLI-1" value="recycle flow" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="q6kuXPGmdFiTF4jW_8sn-1">
+          <mxGeometry x="30" y="730" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wmaeNKIAT3VEBeK-VpLI-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="q6kuXPGmdFiTF4jW_8sn-1" source="wmaeNKIAT3VEBeK-VpLI-3" target="wmaeNKIAT3VEBeK-VpLI-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wmaeNKIAT3VEBeK-VpLI-3" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;align=left;verticalAlign=top;" vertex="1" parent="q6kuXPGmdFiTF4jW_8sn-1">
+          <mxGeometry x="384" y="930" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wmaeNKIAT3VEBeK-VpLI-4" value="cancle" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="q6kuXPGmdFiTF4jW_8sn-1" source="wmaeNKIAT3VEBeK-VpLI-6" target="wmaeNKIAT3VEBeK-VpLI-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wmaeNKIAT3VEBeK-VpLI-6" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="q6kuXPGmdFiTF4jW_8sn-1">
+          <mxGeometry x="130" y="800" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wmaeNKIAT3VEBeK-VpLI-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="q6kuXPGmdFiTF4jW_8sn-1" source="wmaeNKIAT3VEBeK-VpLI-8" target="wmaeNKIAT3VEBeK-VpLI-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wmaeNKIAT3VEBeK-VpLI-8" value="reserve svc" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="q6kuXPGmdFiTF4jW_8sn-1">
+          <mxGeometry x="290" y="800" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wmaeNKIAT3VEBeK-VpLI-9" value="reserve db" style="ellipse;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="q6kuXPGmdFiTF4jW_8sn-1">
+          <mxGeometry x="290" y="940" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wmaeNKIAT3VEBeK-VpLI-11" value="update reservation status" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.583;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="q6kuXPGmdFiTF4jW_8sn-1" source="wmaeNKIAT3VEBeK-VpLI-12" target="wmaeNKIAT3VEBeK-VpLI-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="830" y="1110" />
+              <mxPoint x="360" y="1110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wmaeNKIAT3VEBeK-VpLI-12" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; ticket DB" style="ellipse;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="q6kuXPGmdFiTF4jW_8sn-1">
+          <mxGeometry x="770" y="930" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wmaeNKIAT3VEBeK-VpLI-14" value="scanning daemon to recycle failed reservation" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="q6kuXPGmdFiTF4jW_8sn-1">
+          <mxGeometry x="427" y="900" width="206" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wmaeNKIAT3VEBeK-VpLI-15" value="&lt;div&gt;ticket DB&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;concert table&lt;/div&gt;&lt;div&gt;ticket table&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;" vertex="1" parent="q6kuXPGmdFiTF4jW_8sn-1">
+          <mxGeometry x="770" y="930" width="120" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
