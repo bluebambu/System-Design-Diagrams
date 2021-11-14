@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-11-14T01:10:36.188Z" agent="5.0 (Windows)" etag="VPyIUETks2oyz12pNDPu" version="15.7.0" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-11-14T01:49:50.429Z" agent="5.0 (Windows)" etag="KQC5YFFLPzl0kAtowCeS" version="15.7.0" type="github" pages="3">
   <diagram id="WV1M-wPJZFe6CbQ2AYyr" name="Page-1">
     <mxGraphModel dx="2105" dy="1705" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -201,12 +201,49 @@
     </mxGraphModel>
   </diagram>
   <diagram id="xN6LhDHEUVU5FgG2BZHp" name="Page-3">
-    <mxGraphModel dx="1038" dy="536" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1753" dy="671" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="q6kuXPGmdFiTF4jW_8sn-0" />
         <mxCell id="q6kuXPGmdFiTF4jW_8sn-1" parent="q6kuXPGmdFiTF4jW_8sn-0" />
-        <mxCell id="q6kuXPGmdFiTF4jW_8sn-2" value="&lt;div&gt;500k qps, 50k ticket&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;if each ticket is unique? &lt;br&gt;&lt;/div&gt;&lt;div&gt;- No&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Can client reserve first and then checkout ? &lt;br&gt;&lt;/div&gt;&lt;div&gt;- Yes&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;How long does client need to wait for a result ? &lt;br&gt;&lt;/div&gt;&lt;div&gt;- 1min max. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;How long does 1 reservation last? &lt;br&gt;&lt;/div&gt;&lt;div&gt;- 30 min&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="q6kuXPGmdFiTF4jW_8sn-1">
+        <mxCell id="q6kuXPGmdFiTF4jW_8sn-11" value="transaction" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="q6kuXPGmdFiTF4jW_8sn-1" source="q6kuXPGmdFiTF4jW_8sn-8" target="q6kuXPGmdFiTF4jW_8sn-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="550" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q6kuXPGmdFiTF4jW_8sn-8" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;align=left;verticalAlign=top;" vertex="1" parent="q6kuXPGmdFiTF4jW_8sn-1">
+          <mxGeometry x="334" y="450" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="q6kuXPGmdFiTF4jW_8sn-2" value="&lt;div&gt;500k qps, 50k ticket&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;if each ticket is unique? &lt;br&gt;&lt;/div&gt;&lt;div&gt;- No&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Can client reserve first and then checkout ? &lt;br&gt;&lt;/div&gt;&lt;div&gt;- Yes&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;How long does client need to wait for a result ? &lt;br&gt;&lt;/div&gt;&lt;div&gt;- 1min max. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;How long does 1 reservation last? &lt;br&gt;&lt;/div&gt;&lt;div&gt;- 30 min&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="q6kuXPGmdFiTF4jW_8sn-1">
           <mxGeometry x="30" y="30" width="1000" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="q6kuXPGmdFiTF4jW_8sn-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="q6kuXPGmdFiTF4jW_8sn-1" source="q6kuXPGmdFiTF4jW_8sn-3" target="q6kuXPGmdFiTF4jW_8sn-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q6kuXPGmdFiTF4jW_8sn-3" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="q6kuXPGmdFiTF4jW_8sn-1">
+          <mxGeometry x="80" y="320" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="q6kuXPGmdFiTF4jW_8sn-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="q6kuXPGmdFiTF4jW_8sn-1" source="q6kuXPGmdFiTF4jW_8sn-4" target="q6kuXPGmdFiTF4jW_8sn-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="q6kuXPGmdFiTF4jW_8sn-4" value="reserve svc" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="q6kuXPGmdFiTF4jW_8sn-1">
+          <mxGeometry x="240" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="q6kuXPGmdFiTF4jW_8sn-6" value="reserve db" style="ellipse;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="q6kuXPGmdFiTF4jW_8sn-1">
+          <mxGeometry x="240" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="q6kuXPGmdFiTF4jW_8sn-9" value="batch search for PENDING ticket" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="q6kuXPGmdFiTF4jW_8sn-1">
+          <mxGeometry x="369" y="410" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="q6kuXPGmdFiTF4jW_8sn-15" value="update reservation status" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.583;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="q6kuXPGmdFiTF4jW_8sn-1" source="q6kuXPGmdFiTF4jW_8sn-14" target="q6kuXPGmdFiTF4jW_8sn-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="640" y="630" />
+              <mxPoint x="310" y="630" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q6kuXPGmdFiTF4jW_8sn-14" value="&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; ticket DB" style="ellipse;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="q6kuXPGmdFiTF4jW_8sn-1">
+          <mxGeometry x="580" y="450" width="120" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
