@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-11-15T03:02:31.059Z" agent="5.0 (Windows)" etag="ZI2S1PmkABSre6BoaAIp" version="15.7.0" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2021-11-15T05:01:02.506Z" agent="5.0 (Windows)" etag="VhAoEJ5PdZB8U0j6xh5u" version="15.7.0" type="github" pages="4">
   <diagram id="WV1M-wPJZFe6CbQ2AYyr" name="Page-1">
     <mxGraphModel dx="1865" dy="1705" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -330,7 +330,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="5ZukOL25x_V3w1Rc6v0g" name="用 redis 预热库存">
-    <mxGraphModel dx="725" dy="545" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="709" dy="545" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="IP3t14m2KwuGL63WNb0W-0" />
         <mxCell id="IP3t14m2KwuGL63WNb0W-1" parent="IP3t14m2KwuGL63WNb0W-0" />
@@ -392,6 +392,9 @@
         </mxCell>
         <mxCell id="IP3t14m2KwuGL63WNb0W-22" value="&lt;div&gt;Question: &lt;br&gt;&lt;/div&gt;&lt;div&gt;1. what is the function of MQ here ?&amp;nbsp; what does MQ provide here ? &lt;br&gt;&lt;/div&gt;&lt;div&gt;2. when using MQ, what should be considered?&amp;nbsp; ACK mechanism. &lt;br&gt;&lt;/div&gt;&lt;div&gt;3. how msg is guaranteed to be delivered by MQ ?&amp;nbsp; how to make sure msg not be lost ? &lt;br&gt;&lt;/div&gt;&lt;div&gt;4. exactly once?&amp;nbsp; at least once ? &lt;br&gt;&lt;/div&gt;&lt;div&gt;5. how to achieve distributed transaction ? &lt;br&gt;&lt;/div&gt;&lt;div&gt;6. how to achieve idempotency ? &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;7. How to isolate w/ other system. &lt;br&gt;&lt;/div&gt;&lt;div&gt;8. what if mysql db dies. &lt;br&gt;&lt;/div&gt;&lt;div&gt;9. &lt;span style=&quot;font-size: 11pt ; font-family: &amp;#34;arial&amp;#34; ; color: rgb(0 , 0 , 0) ; background-color: transparent ; font-weight: 400 ; font-style: normal ; font-variant: normal ; text-decoration: none ; vertical-align: baseline&quot;&gt;how to avoid bot order?&amp;nbsp;&lt;/span&gt;&lt;p dir=&quot;ltr&quot; style=&quot;line-height: 1.38 ; margin-top: 0pt ; margin-bottom: 0pt&quot;&gt;&lt;span style=&quot;font-size: 11pt ; font-family: &amp;#34;arial&amp;#34; ; color: rgb(0 , 0 , 0) ; background-color: transparent ; font-weight: 400 ; font-style: normal ; font-variant: normal ; text-decoration: none ; vertical-align: baseline&quot;&gt;10. how to make sure all clients see the start of selling at the same time.&lt;/span&gt;&lt;/p&gt;&lt;p dir=&quot;ltr&quot; style=&quot;line-height: 1.38 ; margin-top: 0pt ; margin-bottom: 0pt&quot;&gt;&lt;span style=&quot;font-size: 11pt ; font-family: &amp;#34;arial&amp;#34; ; color: rgb(0 , 0 , 0) ; background-color: transparent ; font-weight: 400 ; font-style: normal ; font-variant: normal ; text-decoration: none ; vertical-align: baseline&quot;&gt;11. &lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="IP3t14m2KwuGL63WNb0W-1">
           <mxGeometry x="290" y="410" width="570" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="IP3t14m2KwuGL63WNb0W-23" value="&lt;div&gt;feedback:&lt;/div&gt;&lt;div&gt;1. use mysql to serve the request ? &lt;br&gt;&lt;/div&gt;&lt;div&gt;2. better ask for more feedback from interviewer. &lt;br&gt;&lt;/div&gt;&lt;div&gt;3. no non-functional req&lt;/div&gt;&lt;div&gt;4. better explain the big picture, then go to detail. &lt;br&gt;&lt;/div&gt;&lt;div&gt;5. cache is not needed&lt;/div&gt;&lt;div&gt;6. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;阿里甚至自己二开了MySQL，在其内部增加了排队功能.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;payment 成功之后， 需要 update stock db， 这里 payment db 和 stock db 之间其实是一个 distributed transaction。 &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;L5 的要求： 产品的 life cycle ，如何 expand scope。 如何maintain services。&amp;nbsp; 比如这里， 讨论 是不是需要 admin dashboard ，&amp;nbsp; 是不是需要给 票的真正卖家一个 dashboard。 提一句就好。 &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="IP3t14m2KwuGL63WNb0W-1">
+          <mxGeometry x="810" y="330" width="320" height="150" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
