@@ -1,1 +1,82 @@
-<mxfile host="app.diagrams.net" modified="2021-12-06T02:14:17.836Z" agent="5.0 (Windows)" version="15.7.0" etag="vxBIIlJmjg-q2ZYmDyG8" type="github"><diagram id="izQifvEF4XPrs6AuTkeb">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-12-06T02:26:47.183Z" agent="5.0 (Windows)" etag="pBogbPNMAj90zNmmuy2X" version="15.7.0" type="github">
+  <diagram id="izQifvEF4XPrs6AuTkeb" name="Page-1">
+    <mxGraphModel dx="1483" dy="766" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Z0xX9kId1aNh944fovrd-2" value="&lt;div&gt;Youtube&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;functional:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;upload from millions users,&amp;nbsp;&amp;nbsp; trillions of videos&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;view viedeos from global:&amp;nbsp;&amp;nbsp; progression bar, different resolution,&amp;nbsp; recommendation, subscription&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;non req:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;high scale&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;consistency: can be low&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;availability: high&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;latency: medium&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;data durabiltiy: high&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;additional:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;subscription&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;recommendation sys &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;thumbnail pic&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;SSO&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;view history&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;multi devices&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;save for later&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;search title&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Next, I&#39;ll talk about these topics: &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;workflow, deepdive of each components(api, capacity, database,&amp;nbsp; servers), recap. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;workflow: &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;upload:&amp;nbsp; user -&amp;gt; uploadSvc -&amp;gt; metaDB + mediaDB&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;view: user -&amp;gt; gateway -&amp;gt; showContentSvc&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;user -&amp;gt; watchSvc - &amp;gt; metaDb + mediaDB&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="70" width="1010" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Z0xX9kId1aNh944fovrd-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Z0xX9kId1aNh944fovrd-3" target="Z0xX9kId1aNh944fovrd-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z0xX9kId1aNh944fovrd-3" value="user" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="50" y="585" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Z0xX9kId1aNh944fovrd-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Z0xX9kId1aNh944fovrd-4" target="Z0xX9kId1aNh944fovrd-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z0xX9kId1aNh944fovrd-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Z0xX9kId1aNh944fovrd-4" target="Z0xX9kId1aNh944fovrd-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="750" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Z0xX9kId1aNh944fovrd-4" value="uploadSvc" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="250" y="585" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Z0xX9kId1aNh944fovrd-6" value="meataDB" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="480" y="760" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Z0xX9kId1aNh944fovrd-9" value="mediaDB" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="707" y="770" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Z0xX9kId1aNh944fovrd-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Z0xX9kId1aNh944fovrd-10" target="Z0xX9kId1aNh944fovrd-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z0xX9kId1aNh944fovrd-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Z0xX9kId1aNh944fovrd-10" target="Z0xX9kId1aNh944fovrd-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="1100" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="90" y="1080" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Z0xX9kId1aNh944fovrd-10" value="user" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="50" y="910" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Z0xX9kId1aNh944fovrd-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="Z0xX9kId1aNh944fovrd-11" target="Z0xX9kId1aNh944fovrd-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z0xX9kId1aNh944fovrd-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Z0xX9kId1aNh944fovrd-11" target="Z0xX9kId1aNh944fovrd-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z0xX9kId1aNh944fovrd-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Z0xX9kId1aNh944fovrd-11" target="Z0xX9kId1aNh944fovrd-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Z0xX9kId1aNh944fovrd-11" value="showContentSvc" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="240" y="910" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Z0xX9kId1aNh944fovrd-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="Z0xX9kId1aNh944fovrd-15" target="Z0xX9kId1aNh944fovrd-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z0xX9kId1aNh944fovrd-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="Z0xX9kId1aNh944fovrd-15" target="Z0xX9kId1aNh944fovrd-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Z0xX9kId1aNh944fovrd-15" value="watchSvc" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="220" y="1050" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Z0xX9kId1aNh944fovrd-18" value="recommendsys" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="130" y="770" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Z0xX9kId1aNh944fovrd-21" value="subscription svc" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="320" y="770" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Z0xX9kId1aNh944fovrd-22" value="&lt;div&gt;these components will be discussed:&lt;/div&gt;&lt;div&gt;1. metaDB&lt;/div&gt;&lt;div&gt;2. mediaDB&lt;/div&gt;&lt;div&gt;3. watchSvc&lt;/div&gt;&lt;div&gt;4. uploadSVC&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="845" y="505" width="210" height="90" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
