@@ -1,1 +1,135 @@
-<mxfile host="app.diagrams.net" modified="2021-12-19T02:17:00.938Z" agent="5.0 (Windows)" version="15.9.1" etag="XFF8S_gVjbf1B2Ggul6Z" type="github"><diagram id="BalH-9nocfHLvexD_veC">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-12-19T03:36:54.822Z" agent="5.0 (Windows)" etag="8O5TcvRwDN5ZJv_cBCZq" version="15.9.1" type="github">
+  <diagram id="BalH-9nocfHLvexD_veC" name="Page-1">
+    <mxGraphModel dx="1038" dy="536" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="1k9sG3Vv_8bNZBX8lGOJ-1" value="Mint.com is a free, web-based personal financial management service, &lt;br&gt;that allows its users to integrate with financial accounts to &lt;br&gt;automatically extract their data, and manage their personal budget.&lt;br&gt;&lt;br&gt;&lt;div&gt;Design a system like Mint.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;food&amp;nbsp; &amp;lt; 1000 $,&amp;nbsp; in 1 month .&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; if more than that, notify .&amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Function&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;1. check acounts balance / other info &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;2. set limit budget per category, --&amp;gt; rules&amp;nbsp; -&amp;gt; rule engines&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;3. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Non function req:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;1. availale, latency, &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;2. scale: 1m user. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;workflow: &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;1. read balance / transacctions from banks:&amp;nbsp; high freq,&amp;nbsp;&amp;nbsp; read &amp;gt;&amp;gt; write ,&amp;nbsp; --&amp;gt; cache possible&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;qps: 0.1M/1e5 =&amp;nbsp; 1qps,&amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;2. CRUD&amp;nbsp; of budget:&amp;nbsp; U , D --&amp;gt; low, ,&amp;nbsp;&amp;nbsp; read &amp;gt;&amp;gt; write,&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;~1qps&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;3. sync from banks: &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;1M * 10 -&amp;gt; 10M/1e5 --&amp;gt; 100 qps,&amp;nbsp; write only.&amp;nbsp;&amp;nbsp; balance be updated, trxns are appended.&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Mysql is ok, other db is ok.&amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; details of workflow: &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;1. read banks:&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;client -&amp;gt; mint.com&amp;nbsp; --&amp;gt; bank_info_database&amp;nbsp; (balance, trxns)&amp;nbsp; &amp;lt;--- sync from banks&amp;nbsp; ( reaptedly read from bank,&amp;nbsp;&amp;nbsp; bank stream accoutn change to mint.com , bank to batch change to mint.com ).&lt;/div&gt;&lt;div&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; 2. CRUD of &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;data model: &lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;1 client --&amp;gt; multi bank accounts&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;each acc&amp;nbsp; --&amp;gt; balance, [list of trnxs] &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;1 mysql : &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	table &lt;/span&gt;&amp;lt; client, account &amp;gt;&amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	table &lt;/span&gt;&amp;lt;account, acc_info ( balance, list of trxn ) &amp;gt;&amp;nbsp; -- can used doc_based db&amp;nbsp; as well: &lt;br&gt;&lt;/div&gt;&lt;blockquote&gt;&lt;blockquote&gt;&lt;div&gt;1 doc_based db:&amp;nbsp; mongodb, aws dynamo,&amp;nbsp; key-value &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;client id -&amp;gt; obj of its balance &amp;amp; list of trxns.&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;mysql is best option.&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="50" width="540" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1k9sG3Vv_8bNZBX8lGOJ-3" value="&lt;div&gt;sync from bank&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="850" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1k9sG3Vv_8bNZBX8lGOJ-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1k9sG3Vv_8bNZBX8lGOJ-4" target="1k9sG3Vv_8bNZBX8lGOJ-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1k9sG3Vv_8bNZBX8lGOJ-4" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="90" y="980" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1k9sG3Vv_8bNZBX8lGOJ-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1k9sG3Vv_8bNZBX8lGOJ-5" target="1k9sG3Vv_8bNZBX8lGOJ-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1k9sG3Vv_8bNZBX8lGOJ-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1k9sG3Vv_8bNZBX8lGOJ-5" target="1k9sG3Vv_8bNZBX8lGOJ-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="1130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1k9sG3Vv_8bNZBX8lGOJ-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1k9sG3Vv_8bNZBX8lGOJ-5" target="1k9sG3Vv_8bNZBX8lGOJ-12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="1320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1k9sG3Vv_8bNZBX8lGOJ-5" value="&lt;div&gt;gatweay&lt;/div&gt;" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="155" y="980" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1k9sG3Vv_8bNZBX8lGOJ-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1k9sG3Vv_8bNZBX8lGOJ-7" target="1k9sG3Vv_8bNZBX8lGOJ-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1k9sG3Vv_8bNZBX8lGOJ-7" value="user" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="350" y="900" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1k9sG3Vv_8bNZBX8lGOJ-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1k9sG3Vv_8bNZBX8lGOJ-10" target="1k9sG3Vv_8bNZBX8lGOJ-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1k9sG3Vv_8bNZBX8lGOJ-10" value="bankInfoService" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="1100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1k9sG3Vv_8bNZBX8lGOJ-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1k9sG3Vv_8bNZBX8lGOJ-12" target="1k9sG3Vv_8bNZBX8lGOJ-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1k9sG3Vv_8bNZBX8lGOJ-12" value="mintBudgetSvc" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="1390" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1k9sG3Vv_8bNZBX8lGOJ-13" value="budgetDB" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="1390" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1k9sG3Vv_8bNZBX8lGOJ-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1k9sG3Vv_8bNZBX8lGOJ-15" target="1k9sG3Vv_8bNZBX8lGOJ-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1k9sG3Vv_8bNZBX8lGOJ-15" value="bankInfoDB" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="1100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1k9sG3Vv_8bNZBX8lGOJ-17" value="userDB" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="550" y="900" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1k9sG3Vv_8bNZBX8lGOJ-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="1k9sG3Vv_8bNZBX8lGOJ-19" target="1k9sG3Vv_8bNZBX8lGOJ-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1k9sG3Vv_8bNZBX8lGOJ-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1k9sG3Vv_8bNZBX8lGOJ-19" target="1k9sG3Vv_8bNZBX8lGOJ-25">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="950" y="1240" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="840" y="1260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1k9sG3Vv_8bNZBX8lGOJ-19" value="bandIntegrationService" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="750" y="1100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1k9sG3Vv_8bNZBX8lGOJ-21" value="bank1" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="950" y="1100" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1k9sG3Vv_8bNZBX8lGOJ-25" value="bank2" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="940" y="1230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1k9sG3Vv_8bNZBX8lGOJ-27" value="&lt;div&gt;-&amp;gt;&amp;nbsp; polling&lt;/div&gt;&lt;div&gt;&amp;lt;-&amp;nbsp; bank streaming &lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="860" y="1070" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1k9sG3Vv_8bNZBX8lGOJ-33" value="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="1k9sG3Vv_8bNZBX8lGOJ-28" target="1k9sG3Vv_8bNZBX8lGOJ-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1k9sG3Vv_8bNZBX8lGOJ-38" value="2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="1k9sG3Vv_8bNZBX8lGOJ-28" target="1k9sG3Vv_8bNZBX8lGOJ-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1k9sG3Vv_8bNZBX8lGOJ-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1k9sG3Vv_8bNZBX8lGOJ-28" target="1k9sG3Vv_8bNZBX8lGOJ-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1k9sG3Vv_8bNZBX8lGOJ-46" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1k9sG3Vv_8bNZBX8lGOJ-28" target="1k9sG3Vv_8bNZBX8lGOJ-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1k9sG3Vv_8bNZBX8lGOJ-28" value="&lt;div&gt;SpendingAnalysisSvc&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="1310" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1k9sG3Vv_8bNZBX8lGOJ-29" value="1 client -》 multi rules&amp;nbsp; --&amp;gt; rules id &amp;lt;--&amp;gt; number, ts" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="420" y="1470" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1k9sG3Vv_8bNZBX8lGOJ-30" value="&lt;div&gt;predefined rules&lt;/div&gt;&lt;div&gt;&amp;nbsp;--&amp;gt; rule id&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="820" y="1380" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1k9sG3Vv_8bNZBX8lGOJ-32" value="repeat read" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="510" y="1300" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1k9sG3Vv_8bNZBX8lGOJ-39" value="repeat read" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="710" y="1190" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1k9sG3Vv_8bNZBX8lGOJ-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="1k9sG3Vv_8bNZBX8lGOJ-41" target="1k9sG3Vv_8bNZBX8lGOJ-44">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="1580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1k9sG3Vv_8bNZBX8lGOJ-41" value="notification svc" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="1550" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1k9sG3Vv_8bNZBX8lGOJ-44" value="&lt;div&gt;mint email, &lt;br&gt;&lt;/div&gt;&lt;div&gt;browser server push, &lt;br&gt;&lt;/div&gt;&lt;div&gt;other emails, &lt;br&gt;&lt;/div&gt;&lt;div&gt;txt msg,&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="1550" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1k9sG3Vv_8bNZBX8lGOJ-45" value="monthly spending / aggregated data" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="850" y="1310" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1k9sG3Vv_8bNZBX8lGOJ-47" value="&lt;div&gt;active usres&lt;/div&gt;&lt;div&gt;innactive users&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="845" y="1440" width="90" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
