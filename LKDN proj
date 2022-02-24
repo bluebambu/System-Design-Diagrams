@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-02-24T20:27:30.215Z" agent="5.0 (Windows)" etag="jMUzl4K4HX22WI8nxqZ1" version="16.6.1" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-02-24T20:33:11.619Z" agent="5.0 (Windows)" etag="ISFt2kf_pyGc9-I2xlPh" version="16.6.1" type="github" pages="2">
   <diagram id="9RunwrqXYkiTMfON8GXz" name="Egress">
     <mxGraphModel dx="1038" dy="528" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -165,7 +165,103 @@
         <mxCell id="xrGG8xdh3uXNE0hpD2VD-0" />
         <mxCell id="xrGG8xdh3uXNE0hpD2VD-1" parent="xrGG8xdh3uXNE0hpD2VD-0" />
         <mxCell id="xrGG8xdh3uXNE0hpD2VD-3" value="&lt;h1&gt;&lt;span style=&quot;background-color: transparent&quot;&gt;internal security boundary proxy&lt;/span&gt;&lt;/h1&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent&quot;&gt;Requirements:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent&quot;&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;On azure we will have different security domains. &lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent&quot;&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;Low -&amp;gt; high security domain traffic, we need a proxy enforcing ACLs. &lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent&quot;&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	ACLs should be audited by security house. &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent&quot;&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;Current clients should make no changes. &lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent&quot;&gt;Impl:&lt;/span&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent&quot;&gt;RPC framework: accept proxy&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent&quot;&gt;Proxy: support HTTP2; upgrade to support internal security rules;&amp;nbsp; having a map from hostname to security domains. &lt;br&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent&quot;&gt;tradeoffs: &lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent&quot;&gt;reversed proxy vs forward proxy&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent&quot;&gt;L4 proxy vs L7 proxy&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="xrGG8xdh3uXNE0hpD2VD-1">
-          <mxGeometry x="30" y="20" width="770" height="410" as="geometry" />
+          <mxGeometry x="30" y="20" width="770" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="x3lAMpiP-pObGOzM_DsG-1" value="client" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="xrGG8xdh3uXNE0hpD2VD-1">
+          <mxGeometry x="50" y="780" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="x3lAMpiP-pObGOzM_DsG-2" value="server" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="xrGG8xdh3uXNE0hpD2VD-1">
+          <mxGeometry x="660" y="740" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="x3lAMpiP-pObGOzM_DsG-3" value="" style="endArrow=none;html=1;rounded=0;startArrow=none;" edge="1" parent="xrGG8xdh3uXNE0hpD2VD-1" source="x3lAMpiP-pObGOzM_DsG-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="950" as="sourcePoint" />
+            <mxPoint x="440" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x3lAMpiP-pObGOzM_DsG-4" value="" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;labelBackgroundColor=none;" vertex="1" parent="xrGG8xdh3uXNE0hpD2VD-1">
+          <mxGeometry x="400" y="620" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="x3lAMpiP-pObGOzM_DsG-5" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="xrGG8xdh3uXNE0hpD2VD-1" target="x3lAMpiP-pObGOzM_DsG-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="950" as="sourcePoint" />
+            <mxPoint x="440" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x3lAMpiP-pObGOzM_DsG-6" value="security boundary" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;labelBackgroundColor=none;" vertex="1" parent="xrGG8xdh3uXNE0hpD2VD-1">
+          <mxGeometry x="385" y="950" width="115" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="x3lAMpiP-pObGOzM_DsG-7" value="rpc framework" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="xrGG8xdh3uXNE0hpD2VD-1">
+          <mxGeometry x="150" y="600" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="x3lAMpiP-pObGOzM_DsG-9" value="1. server discover" style="endArrow=classic;html=1;rounded=0;exitX=0.183;exitY=-0.017;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.042;entryY=0.538;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="xrGG8xdh3uXNE0hpD2VD-1" source="x3lAMpiP-pObGOzM_DsG-1" target="x3lAMpiP-pObGOzM_DsG-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="130" y="730" as="sourcePoint" />
+            <mxPoint x="180" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x3lAMpiP-pObGOzM_DsG-10" value="2. server host given" style="endArrow=classic;html=1;rounded=0;exitX=0.692;exitY=0.938;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="xrGG8xdh3uXNE0hpD2VD-1" source="x3lAMpiP-pObGOzM_DsG-7" target="x3lAMpiP-pObGOzM_DsG-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="160" y="910" as="sourcePoint" />
+            <mxPoint x="210" y="860" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x3lAMpiP-pObGOzM_DsG-11" value="3. go thru proxy" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="xrGG8xdh3uXNE0hpD2VD-1" source="x3lAMpiP-pObGOzM_DsG-1" target="x3lAMpiP-pObGOzM_DsG-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="250" y="910" as="sourcePoint" />
+            <mxPoint x="300" y="860" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x3lAMpiP-pObGOzM_DsG-12" value="4. forward packet" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="xrGG8xdh3uXNE0hpD2VD-1" source="x3lAMpiP-pObGOzM_DsG-4" target="x3lAMpiP-pObGOzM_DsG-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="670" y="940" as="sourcePoint" />
+            <mxPoint x="720" y="890" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x3lAMpiP-pObGOzM_DsG-13" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.025;exitY=0.367;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="xrGG8xdh3uXNE0hpD2VD-1" source="x3lAMpiP-pObGOzM_DsG-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="660" y="930" as="sourcePoint" />
+            <mxPoint x="460" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x3lAMpiP-pObGOzM_DsG-14" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.238;exitY=1.017;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitPerimeter=0;" edge="1" parent="xrGG8xdh3uXNE0hpD2VD-1" source="x3lAMpiP-pObGOzM_DsG-4" target="x3lAMpiP-pObGOzM_DsG-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="673" y="772.02" as="sourcePoint" />
+            <mxPoint x="472" y="682.02" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x3lAMpiP-pObGOzM_DsG-16" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="xrGG8xdh3uXNE0hpD2VD-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="590" as="sourcePoint" />
+            <mxPoint x="400" y="630" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="400" y="590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x3lAMpiP-pObGOzM_DsG-17" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="xrGG8xdh3uXNE0hpD2VD-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="480" y="590" as="sourcePoint" />
+            <mxPoint x="480" y="630" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="480" y="590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x3lAMpiP-pObGOzM_DsG-18" value="mTLS" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="xrGG8xdh3uXNE0hpD2VD-1">
+          <mxGeometry x="355" y="560" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="x3lAMpiP-pObGOzM_DsG-19" value="mTLS" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="xrGG8xdh3uXNE0hpD2VD-1">
+          <mxGeometry x="455" y="560" width="50" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="x3lAMpiP-pObGOzM_DsG-20" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="xrGG8xdh3uXNE0hpD2VD-1" target="x3lAMpiP-pObGOzM_DsG-21">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="620" as="sourcePoint" />
+            <mxPoint x="440" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x3lAMpiP-pObGOzM_DsG-21" value="host to security domain mapping" style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;" vertex="1" parent="xrGG8xdh3uXNE0hpD2VD-1">
+          <mxGeometry x="380" y="490" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
