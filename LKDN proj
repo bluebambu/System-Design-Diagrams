@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-02-24T20:05:13.110Z" agent="5.0 (Windows)" etag="7Yup0z3wPlEUPTLmd-Za" version="16.6.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-02-24T20:27:09.172Z" agent="5.0 (Windows)" etag="Ualaxe2OnF49cqxhjMUi" version="16.6.1" type="github" pages="2">
   <diagram id="9RunwrqXYkiTMfON8GXz" name="Egress">
     <mxGraphModel dx="1038" dy="528" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -155,6 +155,17 @@
         </mxCell>
         <mxCell id="kD61fhlVyIPisMuZ5bD3-56" value="&lt;div&gt;tradeoffs:&lt;/div&gt;&lt;ol&gt;&lt;li&gt;complexity&lt;/li&gt;&lt;li&gt;1 pool per thread or 1 pool per instance&lt;/li&gt;&lt;li&gt;session sensitive requests.&lt;/li&gt;&lt;/ol&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="65" y="1460" width="895" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="a4AlGk3RP-9vKiVWsGz1" name="internal security boundary proxy">
+    <mxGraphModel dx="1038" dy="528" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="xrGG8xdh3uXNE0hpD2VD-0" />
+        <mxCell id="xrGG8xdh3uXNE0hpD2VD-1" parent="xrGG8xdh3uXNE0hpD2VD-0" />
+        <mxCell id="xrGG8xdh3uXNE0hpD2VD-3" value="&lt;h1&gt;&lt;span style=&quot;background-color: transparent&quot;&gt;internal security boundary proxy&lt;/span&gt;&lt;/h1&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent&quot;&gt;Requirements:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent&quot;&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;On azure we will have different security domains. &lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent&quot;&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;Low -&amp;gt; high security domain traffic, we need a proxy enforcing ACLs. &lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent&quot;&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	ACLs should be audited by security house. &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent&quot;&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;Current clients should make no changes. &lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent&quot;&gt;Impl:&lt;/span&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent&quot;&gt;RPC framework: accept proxy&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent&quot;&gt;Proxy: support HTTP2; upgrade to support internal security rules;&amp;nbsp; having a map from hostname to security domains. &lt;br&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent&quot;&gt;tradeoffs: &lt;br&gt;&lt;/span&gt;&lt;/p&gt;&lt;ol&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent&quot;&gt;reversed proxy vs forward proxy&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent&quot;&gt;L4 proxy vs L7 proxy&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="xrGG8xdh3uXNE0hpD2VD-1">
+          <mxGeometry x="30" y="20" width="770" height="120" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
