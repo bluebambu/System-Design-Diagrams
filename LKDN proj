@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-02-25T03:09:00.509Z" agent="5.0 (Windows)" etag="5p1nrHZhzdtz0ZZx_x_2" version="16.6.3" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-02-25T03:09:12.595Z" agent="5.0 (Windows)" etag="NXhmcFdjHLEzg3QMLKo5" version="16.6.3" type="github" pages="2">
   <diagram id="9RunwrqXYkiTMfON8GXz" name="Egress">
     <mxGraphModel dx="1038" dy="528" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -300,7 +300,7 @@
           <mxGeometry x="230" y="1280" width="520" height="30" as="geometry" />
         </mxCell>
         <mxCell id="xAqIFYCXRTqzRdHsDi3Q-12" value="" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="xrGG8xdh3uXNE0hpD2VD-1">
-          <mxGeometry x="70" y="1560" width="1130" height="230" as="geometry" />
+          <mxGeometry x="30" y="1560" width="1170" height="230" as="geometry" />
         </mxCell>
         <mxCell id="xAqIFYCXRTqzRdHsDi3Q-13" value="&lt;div&gt;logic: &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	CONNECT -&amp;gt; build TLS connection: &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;accept CONNECT req, -&amp;gt; verify internal IP -&amp;gt; tls handshake /clients -&amp;gt; extract the identy of client -&amp;gt; validate conn request -&amp;gt; start to conn to google.com -&amp;gt; connection step finished. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;Requrest forwarding :&amp;nbsp; req decoding (http, sftp) -&amp;gt; proxy got the decrypted request -&amp;gt; check header -&amp;gt; forward -&amp;gt; forward response to client. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;fault tolerance handlers:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;no responnding conn ( detecting the ideling status of a connection), &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;backpressure, &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="xrGG8xdh3uXNE0hpD2VD-1">
           <mxGeometry x="170" y="1600" width="910" height="30" as="geometry" />
