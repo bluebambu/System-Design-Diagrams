@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-02-26T00:19:01.066Z" agent="5.0 (Windows)" etag="yDL50QCFClMM7hI0QeOq" version="16.6.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-02-26T00:25:33.309Z" agent="5.0 (Windows)" etag="48kNGAHDHXzqRtsLxmAi" version="16.6.4" type="github">
   <diagram id="cPlzmwqNdo_uneqvr3Ga" name="Page-1">
     <mxGraphModel dx="1038" dy="528" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -7,20 +7,57 @@
         <mxCell id="TnNpmWxpge6Z97p94qj9-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="TnNpmWxpge6Z97p94qj9-3" target="TnNpmWxpge6Z97p94qj9-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="TnNpmWxpge6Z97p94qj9-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="TnNpmWxpge6Z97p94qj9-3" target="TnNpmWxpge6Z97p94qj9-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="TnNpmWxpge6Z97p94qj9-3" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
           <mxGeometry x="30" y="210" width="30" height="60" as="geometry" />
         </mxCell>
         <mxCell id="TnNpmWxpge6Z97p94qj9-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="TnNpmWxpge6Z97p94qj9-4" target="TnNpmWxpge6Z97p94qj9-6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="TnNpmWxpge6Z97p94qj9-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="TnNpmWxpge6Z97p94qj9-4" target="TnNpmWxpge6Z97p94qj9-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="TnNpmWxpge6Z97p94qj9-4" value="reservation" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="95" y="210" width="120" height="60" as="geometry" />
+          <mxGeometry x="140" y="210" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="TnNpmWxpge6Z97p94qj9-6" value="database" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="295" y="210" width="120" height="60" as="geometry" />
+        <mxCell id="TnNpmWxpge6Z97p94qj9-6" value="reserve db" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="570" y="210" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="TnNpmWxpge6Z97p94qj9-8" value="&lt;div align=&quot;left&quot;&gt;reserve TABLE &lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;id&amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;user_id&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;slot_id&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;time_start&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;time_end&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="310" y="280" width="320" height="70" as="geometry" />
+        <mxCell id="TnNpmWxpge6Z97p94qj9-8" value="&lt;div align=&quot;left&quot;&gt;reserve TABLE &lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;id&amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;user_id&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;slot_id&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;time_start&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;time_end&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;status&amp;nbsp; :&amp;nbsp; init , finished, reverted/canceled&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="480" y="320" width="320" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="TnNpmWxpge6Z97p94qj9-9" value="a lot is reserved" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="690" y="210" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="TnNpmWxpge6Z97p94qj9-11" value="slot occupy table" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="430" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TnNpmWxpge6Z97p94qj9-12" value="a slot is occupied" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="130" y="520" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TnNpmWxpge6Z97p94qj9-15" value="trxn" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="TnNpmWxpge6Z97p94qj9-13" target="TnNpmWxpge6Z97p94qj9-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TnNpmWxpge6Z97p94qj9-13" value="cancled reserrve" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TnNpmWxpge6Z97p94qj9-16" value="del occupying" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="540" y="100" as="sourcePoint" />
+            <mxPoint x="250" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TnNpmWxpge6Z97p94qj9-17" value="mark 1 reserve rec to CANCEL" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="640" y="140" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TnNpmWxpge6Z97p94qj9-18" value="reservation id" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="250" y="445" width="110" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
