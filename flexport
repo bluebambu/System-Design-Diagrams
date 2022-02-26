@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-02-26T00:49:45.485Z" agent="5.0 (Windows)" etag="Q3Wsfuc9LVQd7QnBvbBD" version="16.6.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-02-26T00:51:00.049Z" agent="5.0 (Windows)" etag="MPfgqiH4FI3zI5STQCpC" version="16.6.4" type="github">
   <diagram id="cPlzmwqNdo_uneqvr3Ga" name="Page-1">
     <mxGraphModel dx="1038" dy="1697" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -11,53 +11,53 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="TnNpmWxpge6Z97p94qj9-3" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="26.5" y="360" width="30" height="60" as="geometry" />
+          <mxGeometry x="26.5" y="560" width="30" height="60" as="geometry" />
         </mxCell>
         <mxCell id="TnNpmWxpge6Z97p94qj9-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="TnNpmWxpge6Z97p94qj9-4" target="TnNpmWxpge6Z97p94qj9-6">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="TnNpmWxpge6Z97p94qj9-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="TnNpmWxpge6Z97p94qj9-4" target="TnNpmWxpge6Z97p94qj9-11">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="186.5" y="610" as="targetPoint" />
+            <mxPoint x="186.5" y="810" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="TnNpmWxpge6Z97p94qj9-4" value="reservation" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="136.5" y="360" width="120" height="60" as="geometry" />
+          <mxGeometry x="136.5" y="560" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="TnNpmWxpge6Z97p94qj9-6" value="reserve db" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="566.5" y="360" width="120" height="60" as="geometry" />
+          <mxGeometry x="566.5" y="560" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="TnNpmWxpge6Z97p94qj9-8" value="&lt;div align=&quot;left&quot;&gt;reserve TABLE &lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;id&amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;user_id&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;slot_id&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;time_start&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;time_end&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;status&amp;nbsp; :&amp;nbsp; init , finished, reverted/canceled&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="476.5" y="470" width="320" height="170" as="geometry" />
+          <mxGeometry x="476.5" y="670" width="320" height="170" as="geometry" />
         </mxCell>
         <mxCell id="TnNpmWxpge6Z97p94qj9-9" value="a lot is reserved" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="686.5" y="360" width="100" height="20" as="geometry" />
+          <mxGeometry x="686.5" y="560" width="100" height="20" as="geometry" />
         </mxCell>
         <mxCell id="TnNpmWxpge6Z97p94qj9-11" value="slot occupy table" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="126.5" y="580" width="120" height="60" as="geometry" />
+          <mxGeometry x="126.5" y="780" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="TnNpmWxpge6Z97p94qj9-12" value="a slot is occupied" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="126.5" y="670" width="60" height="30" as="geometry" />
+          <mxGeometry x="126.5" y="870" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="TnNpmWxpge6Z97p94qj9-15" value="trxn" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="TnNpmWxpge6Z97p94qj9-13" target="TnNpmWxpge6Z97p94qj9-6">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="436.5" y="260" as="targetPoint" />
+            <mxPoint x="436.5" y="460" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="TnNpmWxpge6Z97p94qj9-13" value="cancled reserrve" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="146.5" y="220" width="120" height="60" as="geometry" />
+          <mxGeometry x="146.5" y="420" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="TnNpmWxpge6Z97p94qj9-16" value="del occupying" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="536.5" y="250" as="sourcePoint" />
-            <mxPoint x="246.5" y="580" as="targetPoint" />
+            <mxPoint x="536.5" y="450" as="sourcePoint" />
+            <mxPoint x="246.5" y="780" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="TnNpmWxpge6Z97p94qj9-17" value="mark 1 reserve rec to CANCEL" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="636.5" y="290" width="140" height="30" as="geometry" />
+          <mxGeometry x="636.5" y="490" width="140" height="30" as="geometry" />
         </mxCell>
         <mxCell id="TnNpmWxpge6Z97p94qj9-18" value="reservation id" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="246.5" y="595" width="110" height="30" as="geometry" />
+          <mxGeometry x="246.5" y="795" width="110" height="30" as="geometry" />
         </mxCell>
         <mxCell id="TnNpmWxpge6Z97p94qj9-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="TnNpmWxpge6Z97p94qj9-20" target="TnNpmWxpge6Z97p94qj9-38">
           <mxGeometry relative="1" as="geometry" />
@@ -144,6 +144,9 @@
         </mxCell>
         <mxCell id="TnNpmWxpge6Z97p94qj9-46" value="&lt;div&gt;API:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;search:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; search(&amp;nbsp; user_id, dish_type, dish_start_time, dish_end_time, party_size, user_loc (raw data, long + lat. OR processed geoHash or google S2, both should be fine ), max_dist (kilo meter or meters, both fine) ) &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;return:&amp;nbsp;&amp;nbsp; [&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;{&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;restaurant 1: &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;slots: [&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;{&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;slot_id:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;slot_start_time:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;slot_end_time:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;slot_status:  (occupied or not) &lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;}&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;]&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;}&lt;br&gt;&lt;/div&gt;&lt;div&gt;]&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;How loc is stored in databasee and for searching:&amp;nbsp; geoHash, google S2.&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; geoHash:&amp;nbsp; if 2 geohash has longer same string prefix, then they are closer on geomery. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;How to get available slots:&amp;nbsp;&amp;nbsp; each slot has regular operation hours, we also stored the occupied time for each slots, we compare those 2 to get the available slots.&amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="50" y="-390" width="720" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TnNpmWxpge6Z97p94qj9-47" value="&lt;div&gt;Research API:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;researve ( user_id, slot_id, start_time, end_time) &lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="57" y="300" width="753" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
