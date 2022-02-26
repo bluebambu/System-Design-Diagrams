@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-02-26T00:41:15.702Z" agent="5.0 (Windows)" etag="mrGZ6_zyTTI8dnOKLfnj" version="16.6.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-02-26T00:42:03.741Z" agent="5.0 (Windows)" etag="UyiUV8KW7DLbzRzpbkWo" version="16.6.4" type="github">
   <diagram id="cPlzmwqNdo_uneqvr3Ga" name="Page-1">
     <mxGraphModel dx="1038" dy="1697" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -63,7 +63,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="TnNpmWxpge6Z97p94qj9-20" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="60" y="-300" width="30" height="60" as="geometry" />
+          <mxGeometry x="57" y="-140" width="30" height="60" as="geometry" />
         </mxCell>
         <mxCell id="TnNpmWxpge6Z97p94qj9-21" value="Text" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="50" y="-584" width="180" height="30" as="geometry" />
@@ -124,23 +124,23 @@
         </mxCell>
         <mxCell id="TnNpmWxpge6Z97p94qj9-43" value="2. find occupations in nearby slots" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="TnNpmWxpge6Z97p94qj9-38" target="TnNpmWxpge6Z97p94qj9-44">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="340" y="-220" as="targetPoint" />
+            <mxPoint x="337" y="-60" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="TnNpmWxpge6Z97p94qj9-38" value="search" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="125" y="-300" width="120" height="60" as="geometry" />
+          <mxGeometry x="122" y="-140" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="TnNpmWxpge6Z97p94qj9-40" value="slot property service" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="520" y="-355" width="120" height="60" as="geometry" />
+          <mxGeometry x="517" y="-195" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="TnNpmWxpge6Z97p94qj9-42" value="&lt;div&gt;slot table: &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;restaurant_id&lt;br&gt;&lt;/div&gt;&lt;div&gt;slot_id&lt;/div&gt;&lt;div&gt;party sz&lt;/div&gt;&lt;div&gt;location hashcode/int_code&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="700" y="-360" width="190" height="30" as="geometry" />
+          <mxGeometry x="697" y="-200" width="190" height="30" as="geometry" />
         </mxCell>
         <mxCell id="TnNpmWxpge6Z97p94qj9-44" value="slot occupy service" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="520" y="-250" width="120" height="60" as="geometry" />
+          <mxGeometry x="517" y="-90" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="TnNpmWxpge6Z97p94qj9-45" value="&lt;div&gt;slot occupy table: &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;slot_id&amp;nbsp; fk&lt;/div&gt;&lt;div&gt;is_occupied (default true)&lt;/div&gt;&lt;div&gt;occupy_start_time &amp;nbsp; long&lt;/div&gt;&lt;div&gt;occupy_end_time&amp;nbsp; long&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="700" y="-220" width="200" height="30" as="geometry" />
+          <mxGeometry x="697" y="-60" width="200" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
