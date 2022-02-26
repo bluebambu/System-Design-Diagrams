@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-02-26T00:54:04.330Z" agent="5.0 (Windows)" etag="S6cmwiIEYvi8_ovQ2txk" version="16.6.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-02-26T00:56:31.992Z" agent="5.0 (Windows)" etag="PsQMiXztKoNZsHG6k0hq" version="16.6.4" type="github">
   <diagram id="cPlzmwqNdo_uneqvr3Ga" name="Page-1">
     <mxGraphModel dx="1038" dy="1697" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -147,6 +147,9 @@
         </mxCell>
         <mxCell id="TnNpmWxpge6Z97p94qj9-47" value="&lt;div&gt;Research API:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;researve ( user_id, slot_id, start_time, end_time) &lt;br&gt;&lt;/div&gt;&amp;nbsp; --&amp;gt; return a reserve ID.&amp;nbsp; unique.&amp;nbsp;&amp;nbsp; " style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="57" y="300" width="753" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TnNpmWxpge6Z97p94qj9-48" value="first find all nearby slots, second within these slots, find their occupied time ranges, and then we can calcualte the non-occupied time ranges w/ their original op_hours.&amp;nbsp; Then we can sort the result somehow (by close location or by rating) and present to users. " style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="87" y="190" width="503" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
