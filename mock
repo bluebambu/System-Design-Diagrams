@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-03-19T20:58:43.186Z" agent="5.0 (Windows)" etag="TKOwxILVFmOrgI5vKC9L" version="17.1.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-03-19T21:48:24.687Z" agent="5.0 (Windows)" etag="2OK9-Rk4S0jEC-2cUnJd" version="17.1.3" type="github" pages="2">
   <diagram id="IJsTIF0-5-oSVOKzHsEy" name="Page-1">
     <mxGraphModel dx="1038" dy="556" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -6,6 +6,142 @@
         <mxCell id="1" parent="0" />
         <mxCell id="h_MfEOttMhotzDMGkOlt-1" value="&lt;div&gt;kv store: &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;chat, msg, &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;system. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;scale, db.&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Req: &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;kv store:&amp;nbsp; key, vale -&amp;gt;&amp;nbsp; user : get, put(true, false) &lt;br&gt;&lt;/div&gt;&lt;div&gt;non tech req:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;scale&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;avail&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;consistency: not payment,&amp;nbsp; negotiable. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;data durability:&amp;nbsp;&amp;nbsp; -&amp;gt; replica &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;mvp:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;1 host&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;in memory: hashtable, -&amp;gt;&amp;nbsp; outage:&amp;nbsp; 1. flush to disk: &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;query range ?&amp;nbsp;&amp;nbsp; CP, AP?&amp;nbsp; R/W ratio?&amp;nbsp; btree vs merkel ?&amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;状态系统。 &lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="30" y="50" width="720" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="STOopXJBoyyqDFyOm4pA" name="Page-2">
+    <mxGraphModel dx="1038" dy="556" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="Tzn_eUyt2AUOMEp1_5rh-0" />
+        <mxCell id="Tzn_eUyt2AUOMEp1_5rh-1" parent="Tzn_eUyt2AUOMEp1_5rh-0" />
+        <mxCell id="Tzn_eUyt2AUOMEp1_5rh-2" value="&lt;div&gt;q/a paltform,&amp;nbsp;&amp;nbsp; zhihu,&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;requremt:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;asker,: &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;anserer : mailbox, &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&amp;nbsp;platform.&amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;1 q: [ans], ans rank （likes num, or thers, rank system）, content, invite ppl to answer (notification sys), &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	1ans: content, author, likes/  &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;q &amp;amp; a: read &amp;gt; write &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;data long tail effect, populatity differes, (cache) &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;/div&gt;&lt;div&gt;mvp:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;data flow:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;asker:&amp;nbsp; -&amp;gt; website -&amp;gt; provide a q&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;answer:&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;read :&amp;nbsp; go to web, read Qs, &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;write:&amp;nbsp; pick 1 Q, anser&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;write: pick 1 ans, like/unlike&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="Tzn_eUyt2AUOMEp1_5rh-1">
+          <mxGeometry x="60" y="50" width="580" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzn_eUyt2AUOMEp1_5rh-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Tzn_eUyt2AUOMEp1_5rh-1" source="Tzn_eUyt2AUOMEp1_5rh-6" target="Tzn_eUyt2AUOMEp1_5rh-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzn_eUyt2AUOMEp1_5rh-6" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="Tzn_eUyt2AUOMEp1_5rh-1">
+          <mxGeometry x="100" y="460" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzn_eUyt2AUOMEp1_5rh-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Tzn_eUyt2AUOMEp1_5rh-1" source="Tzn_eUyt2AUOMEp1_5rh-7" target="Tzn_eUyt2AUOMEp1_5rh-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzn_eUyt2AUOMEp1_5rh-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="Tzn_eUyt2AUOMEp1_5rh-1" source="Tzn_eUyt2AUOMEp1_5rh-7" target="Tzn_eUyt2AUOMEp1_5rh-23">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="250" y="410" />
+              <mxPoint x="685" y="410" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tzn_eUyt2AUOMEp1_5rh-7" value="Q service" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="Tzn_eUyt2AUOMEp1_5rh-1">
+          <mxGeometry x="190" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzn_eUyt2AUOMEp1_5rh-9" value="Q store" style="ellipse;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="Tzn_eUyt2AUOMEp1_5rh-1">
+          <mxGeometry x="390" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzn_eUyt2AUOMEp1_5rh-11" value="read / write q" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="Tzn_eUyt2AUOMEp1_5rh-1">
+          <mxGeometry x="100" y="400" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzn_eUyt2AUOMEp1_5rh-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Tzn_eUyt2AUOMEp1_5rh-1" source="Tzn_eUyt2AUOMEp1_5rh-12" target="Tzn_eUyt2AUOMEp1_5rh-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzn_eUyt2AUOMEp1_5rh-12" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="Tzn_eUyt2AUOMEp1_5rh-1">
+          <mxGeometry x="110" y="600" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzn_eUyt2AUOMEp1_5rh-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Tzn_eUyt2AUOMEp1_5rh-1" source="Tzn_eUyt2AUOMEp1_5rh-13" target="Tzn_eUyt2AUOMEp1_5rh-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzn_eUyt2AUOMEp1_5rh-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Tzn_eUyt2AUOMEp1_5rh-1" source="Tzn_eUyt2AUOMEp1_5rh-13" target="Tzn_eUyt2AUOMEp1_5rh-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzn_eUyt2AUOMEp1_5rh-24" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="Tzn_eUyt2AUOMEp1_5rh-1" source="Tzn_eUyt2AUOMEp1_5rh-13" target="Tzn_eUyt2AUOMEp1_5rh-23">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="280" y="565" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tzn_eUyt2AUOMEp1_5rh-13" value="answer service" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="Tzn_eUyt2AUOMEp1_5rh-1">
+          <mxGeometry x="190" y="600" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzn_eUyt2AUOMEp1_5rh-15" value="answer store" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="Tzn_eUyt2AUOMEp1_5rh-1">
+          <mxGeometry x="375" y="600" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzn_eUyt2AUOMEp1_5rh-17" value="read/ write /like / unlike" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="Tzn_eUyt2AUOMEp1_5rh-1">
+          <mxGeometry x="75" y="570" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzn_eUyt2AUOMEp1_5rh-18" value="like store" style="ellipse;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="Tzn_eUyt2AUOMEp1_5rh-1">
+          <mxGeometry x="260" y="730" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzn_eUyt2AUOMEp1_5rh-20" value="Text" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="Tzn_eUyt2AUOMEp1_5rh-1">
+          <mxGeometry x="340" y="680" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzn_eUyt2AUOMEp1_5rh-21" value="&lt;div&gt;API:&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt; GET&amp;nbsp; api/v1/questions?&amp;nbsp; userId, metadata( location, language)&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt; GET api/v1/question? q_id ,&amp;nbsp; &amp;nbsp; --&amp;gt; q_content,&amp;nbsp; list of answers : [{ ans_id}]&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;POST  api/v1/question?&amp;nbsp; content&amp;nbsp; -&amp;gt; suc or fail. q_id&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;GET api/v1/answer? ans_id&amp;nbsp; --&amp;gt; {contet, auther, likes}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;	POST api/v1/answer? q_id, author , params: --&amp;gt; answer_id, true/false &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;GET api/v1/like? ans_id -&amp;gt; int&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;POST api/v1/like? userId, answer_id -&amp;gt; suc or fail &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="Tzn_eUyt2AUOMEp1_5rh-1">
+          <mxGeometry x="95" y="820" width="545" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzn_eUyt2AUOMEp1_5rh-22" value="ans: q_id" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="Tzn_eUyt2AUOMEp1_5rh-1">
+          <mxGeometry x="580" y="680" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzn_eUyt2AUOMEp1_5rh-23" value="Q/A relations" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="Tzn_eUyt2AUOMEp1_5rh-1">
+          <mxGeometry x="630" y="510" width="110" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzn_eUyt2AUOMEp1_5rh-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Tzn_eUyt2AUOMEp1_5rh-1" source="Tzn_eUyt2AUOMEp1_5rh-27" target="Tzn_eUyt2AUOMEp1_5rh-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzn_eUyt2AUOMEp1_5rh-27" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="Tzn_eUyt2AUOMEp1_5rh-1">
+          <mxGeometry x="120" y="1140" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzn_eUyt2AUOMEp1_5rh-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="Tzn_eUyt2AUOMEp1_5rh-1" source="Tzn_eUyt2AUOMEp1_5rh-30" target="Tzn_eUyt2AUOMEp1_5rh-31">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330" y="1360" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Tzn_eUyt2AUOMEp1_5rh-30" value="Q service" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="Tzn_eUyt2AUOMEp1_5rh-1">
+          <mxGeometry x="210" y="1140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzn_eUyt2AUOMEp1_5rh-31" value="Q store" style="ellipse;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="Tzn_eUyt2AUOMEp1_5rh-1">
+          <mxGeometry x="410" y="1140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzn_eUyt2AUOMEp1_5rh-32" value="read / write q" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="Tzn_eUyt2AUOMEp1_5rh-1">
+          <mxGeometry x="120" y="1080" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzn_eUyt2AUOMEp1_5rh-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Tzn_eUyt2AUOMEp1_5rh-1" source="Tzn_eUyt2AUOMEp1_5rh-34" target="Tzn_eUyt2AUOMEp1_5rh-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzn_eUyt2AUOMEp1_5rh-34" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="Tzn_eUyt2AUOMEp1_5rh-1">
+          <mxGeometry x="130" y="1280" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzn_eUyt2AUOMEp1_5rh-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Tzn_eUyt2AUOMEp1_5rh-1" source="Tzn_eUyt2AUOMEp1_5rh-38" target="Tzn_eUyt2AUOMEp1_5rh-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzn_eUyt2AUOMEp1_5rh-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Tzn_eUyt2AUOMEp1_5rh-1" source="Tzn_eUyt2AUOMEp1_5rh-38" target="Tzn_eUyt2AUOMEp1_5rh-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzn_eUyt2AUOMEp1_5rh-38" value="answer service" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="Tzn_eUyt2AUOMEp1_5rh-1">
+          <mxGeometry x="210" y="1280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzn_eUyt2AUOMEp1_5rh-39" value="answer store" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="Tzn_eUyt2AUOMEp1_5rh-1">
+          <mxGeometry x="395" y="1280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzn_eUyt2AUOMEp1_5rh-40" value="read/ write /like / unlike" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="Tzn_eUyt2AUOMEp1_5rh-1">
+          <mxGeometry x="95" y="1250" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzn_eUyt2AUOMEp1_5rh-41" value="like store" style="ellipse;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="Tzn_eUyt2AUOMEp1_5rh-1">
+          <mxGeometry x="285" y="1420" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzn_eUyt2AUOMEp1_5rh-42" value="Text" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="Tzn_eUyt2AUOMEp1_5rh-1">
+          <mxGeometry x="360" y="1360" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzn_eUyt2AUOMEp1_5rh-43" value="ans: q_id" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="Tzn_eUyt2AUOMEp1_5rh-1">
+          <mxGeometry x="600" y="1360" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzn_eUyt2AUOMEp1_5rh-46" value="&lt;div&gt;schema:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;q_id (indexed) | ans_id &amp;nbsp; &lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="Tzn_eUyt2AUOMEp1_5rh-1">
+          <mxGeometry x="690" y="1210" width="305" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Tzn_eUyt2AUOMEp1_5rh-47" value="&lt;div&gt;Q store:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; q_id&amp;nbsp; (indexed), q_content (link), create_ts, author_id&lt;/div&gt;&lt;div&gt;A store:&amp;nbsp; ans_id (index), an_content(), crete_ts, author_id, q_id ( indexed)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;like store: answ_id (index) | user_id | ts | status (unlike or like , 0, 1) &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;get like:&amp;nbsp;&amp;nbsp; select COUNT(*) where ans_id =.. and status = ... &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;1b users: bottleneck:&amp;nbsp; like: write side, readside, &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;1. denormalize liek to answer store (&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;2. &lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="Tzn_eUyt2AUOMEp1_5rh-1">
+          <mxGeometry x="130" y="1520" width="530" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
