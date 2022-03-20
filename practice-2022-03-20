@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-03-20T20:31:32.843Z" agent="5.0 (Windows)" etag="pxvCmPKGR1jFlpyJV9jP" version="17.1.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-03-20T21:30:19.671Z" agent="5.0 (Windows)" etag="Sg_bErQbkDnjJFVmhSJH" version="17.1.3" type="github">
   <diagram id="uW7OsOjydMDewvjMiIQj" name="Page-1">
     <mxGraphModel dx="1038" dy="556" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -11,42 +11,108 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="9f2MgLWmkAvwQ-DP_VtF-13" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="10" y="730" width="30" height="60" as="geometry" />
+          <mxGeometry x="50" y="700" width="30" height="60" as="geometry" />
         </mxCell>
         <mxCell id="9f2MgLWmkAvwQ-DP_VtF-17" value="1. get friends" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9f2MgLWmkAvwQ-DP_VtF-14" target="9f2MgLWmkAvwQ-DP_VtF-16">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="9f2MgLWmkAvwQ-DP_VtF-19" value="3. get opsts for all f" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="9f2MgLWmkAvwQ-DP_VtF-14" target="9f2MgLWmkAvwQ-DP_VtF-20">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="320" y="910" as="targetPoint" />
+            <mxPoint x="360" y="880" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="9f2MgLWmkAvwQ-DP_VtF-25" value="5 return" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="9f2MgLWmkAvwQ-DP_VtF-14" target="9f2MgLWmkAvwQ-DP_VtF-13">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="9f2MgLWmkAvwQ-DP_VtF-14" value="timeline" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="145" y="730" width="120" height="60" as="geometry" />
+          <mxGeometry x="185" y="700" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="9f2MgLWmkAvwQ-DP_VtF-18" value="2. return" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="9f2MgLWmkAvwQ-DP_VtF-16" target="9f2MgLWmkAvwQ-DP_VtF-14">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="9f2MgLWmkAvwQ-DP_VtF-16" value="timeline" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="520" y="730" width="120" height="60" as="geometry" />
+        <mxCell id="9f2MgLWmkAvwQ-DP_VtF-16" value="friends" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="560" y="700" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="9f2MgLWmkAvwQ-DP_VtF-22" value="4. merge all posts, do ranking" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="9f2MgLWmkAvwQ-DP_VtF-20" target="9f2MgLWmkAvwQ-DP_VtF-14">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="9f2MgLWmkAvwQ-DP_VtF-20" value="friend" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="380" y="910" width="120" height="60" as="geometry" />
+        <mxCell id="9f2MgLWmkAvwQ-DP_VtF-20" value="post store" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="880" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="9f2MgLWmkAvwQ-DP_VtF-27" value="gw" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="60" y="710" width="60" height="60" as="geometry" />
+          <mxGeometry x="100" y="680" width="60" height="60" as="geometry" />
         </mxCell>
         <mxCell id="9f2MgLWmkAvwQ-DP_VtF-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;" edge="1" parent="1" source="9f2MgLWmkAvwQ-DP_VtF-13" target="9f2MgLWmkAvwQ-DP_VtF-27">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="40" y="760" as="sourcePoint" />
-            <mxPoint x="145" y="760" as="targetPoint" />
+            <mxPoint x="80" y="730" as="sourcePoint" />
+            <mxPoint x="185" y="730" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="9f2MgLWmkAvwQ-DP_VtF-29" value="&lt;div&gt;deepdive: &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;1. timelline svc:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	bottleneck:  &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;1. read amplification: 1timeline -&amp;gt; multi users -&amp;gt; multi * multi posts -&amp;gt;  high pressure to backend, esp mysql &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;2. too much calculation onto timeline svc: 1 req -&amp;gt; 1 rank cal  to hundreds of tposts -&amp;gt; big pressure to timelien svc. &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;solution:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;1. add cache that buffer the timeline for each user, save mysql read, save calculation. &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;improve:&lt;/span&gt;&lt;/div&gt;&amp;nbsp;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;pre-calculation, pre-cache" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="1010" width="660" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="9f2MgLWmkAvwQ-DP_VtF-42" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;" edge="1" source="9f2MgLWmkAvwQ-DP_VtF-52" target="9f2MgLWmkAvwQ-DP_VtF-47" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9f2MgLWmkAvwQ-DP_VtF-58" value="write post" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="9f2MgLWmkAvwQ-DP_VtF-43" target="9f2MgLWmkAvwQ-DP_VtF-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9f2MgLWmkAvwQ-DP_VtF-43" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="1370" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9f2MgLWmkAvwQ-DP_VtF-46" value="5 return" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" source="9f2MgLWmkAvwQ-DP_VtF-47" target="9f2MgLWmkAvwQ-DP_VtF-43" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9f2MgLWmkAvwQ-DP_VtF-55" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9f2MgLWmkAvwQ-DP_VtF-47" target="9f2MgLWmkAvwQ-DP_VtF-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9f2MgLWmkAvwQ-DP_VtF-64" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="9f2MgLWmkAvwQ-DP_VtF-47" target="9f2MgLWmkAvwQ-DP_VtF-65">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="270" y="1520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9f2MgLWmkAvwQ-DP_VtF-47" value="timeline" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="215" y="1370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9f2MgLWmkAvwQ-DP_VtF-52" value="gw" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="1350" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9f2MgLWmkAvwQ-DP_VtF-53" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;" edge="1" source="9f2MgLWmkAvwQ-DP_VtF-43" target="9f2MgLWmkAvwQ-DP_VtF-52" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="1400" as="sourcePoint" />
+            <mxPoint x="215" y="1400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9f2MgLWmkAvwQ-DP_VtF-56" value="return {userID: timeline}" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.942;entryY=0.933;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="9f2MgLWmkAvwQ-DP_VtF-54" target="9f2MgLWmkAvwQ-DP_VtF-47">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9f2MgLWmkAvwQ-DP_VtF-54" value="timeline store" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="540" y="1370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9f2MgLWmkAvwQ-DP_VtF-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="9f2MgLWmkAvwQ-DP_VtF-57" target="9f2MgLWmkAvwQ-DP_VtF-60">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390" y="1220" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="350" y="1255" />
+              <mxPoint x="350" y="1270" />
+              <mxPoint x="390" y="1270" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9f2MgLWmkAvwQ-DP_VtF-61" value="write to differnet users&#39; space Asyncly" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="9f2MgLWmkAvwQ-DP_VtF-57" target="9f2MgLWmkAvwQ-DP_VtF-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9f2MgLWmkAvwQ-DP_VtF-57" value="postsvc" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="1240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9f2MgLWmkAvwQ-DP_VtF-60" value="friendsvc" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="1190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="9f2MgLWmkAvwQ-DP_VtF-63" value="&lt;div&gt;pre-cal solutiON:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;/div&gt;&lt;div&gt;deepdive: &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;timeline:&lt;/div&gt;&lt;blockquote&gt;&lt;blockquote&gt;&lt;div&gt;qps: 1M: , stateless svc, 3k req -&amp;gt; 300hosts , &lt;br&gt;&lt;/div&gt;&lt;div&gt;zk to maintain the hosts, k-oche serice, &lt;br&gt;&lt;/div&gt;&lt;div&gt;read from the timeline store.&amp;nbsp; what in timeline store?&amp;nbsp; later&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;timelien get [ids] from tl store:&amp;nbsp; need to get post from p_store.&amp;nbsp; Cache: redis , LRU, cache the posts.&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;blockquote&gt;&lt;div&gt;tl store: schema: userID | timeline&amp;nbsp;&amp;nbsp; , kv &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;qps: 1M read,&amp;nbsp; 100M*0.1/1e5 -&amp;gt; 100 qps, &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;in memory store:&amp;nbsp; redis: (redis provide sort funcion: zset , when store opst, [ p_id, ts] --&amp;gt; sorted by redis &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;user -&amp;gt; [ sorted posts from friends by time]&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;postSvc: &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;/blockquote&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="1650" width="690" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="9f2MgLWmkAvwQ-DP_VtF-65" value="&lt;div&gt;redis to cache posts&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="1490" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
