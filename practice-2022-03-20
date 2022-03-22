@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-03-22T13:41:40.912Z" agent="5.0 (Windows)" etag="9Nq-eQd5PJq2zLd1AlTI" version="17.1.3" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2022-03-22T14:25:23.050Z" agent="5.0 (Windows)" etag="ikm9DY16eENWQ4u1OB1U" version="17.1.3" type="github" pages="4">
   <diagram id="uW7OsOjydMDewvjMiIQj" name="newsfeed">
     <mxGraphModel dx="1038" dy="556" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -371,69 +371,69 @@
     </mxGraphModel>
   </diagram>
   <diagram id="AZ77vJw2ojLxVnteHUjz" name="upstart signup page">
-    <mxGraphModel dx="917" dy="557" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1038" dy="556" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="6J5aaT0vLCsX0WpH28Cg-0" />
         <mxCell id="6J5aaT0vLCsX0WpH28Cg-1" parent="6J5aaT0vLCsX0WpH28Cg-0" />
-        <mxCell id="6J5aaT0vLCsX0WpH28Cg-14" value="&lt;div&gt;sign&amp;nbsp; on system&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;func req&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;sign on: name/pswd,&amp;nbsp; oauth?&amp;nbsp; ,,&amp;nbsp; guest?&amp;nbsp; sso?&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;div&gt;non-func:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;availability &amp;gt; consistency&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;security&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;/div&gt;&lt;div&gt;user flow:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;user -&amp;gt; sign up -&amp;gt; provide: name, pswd, email, phone&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;-&amp;gt; auth code to email and phone, or an auth link to email and phone, need to click within 30min&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;-&amp;gt; auth succeed. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;user -&amp;gt; login page -&amp;gt; choose method to login:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;u/pswd&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;oauth: google, fb, linkedin&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;login as guest&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;user -&amp;gt; 1st page -&amp;gt; do things&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;user -&amp;gt; another page -&amp;gt; no need to login again&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;user -&amp;gt; 3rd page ...&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;user -&amp;gt; log out on 3rd page&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;user -&amp;gt; 1st page -&amp;gt; need to login again. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;API:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;HTTPS:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;POST api/v1/user/signup, body: {uname, pswd, email, phone } --&amp;gt; &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;good: 301 redirect to real page, notice to click the lnk inside (email, phone, app) , set_cookie&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;bad: err 4xx, show error cause. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;POST api/v1/user/login, body: {uname, pswd} --&amp;gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;good: return cookie.&amp;nbsp; 200OK, or 301 redirect&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;bad: return 4xxx, error&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; POST api/v1/signout ，{uname, token} --&amp;gt; ok or fail &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;GET api/v1/otherpath, {uname, token } --&amp;gt; &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;401 unAuth, 403 forbidden, 500 error&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;MVP:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="6J5aaT0vLCsX0WpH28Cg-1">
+        <mxCell id="6J5aaT0vLCsX0WpH28Cg-14" value="&lt;div&gt;sign&amp;nbsp; on system&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;func req&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;sign on: name/pswd,&amp;nbsp; oauth?&amp;nbsp; ,,&amp;nbsp; guest?&amp;nbsp; sso?&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;div&gt;non-func:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;availability &amp;gt; consistency&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;security&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;/div&gt;&lt;div&gt;user flow:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;user -&amp;gt; sign up -&amp;gt; provide: name, pswd, email, phone&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;-&amp;gt; auth code to email and phone, or an auth link to email and phone, need to click within 30min&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;-&amp;gt; auth succeed. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;user -&amp;gt; login page -&amp;gt; choose method to login:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;u/pswd&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;oauth: google, fb, linkedin&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;login as guest&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;user -&amp;gt; 1st page -&amp;gt; do things&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;user -&amp;gt; another page -&amp;gt; no need to login again&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;user -&amp;gt; 3rd page ...&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;user -&amp;gt; log out on 3rd page&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;user -&amp;gt; 1st page -&amp;gt; need to login again. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;API:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;HTTPS:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;POST api/v1/user/signup, body: {uname, pswd, email, phone } --&amp;gt; &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;good: 301 redirect to real page, notice to click the lnk inside (email, phone, app) , set_cookie&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;bad: err 4xx, show error cause. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;POST api/v1/user/login, body: {uname, pswd} --&amp;gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;good: return cookie.&amp;nbsp; 200OK, or 301 redirect&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;bad: return 4xxx, error&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; POST api/v1/signout ，{uname, token} --&amp;gt; ok or fail &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;GET api/v1/otherpath, {uname, token } --&amp;gt; &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;401 unAuth, 403 forbidden, 500 error&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;MVP:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="6J5aaT0vLCsX0WpH28Cg-1" vertex="1">
           <mxGeometry x="40" y="50" width="510" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="6J5aaT0vLCsX0WpH28Cg-16" value="1. signup" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="6J5aaT0vLCsX0WpH28Cg-1" source="6J5aaT0vLCsX0WpH28Cg-15" target="6J5aaT0vLCsX0WpH28Cg-17">
+        <mxCell id="6J5aaT0vLCsX0WpH28Cg-16" value="1. signup" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="6J5aaT0vLCsX0WpH28Cg-1" source="6J5aaT0vLCsX0WpH28Cg-15" target="6J5aaT0vLCsX0WpH28Cg-17" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="320" y="790" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="6J5aaT0vLCsX0WpH28Cg-15" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="6J5aaT0vLCsX0WpH28Cg-1">
+        <mxCell id="6J5aaT0vLCsX0WpH28Cg-15" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="6J5aaT0vLCsX0WpH28Cg-1" vertex="1">
           <mxGeometry x="90" y="760" width="30" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="6J5aaT0vLCsX0WpH28Cg-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="6J5aaT0vLCsX0WpH28Cg-1" source="6J5aaT0vLCsX0WpH28Cg-17" target="6J5aaT0vLCsX0WpH28Cg-22">
+        <mxCell id="6J5aaT0vLCsX0WpH28Cg-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="6J5aaT0vLCsX0WpH28Cg-1" source="6J5aaT0vLCsX0WpH28Cg-17" target="6J5aaT0vLCsX0WpH28Cg-22" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="470" y="790" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="6J5aaT0vLCsX0WpH28Cg-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="6J5aaT0vLCsX0WpH28Cg-1" source="6J5aaT0vLCsX0WpH28Cg-17" target="6J5aaT0vLCsX0WpH28Cg-23">
+        <mxCell id="6J5aaT0vLCsX0WpH28Cg-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="6J5aaT0vLCsX0WpH28Cg-1" source="6J5aaT0vLCsX0WpH28Cg-17" target="6J5aaT0vLCsX0WpH28Cg-23" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="6J5aaT0vLCsX0WpH28Cg-17" value="signup svc" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="6J5aaT0vLCsX0WpH28Cg-1">
+        <mxCell id="6J5aaT0vLCsX0WpH28Cg-17" value="signup svc" style="rounded=0;whiteSpace=wrap;html=1;" parent="6J5aaT0vLCsX0WpH28Cg-1" vertex="1">
           <mxGeometry x="260" y="760" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="6J5aaT0vLCsX0WpH28Cg-22" value="user store" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="6J5aaT0vLCsX0WpH28Cg-1">
+        <mxCell id="6J5aaT0vLCsX0WpH28Cg-22" value="user store" style="rounded=1;whiteSpace=wrap;html=1;" parent="6J5aaT0vLCsX0WpH28Cg-1" vertex="1">
           <mxGeometry x="470" y="720" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="6J5aaT0vLCsX0WpH28Cg-23" value="login method store" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="6J5aaT0vLCsX0WpH28Cg-1">
+        <mxCell id="6J5aaT0vLCsX0WpH28Cg-23" value="login method store" style="rounded=1;whiteSpace=wrap;html=1;" parent="6J5aaT0vLCsX0WpH28Cg-1" vertex="1">
           <mxGeometry x="470" y="820" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="6J5aaT0vLCsX0WpH28Cg-27" value="&lt;div&gt;name/pswd table&lt;/div&gt;&lt;div&gt;google oauth table&lt;/div&gt;&lt;div&gt;fb oatuth table&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="6J5aaT0vLCsX0WpH28Cg-1">
+        <mxCell id="6J5aaT0vLCsX0WpH28Cg-27" value="&lt;div&gt;name/pswd table&lt;/div&gt;&lt;div&gt;google oauth table&lt;/div&gt;&lt;div&gt;fb oatuth table&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="6J5aaT0vLCsX0WpH28Cg-1" vertex="1">
           <mxGeometry x="610" y="835" width="100" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="6J5aaT0vLCsX0WpH28Cg-28" value="2. sign in" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="6J5aaT0vLCsX0WpH28Cg-1" source="6J5aaT0vLCsX0WpH28Cg-29" target="6J5aaT0vLCsX0WpH28Cg-30">
+        <mxCell id="6J5aaT0vLCsX0WpH28Cg-28" value="2. sign in" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="6J5aaT0vLCsX0WpH28Cg-1" source="6J5aaT0vLCsX0WpH28Cg-29" target="6J5aaT0vLCsX0WpH28Cg-30" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="320" y="920" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="6J5aaT0vLCsX0WpH28Cg-37" value="4. take cookie (token)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="6J5aaT0vLCsX0WpH28Cg-1" source="6J5aaT0vLCsX0WpH28Cg-29" target="6J5aaT0vLCsX0WpH28Cg-38">
+        <mxCell id="6J5aaT0vLCsX0WpH28Cg-37" value="4. take cookie (token)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" parent="6J5aaT0vLCsX0WpH28Cg-1" source="6J5aaT0vLCsX0WpH28Cg-29" target="6J5aaT0vLCsX0WpH28Cg-38" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="260" y="1030" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="6J5aaT0vLCsX0WpH28Cg-29" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="6J5aaT0vLCsX0WpH28Cg-1">
+        <mxCell id="6J5aaT0vLCsX0WpH28Cg-29" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="6J5aaT0vLCsX0WpH28Cg-1" vertex="1">
           <mxGeometry x="90" y="890" width="30" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="6J5aaT0vLCsX0WpH28Cg-36" value="3. return cookie" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="6J5aaT0vLCsX0WpH28Cg-1" source="6J5aaT0vLCsX0WpH28Cg-30">
+        <mxCell id="6J5aaT0vLCsX0WpH28Cg-36" value="3. return cookie" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" parent="6J5aaT0vLCsX0WpH28Cg-1" source="6J5aaT0vLCsX0WpH28Cg-30" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="140" y="935" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="6J5aaT0vLCsX0WpH28Cg-30" value="signup svc" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="6J5aaT0vLCsX0WpH28Cg-1">
+        <mxCell id="6J5aaT0vLCsX0WpH28Cg-30" value="signup svc" style="rounded=0;whiteSpace=wrap;html=1;" parent="6J5aaT0vLCsX0WpH28Cg-1" vertex="1">
           <mxGeometry x="260" y="890" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="6J5aaT0vLCsX0WpH28Cg-40" value="5.2 check w/ signup svc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="6J5aaT0vLCsX0WpH28Cg-1" source="6J5aaT0vLCsX0WpH28Cg-38" target="6J5aaT0vLCsX0WpH28Cg-30">
+        <mxCell id="6J5aaT0vLCsX0WpH28Cg-40" value="5.2 check w/ signup svc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" parent="6J5aaT0vLCsX0WpH28Cg-1" source="6J5aaT0vLCsX0WpH28Cg-38" target="6J5aaT0vLCsX0WpH28Cg-30" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="6J5aaT0vLCsX0WpH28Cg-38" value="other system" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="6J5aaT0vLCsX0WpH28Cg-1">
+        <mxCell id="6J5aaT0vLCsX0WpH28Cg-38" value="other system" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="6J5aaT0vLCsX0WpH28Cg-1" vertex="1">
           <mxGeometry x="240" y="1040" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="6J5aaT0vLCsX0WpH28Cg-39" value="5.1 self auth" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="6J5aaT0vLCsX0WpH28Cg-1" source="6J5aaT0vLCsX0WpH28Cg-38" target="6J5aaT0vLCsX0WpH28Cg-38">
+        <mxCell id="6J5aaT0vLCsX0WpH28Cg-39" value="5.1 self auth" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="6J5aaT0vLCsX0WpH28Cg-1" source="6J5aaT0vLCsX0WpH28Cg-38" target="6J5aaT0vLCsX0WpH28Cg-38" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="400" y="1060" />
@@ -441,116 +441,172 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="6J5aaT0vLCsX0WpH28Cg-41" value="&lt;div&gt;user store:&amp;nbsp;&amp;nbsp; uid | real - name | address .... profiles. &lt;br&gt;&lt;/div&gt;&lt;div&gt;login_method_store:&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;name_pswd table:&amp;nbsp; uid | name | pswd &amp;nbsp; ( no real pswd, hashed, salted, slow hashed )&lt;/div&gt;&lt;div&gt;&amp;nbsp;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;oauth table: uid | provider_name | oauth_id | access token | expires | refresh_token&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;api table: uid | api_key | api_secret&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="6J5aaT0vLCsX0WpH28Cg-1">
+        <mxCell id="6J5aaT0vLCsX0WpH28Cg-41" value="&lt;div&gt;user store:&amp;nbsp;&amp;nbsp; uid | real - name | address .... profiles. &lt;br&gt;&lt;/div&gt;&lt;div&gt;login_method_store:&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;name_pswd table:&amp;nbsp; uid | name | pswd &amp;nbsp; ( no real pswd, hashed, salted, slow hashed )&lt;/div&gt;&lt;div&gt;&amp;nbsp;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;oauth table: uid | provider_name | oauth_id | access token | expires | refresh_token&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;api table: uid | api_key | api_secret&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="6J5aaT0vLCsX0WpH28Cg-1" vertex="1">
           <mxGeometry x="40" y="1160" width="740" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="6J5aaT0vLCsX0WpH28Cg-42" value="Text" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="6J5aaT0vLCsX0WpH28Cg-1">
+        <mxCell id="6J5aaT0vLCsX0WpH28Cg-42" value="Text" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="6J5aaT0vLCsX0WpH28Cg-1" vertex="1">
           <mxGeometry x="200" y="1140" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="6J5aaT0vLCsX0WpH28Cg-43" value="&lt;div&gt;how cookie token is generated: &lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="6J5aaT0vLCsX0WpH28Cg-1">
+        <mxCell id="6J5aaT0vLCsX0WpH28Cg-43" value="&lt;div&gt;how cookie token is generated: &lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="6J5aaT0vLCsX0WpH28Cg-1" vertex="1">
           <mxGeometry x="30" y="1300" width="380" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="6J5aaT0vLCsX0WpH28Cg-44" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="6J5aaT0vLCsX0WpH28Cg-1">
+        <mxCell id="6J5aaT0vLCsX0WpH28Cg-44" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="6J5aaT0vLCsX0WpH28Cg-1" vertex="1">
           <mxGeometry x="70" y="1390" width="30" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="6J5aaT0vLCsX0WpH28Cg-45" value="login svc" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="6J5aaT0vLCsX0WpH28Cg-1">
+        <mxCell id="6J5aaT0vLCsX0WpH28Cg-45" value="login svc" style="rounded=0;whiteSpace=wrap;html=1;" parent="6J5aaT0vLCsX0WpH28Cg-1" vertex="1">
           <mxGeometry x="220" y="1390" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="6J5aaT0vLCsX0WpH28Cg-46" value="oauth provider" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="6J5aaT0vLCsX0WpH28Cg-1">
+        <mxCell id="6J5aaT0vLCsX0WpH28Cg-46" value="oauth provider" style="rounded=0;whiteSpace=wrap;html=1;" parent="6J5aaT0vLCsX0WpH28Cg-1" vertex="1">
           <mxGeometry x="460" y="1390" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="6J5aaT0vLCsX0WpH28Cg-52" value="I want to login via oauth" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="6J5aaT0vLCsX0WpH28Cg-1">
+        <mxCell id="6J5aaT0vLCsX0WpH28Cg-52" value="I want to login via oauth" style="endArrow=classic;html=1;rounded=0;" parent="6J5aaT0vLCsX0WpH28Cg-1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="90" y="1530" as="sourcePoint" />
             <mxPoint x="260" y="1530" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="6J5aaT0vLCsX0WpH28Cg-53" value="redirect to oauth" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="6J5aaT0vLCsX0WpH28Cg-1">
+        <mxCell id="6J5aaT0vLCsX0WpH28Cg-53" value="redirect to oauth" style="endArrow=classic;html=1;rounded=0;" parent="6J5aaT0vLCsX0WpH28Cg-1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="260" y="1600" as="sourcePoint" />
             <mxPoint x="90" y="1600" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="6J5aaT0vLCsX0WpH28Cg-55" value="login on oauth" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="6J5aaT0vLCsX0WpH28Cg-1">
+        <mxCell id="6J5aaT0vLCsX0WpH28Cg-55" value="login on oauth" style="endArrow=classic;html=1;rounded=0;" parent="6J5aaT0vLCsX0WpH28Cg-1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="90" y="1630" as="sourcePoint" />
             <mxPoint x="520" y="1630" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="6J5aaT0vLCsX0WpH28Cg-56" value="redirect to login svc with a code" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="6J5aaT0vLCsX0WpH28Cg-1">
+        <mxCell id="6J5aaT0vLCsX0WpH28Cg-56" value="redirect to login svc with a code" style="endArrow=classic;html=1;rounded=0;" parent="6J5aaT0vLCsX0WpH28Cg-1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="510" y="1710" as="sourcePoint" />
             <mxPoint x="90" y="1710" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="6J5aaT0vLCsX0WpH28Cg-65" value="oauth authen, create a pair:&amp;nbsp; code : access code : u_id" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="6J5aaT0vLCsX0WpH28Cg-1">
+        <mxCell id="6J5aaT0vLCsX0WpH28Cg-65" value="oauth authen, create a pair:&amp;nbsp; code : access code : u_id" style="rounded=1;whiteSpace=wrap;html=1;" parent="6J5aaT0vLCsX0WpH28Cg-1" vertex="1">
           <mxGeometry x="540" y="1620" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="6J5aaT0vLCsX0WpH28Cg-67" value="login again with code" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="6J5aaT0vLCsX0WpH28Cg-1">
+        <mxCell id="6J5aaT0vLCsX0WpH28Cg-67" value="login again with code" style="endArrow=classic;html=1;rounded=0;" parent="6J5aaT0vLCsX0WpH28Cg-1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="90" y="1770" as="sourcePoint" />
             <mxPoint x="260" y="1770" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="6J5aaT0vLCsX0WpH28Cg-68" value="check w/ oauth the code, get access code, get info" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="6J5aaT0vLCsX0WpH28Cg-1">
+        <mxCell id="6J5aaT0vLCsX0WpH28Cg-68" value="check w/ oauth the code, get access code, get info" style="endArrow=classic;html=1;rounded=0;" parent="6J5aaT0vLCsX0WpH28Cg-1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="260" y="1800" as="sourcePoint" />
             <mxPoint x="560" y="1800" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="6J5aaT0vLCsX0WpH28Cg-69" value="return good, access code" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="6J5aaT0vLCsX0WpH28Cg-1">
+        <mxCell id="6J5aaT0vLCsX0WpH28Cg-69" value="return good, access code" style="endArrow=classic;html=1;rounded=0;" parent="6J5aaT0vLCsX0WpH28Cg-1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="540" y="1850" as="sourcePoint" />
             <mxPoint x="290" y="1850" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="6J5aaT0vLCsX0WpH28Cg-70" value="create a token/session for this user" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="6J5aaT0vLCsX0WpH28Cg-1">
+        <mxCell id="6J5aaT0vLCsX0WpH28Cg-70" value="create a token/session for this user" style="rounded=1;whiteSpace=wrap;html=1;" parent="6J5aaT0vLCsX0WpH28Cg-1" vertex="1">
           <mxGeometry x="230" y="1890" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="6J5aaT0vLCsX0WpH28Cg-71" value="return token/session id in cookie" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="6J5aaT0vLCsX0WpH28Cg-1">
+        <mxCell id="6J5aaT0vLCsX0WpH28Cg-71" value="return token/session id in cookie" style="endArrow=classic;html=1;rounded=0;" parent="6J5aaT0vLCsX0WpH28Cg-1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="300" y="2010" as="sourcePoint" />
             <mxPoint x="105" y="2010" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="6J5aaT0vLCsX0WpH28Cg-72" value="sso to other pages" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="6J5aaT0vLCsX0WpH28Cg-1">
+        <mxCell id="6J5aaT0vLCsX0WpH28Cg-72" value="sso to other pages" style="endArrow=classic;html=1;rounded=0;" parent="6J5aaT0vLCsX0WpH28Cg-1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="100" y="2060" as="sourcePoint" />
             <mxPoint x="280" y="2060" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="6J5aaT0vLCsX0WpH28Cg-73" value="&lt;div&gt;jwt token:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;单向函数防伪造&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;加salt&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="6J5aaT0vLCsX0WpH28Cg-1">
+        <mxCell id="6J5aaT0vLCsX0WpH28Cg-73" value="&lt;div&gt;jwt token:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;单向函数防伪造&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;加salt&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="6J5aaT0vLCsX0WpH28Cg-1" vertex="1">
           <mxGeometry x="100" y="2130" width="520" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="6J5aaT0vLCsX0WpH28Cg-74" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="6J5aaT0vLCsX0WpH28Cg-1">
+        <mxCell id="6J5aaT0vLCsX0WpH28Cg-74" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="6J5aaT0vLCsX0WpH28Cg-1" vertex="1">
           <mxGeometry x="120" y="2260" width="30" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="6J5aaT0vLCsX0WpH28Cg-75" value="login" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="6J5aaT0vLCsX0WpH28Cg-1">
+        <mxCell id="6J5aaT0vLCsX0WpH28Cg-75" value="login" style="rounded=1;whiteSpace=wrap;html=1;" parent="6J5aaT0vLCsX0WpH28Cg-1" vertex="1">
           <mxGeometry x="550" y="2260" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="6J5aaT0vLCsX0WpH28Cg-76" value="uname pswd" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="6J5aaT0vLCsX0WpH28Cg-1">
+        <mxCell id="6J5aaT0vLCsX0WpH28Cg-76" value="uname pswd" style="endArrow=classic;html=1;rounded=0;" parent="6J5aaT0vLCsX0WpH28Cg-1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="170" y="2300" as="sourcePoint" />
             <mxPoint x="530" y="2300" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="6J5aaT0vLCsX0WpH28Cg-77" value="return token/session id in cookie" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="6J5aaT0vLCsX0WpH28Cg-1">
+        <mxCell id="6J5aaT0vLCsX0WpH28Cg-77" value="return token/session id in cookie" style="endArrow=classic;html=1;rounded=0;" parent="6J5aaT0vLCsX0WpH28Cg-1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="520" y="2470" as="sourcePoint" />
             <mxPoint x="160" y="2470" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="6J5aaT0vLCsX0WpH28Cg-78" value="&lt;div&gt;1. md5(pswd + salt), auth&lt;/div&gt;&lt;div&gt;2. create a jwt token: &lt;br&gt;&lt;/div&gt;&lt;div&gt;{&lt;/div&gt;&lt;div&gt;uname, &lt;br&gt;&lt;/div&gt;&lt;div&gt;expiry,&lt;/div&gt;&lt;div&gt;md5(uname+expiery+pswd)&lt;br&gt;&lt;/div&gt;&lt;div&gt;}&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="6J5aaT0vLCsX0WpH28Cg-1">
+        <mxCell id="6J5aaT0vLCsX0WpH28Cg-78" value="&lt;div&gt;1. md5(pswd + salt), auth&lt;/div&gt;&lt;div&gt;2. create a jwt token: &lt;br&gt;&lt;/div&gt;&lt;div&gt;{&lt;/div&gt;&lt;div&gt;uname, &lt;br&gt;&lt;/div&gt;&lt;div&gt;expiry,&lt;/div&gt;&lt;div&gt;md5(uname+expiery+pswd)&lt;br&gt;&lt;/div&gt;&lt;div&gt;}&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="6J5aaT0vLCsX0WpH28Cg-1" vertex="1">
           <mxGeometry x="620" y="2338" width="190" height="132" as="geometry" />
         </mxCell>
-        <mxCell id="6J5aaT0vLCsX0WpH28Cg-79" value="login again, with token" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="6J5aaT0vLCsX0WpH28Cg-1">
+        <mxCell id="6J5aaT0vLCsX0WpH28Cg-79" value="login again, with token" style="endArrow=classic;html=1;rounded=0;" parent="6J5aaT0vLCsX0WpH28Cg-1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="160" y="2550" as="sourcePoint" />
             <mxPoint x="520" y="2550" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="6J5aaT0vLCsX0WpH28Cg-80" value="&lt;div&gt;1. get uname, expiery, hash&lt;/div&gt;&lt;div&gt;2. check expiery, &lt;br&gt;&lt;/div&gt;&lt;div&gt;3. recalc jwt token, compare with hash. &lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="6J5aaT0vLCsX0WpH28Cg-1">
+        <mxCell id="6J5aaT0vLCsX0WpH28Cg-80" value="&lt;div&gt;1. get uname, expiery, hash&lt;/div&gt;&lt;div&gt;2. check expiery, &lt;br&gt;&lt;/div&gt;&lt;div&gt;3. recalc jwt token, compare with hash. &lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="6J5aaT0vLCsX0WpH28Cg-1" vertex="1">
           <mxGeometry x="550" y="2570" width="190" height="132" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="48x7h1dFR0f9NhL7fWYP" name="Page-4">
+    <mxGraphModel dx="1038" dy="556" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="_ABCVf9kDW8Ui17VEOTW-0" />
+        <mxCell id="_ABCVf9kDW8Ui17VEOTW-1" parent="_ABCVf9kDW8Ui17VEOTW-0" />
+        <mxCell id="_ABCVf9kDW8Ui17VEOTW-2" value="&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Go game, web based. &lt;br&gt;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;br&gt;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;1: 1&lt;br&gt;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;10K games at the same time. &lt;br&gt;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;br&gt;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;br&gt;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&lt;br&gt;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;Functional requirement: &lt;br&gt;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;i. Matching same lvl players&lt;br&gt;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;ii. Real time games&lt;br&gt;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;iii. Web-based front end. &lt;br&gt;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;iv. Customized matching player&lt;br&gt;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;Un functional requirement:&lt;br&gt;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;i. Real time experience&lt;br&gt;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;ii. Consistent b/w parties&lt;br&gt;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;iii. High available&lt;br&gt;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;nbsp;iv. Scale ?&amp;nbsp; Is it really necessary? &lt;br&gt;Isolation. " style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="_ABCVf9kDW8Ui17VEOTW-1">
+          <mxGeometry x="50" y="30" width="670" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_ABCVf9kDW8Ui17VEOTW-3" value="&lt;div&gt;func req:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;1. user find a match&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;2. user place chess, user read opponent step, user step is timed&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;3. user win or oppo win&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;4. user has scores, leaderboard&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;5. user see replay&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;6. user broke and can re-link&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;non fun:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;consistency &amp;gt; availability&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;connection is iimportant, need t recvei data from server&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;data durability : not very import&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;API:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;place chess:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;POST api/v1/positions?&amp;nbsp; header: {user token}, body { + positions} -&amp;gt; 200OK {}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;poll opponents chess:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;GET api/v1/positions?&amp;nbsp; --&amp;gt; 200 response , body { + positions,&amp;nbsp; users: oopponnetns}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;poll game status&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;GET api/v1/status? --&amp;gt; 200 response, body {status: CONTINUE, SUCCEED, FAIL, your total score: xx}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;MVP:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="_ABCVf9kDW8Ui17VEOTW-1">
+          <mxGeometry x="40" y="330" width="710" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_ABCVf9kDW8Ui17VEOTW-8" value="1. send pos1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="_ABCVf9kDW8Ui17VEOTW-1" source="_ABCVf9kDW8Ui17VEOTW-4" target="_ABCVf9kDW8Ui17VEOTW-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_ABCVf9kDW8Ui17VEOTW-4" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="_ABCVf9kDW8Ui17VEOTW-1">
+          <mxGeometry x="110" y="740" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_ABCVf9kDW8Ui17VEOTW-9" value="&lt;div&gt;4.1 if not finish, write to actor 2&lt;/div&gt;&lt;div&gt;4.2 if finish, write result to actor 2&lt;br&gt;&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="_ABCVf9kDW8Ui17VEOTW-1" source="_ABCVf9kDW8Ui17VEOTW-5" target="_ABCVf9kDW8Ui17VEOTW-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_ABCVf9kDW8Ui17VEOTW-5" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="_ABCVf9kDW8Ui17VEOTW-1">
+          <mxGeometry x="90" y="1010" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_ABCVf9kDW8Ui17VEOTW-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="_ABCVf9kDW8Ui17VEOTW-1" source="_ABCVf9kDW8Ui17VEOTW-7" target="_ABCVf9kDW8Ui17VEOTW-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_ABCVf9kDW8Ui17VEOTW-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.014;entryY=0.15;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="_ABCVf9kDW8Ui17VEOTW-1" source="_ABCVf9kDW8Ui17VEOTW-7" target="_ABCVf9kDW8Ui17VEOTW-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_ABCVf9kDW8Ui17VEOTW-7" value="go server" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="_ABCVf9kDW8Ui17VEOTW-1">
+          <mxGeometry x="390" y="860" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_ABCVf9kDW8Ui17VEOTW-10" value="status of games" style="ellipse;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="_ABCVf9kDW8Ui17VEOTW-1">
+          <mxGeometry x="630" y="860" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_ABCVf9kDW8Ui17VEOTW-12" value="&lt;div&gt;2. write pos1 to the game&lt;/div&gt;&lt;div&gt;3. judge the status of the game&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="_ABCVf9kDW8Ui17VEOTW-1">
+          <mxGeometry x="390" y="810" width="246" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_ABCVf9kDW8Ui17VEOTW-13" value="&lt;div&gt;mysql&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;game_id | serialized_game | next player | last updated time | created ts | status | p1 | p2 &lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;pk: game_id&lt;/div&gt;&lt;div&gt;idx: game_id, p1, p2, last updated time, status&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="_ABCVf9kDW8Ui17VEOTW-1">
+          <mxGeometry x="650" y="930" width="600" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_ABCVf9kDW8Ui17VEOTW-14" value="&lt;div&gt;communication: &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;push service to notify players: &lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;oppo has a new move, the game has a new status&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;websocket,&amp;nbsp; duplex , send notification:&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;notification: you have a new msg, you can poll it.&amp;nbsp; -&amp;gt;&amp;nbsp; call Poll new status: &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;(rarely) send bakck the real data:&amp;nbsp;&amp;nbsp; ws get apixxxx to get new status. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;long polling:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;http1 ,&amp;nbsp; it is old but still can work.&amp;nbsp;&amp;nbsp;&amp;nbsp; take more internal resources.&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;good:&amp;nbsp; easy to impl. ws &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="_ABCVf9kDW8Ui17VEOTW-1">
+          <mxGeometry x="30" y="1100" width="910" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_ABCVf9kDW8Ui17VEOTW-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="_ABCVf9kDW8Ui17VEOTW-1" source="_ABCVf9kDW8Ui17VEOTW-15" target="_ABCVf9kDW8Ui17VEOTW-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_ABCVf9kDW8Ui17VEOTW-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=35;exitDy=60;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="_ABCVf9kDW8Ui17VEOTW-1" source="_ABCVf9kDW8Ui17VEOTW-15" target="_ABCVf9kDW8Ui17VEOTW-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_ABCVf9kDW8Ui17VEOTW-15" value="push service" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;" vertex="1" parent="_ABCVf9kDW8Ui17VEOTW-1">
+          <mxGeometry x="130" y="880" width="70" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
