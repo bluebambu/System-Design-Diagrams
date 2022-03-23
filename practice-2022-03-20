@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-03-23T02:53:36.248Z" agent="5.0 (Windows)" etag="d9DmpGjIMIXzuvhBTAGh" version="17.1.5" type="github" pages="6">
+<mxfile host="app.diagrams.net" modified="2022-03-23T03:15:44.927Z" agent="5.0 (Windows)" etag="BBAhcD9Pwub-PHv49_Sg" version="17.1.5" type="github" pages="7">
   <diagram id="uW7OsOjydMDewvjMiIQj" name="newsfeed">
     <mxGraphModel dx="1038" dy="528" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -737,13 +737,24 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="1yHAf2ZltARBBW7P2lwa" name="Page-6">
+  <diagram id="1yHAf2ZltARBBW7P2lwa" name="crawler">
     <mxGraphModel dx="1038" dy="528" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="sYQ7aKpWDocMD4myl1Jn-0" />
         <mxCell id="sYQ7aKpWDocMD4myl1Jn-1" parent="sYQ7aKpWDocMD4myl1Jn-0" />
         <mxCell id="sYQ7aKpWDocMD4myl1Jn-2" value="&lt;div&gt;FR&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;crawl urls&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;no cyclic crawl&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;no too deep inside 1 domain&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;as many as possible&lt;/div&gt;&lt;div&gt;NFR&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;available .&amp;gt; consistency&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;data amount huge&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;no latency req&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;capacity:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;disk 1month : 1B url * 1kb -&amp;gt; 1TB data , 10TB / yr, 30TB/ 3yr&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;network bandwidth: 1TB/30 = 300GB / 10^5 = 3MB/s = 24Mb/s&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;arch:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;url store -&amp;gt; scheduler -&amp;gt; crawler farm -&amp;gt; raw store -&amp;gt; processors (rid of images, rid of ads, dedup, extract new urls, indexed) -&amp;gt; processed store&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;-&amp;gt; url store&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;rely on: stateless components,&amp;nbsp; easy to scale&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;retry mechanism&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;bottleneck:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;1. crawler farm:&amp;nbsp;&amp;nbsp; need more host, need to change IP, need to be a nice crawler robot, might&amp;nbsp; use proxy. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;2. crawler farm: download network bandwidth, more hosts. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;3. crawler farm: NIO framework, save resources. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;4. raw store: need big disk,&amp;nbsp; HDFS, big data file system. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;5. post processing: similar to youtube design&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;6. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;tricks: bloomfilter&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="sYQ7aKpWDocMD4myl1Jn-1">
           <mxGeometry x="40" y="40" width="680" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="udAKP1Y_BOkuldcwaa5l" name="shorturl">
+    <mxGraphModel dx="1038" dy="528" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="JYRfqtTVYQpH9AIqoDx0-0" />
+        <mxCell id="JYRfqtTVYQpH9AIqoDx0-1" parent="JYRfqtTVYQpH9AIqoDx0-0" />
+        <mxCell id="JYRfqtTVYQpH9AIqoDx0-2" value="&lt;div&gt;short url&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;user -&amp;gt; long url -&amp;gt; short url -&amp;gt; long url :&amp;nbsp; &lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="JYRfqtTVYQpH9AIqoDx0-1">
+          <mxGeometry x="40" y="80" width="660" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
