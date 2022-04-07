@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-04-07T19:07:52.110Z" agent="5.0 (Windows)" etag="gZ3O5y9xj-OI4sEpIsya" version="17.4.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-07T19:11:08.195Z" agent="5.0 (Windows)" etag="S-YW1wl0K-RL7nDOcWFK" version="17.4.0" type="github">
   <diagram id="bEzTkkg6vAA7GaNnG3Gb" name="Page-1">
     <mxGraphModel dx="1038" dy="528" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -44,6 +44,78 @@
         </mxCell>
         <mxCell id="lNIh0QNLnjOsdASKE0ya-15" value="&lt;div&gt;model:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;vote:&amp;nbsp;&amp;nbsp; id, question, description, created_ts, updated_ts....&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;option:&amp;nbsp; id, body, cerated ts, uupdate ts&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;user: id, name , profile, ....&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;vote_option rel:&amp;nbsp; v_id : op_id &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;user_vote:&amp;nbsp; v_id: u_id: option_id&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="180" y="880" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lNIh0QNLnjOsdASKE0ya-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="lNIh0QNLnjOsdASKE0ya-16" target="lNIh0QNLnjOsdASKE0ya-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lNIh0QNLnjOsdASKE0ya-16" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="110" y="1150" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lNIh0QNLnjOsdASKE0ya-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="lNIh0QNLnjOsdASKE0ya-17" target="lNIh0QNLnjOsdASKE0ya-24">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="1310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lNIh0QNLnjOsdASKE0ya-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="lNIh0QNLnjOsdASKE0ya-17" target="lNIh0QNLnjOsdASKE0ya-32">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="1390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lNIh0QNLnjOsdASKE0ya-17" value="vote sys" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="1150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lNIh0QNLnjOsdASKE0ya-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="lNIh0QNLnjOsdASKE0ya-20" target="lNIh0QNLnjOsdASKE0ya-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lNIh0QNLnjOsdASKE0ya-20" value="option app" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="1150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lNIh0QNLnjOsdASKE0ya-21" value="option table" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="670" y="1140" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lNIh0QNLnjOsdASKE0ya-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="lNIh0QNLnjOsdASKE0ya-24" target="lNIh0QNLnjOsdASKE0ya-26">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="580" y="1320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lNIh0QNLnjOsdASKE0ya-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="lNIh0QNLnjOsdASKE0ya-24" target="lNIh0QNLnjOsdASKE0ya-29">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="530" y="1410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lNIh0QNLnjOsdASKE0ya-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="lNIh0QNLnjOsdASKE0ya-24" target="lNIh0QNLnjOsdASKE0ya-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lNIh0QNLnjOsdASKE0ya-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="lNIh0QNLnjOsdASKE0ya-24" target="lNIh0QNLnjOsdASKE0ya-32">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="1470" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lNIh0QNLnjOsdASKE0ya-24" value="vote app" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="1290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lNIh0QNLnjOsdASKE0ya-26" value="vote table" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="550" y="1280" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lNIh0QNLnjOsdASKE0ya-29" value="vote_option table" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="490" y="1410" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lNIh0QNLnjOsdASKE0ya-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="lNIh0QNLnjOsdASKE0ya-32" target="lNIh0QNLnjOsdASKE0ya-34">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="280" y="1530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lNIh0QNLnjOsdASKE0ya-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="lNIh0QNLnjOsdASKE0ya-32" target="lNIh0QNLnjOsdASKE0ya-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lNIh0QNLnjOsdASKE0ya-32" value="user app" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="1400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lNIh0QNLnjOsdASKE0ya-34" value="user db" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="250" y="1490" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lNIh0QNLnjOsdASKE0ya-36" value="user_vote_table" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="390" y="1500" width="60" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
