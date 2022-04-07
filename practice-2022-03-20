@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-04-07T13:52:47.558Z" agent="5.0 (Windows)" etag="eFTm3GKLom_IZt2vrK5m" version="17.4.0" type="github" pages="13">
+<mxfile host="app.diagrams.net" modified="2022-04-07T15:31:02.439Z" agent="5.0 (Windows)" etag="RlEuy-LMBg35TXdPX-W1" version="17.4.0" type="github" pages="13">
   <diagram id="uW7OsOjydMDewvjMiIQj" name="newsfeed">
     <mxGraphModel dx="1038" dy="528" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1040,265 +1040,265 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="eW09PLhZNd3Z7wGGAa37-1" value="&lt;div&gt;online chess&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;FR:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;online gaming, go game, 2player&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;real time, &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;player matching? &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;game replay? &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;leaderboard? &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;resume? &lt;br&gt;&lt;/div&gt;&lt;div&gt;NFR:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;scale? &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;availability&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;consistency: low&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;accuracy on time&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;racing condition&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;data flow:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;user --&amp;gt; login -&amp;gt;&amp;nbsp; pick opponent -&amp;gt; start game, confirmed by 2 players together -&amp;gt; place chess -&amp;gt; see p2 place chess -&amp;gt; place chess again -&amp;gt; win or lose -&amp;gt; gain points -&amp;gt; pick opponent.&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;API:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;user login&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;POST api/v1/login, body {uname, pswd} -&amp;gt; ok or not.&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;start game: &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;POST api/v1/games/id/start, body{user} -&amp;gt; &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;place chess:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;POST api/v1/games/id/state, body {user, move} -&amp;gt; resp: { nxt_player, new state, nxt_timing, win_or_lose_or_continue}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;server push from other side:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;POST api/v1/games/id/state, body {cur_player, move, win_or_lose_or_continue}. -&amp;gt;&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;get score or leaderboards&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;GET api/v1/leaderboards&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;GET api/v1/scores , head {user token} &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;arch:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="eW09PLhZNd3Z7wGGAa37-1" value="&lt;div&gt;online chess&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;FR:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;online gaming, go game, 2player&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;real time, &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;player matching? &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;game replay? &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;leaderboard? &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;resume? &lt;br&gt;&lt;/div&gt;&lt;div&gt;NFR:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;scale? &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;availability&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;consistency: low&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;accuracy on time&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;racing condition&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;data flow:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;user --&amp;gt; login -&amp;gt;&amp;nbsp; pick opponent -&amp;gt; start game, confirmed by 2 players together -&amp;gt; place chess -&amp;gt; see p2 place chess -&amp;gt; place chess again -&amp;gt; win or lose -&amp;gt; gain points -&amp;gt; pick opponent.&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;API:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;user login&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;POST api/v1/login, body {uname, pswd} -&amp;gt; ok or not.&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;start game: &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;POST api/v1/games/id/start, body{user} -&amp;gt; &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;place chess:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;POST api/v1/games/id/state, body {user, move} -&amp;gt; resp: { nxt_player, new state, nxt_timing, win_or_lose_or_continue}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;server push from other side:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;POST api/v1/games/id/state, body {cur_player, move, win_or_lose_or_continue}. -&amp;gt;&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;get score or leaderboards&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;GET api/v1/leaderboards&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;GET api/v1/scores , head {user token} &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;arch:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="30" y="40" width="770" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="eW09PLhZNd3Z7wGGAa37-2" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+        <mxCell id="eW09PLhZNd3Z7wGGAa37-2" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
           <mxGeometry x="60" y="690" width="30" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="eW09PLhZNd3Z7wGGAa37-3" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+        <mxCell id="eW09PLhZNd3Z7wGGAa37-3" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
           <mxGeometry x="60" y="870" width="30" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="eW09PLhZNd3Z7wGGAa37-4" value="gw" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="eW09PLhZNd3Z7wGGAa37-4" value="gw" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="210" y="700" width="60" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="eW09PLhZNd3Z7wGGAa37-5" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="eW09PLhZNd3Z7wGGAa37-5" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="110" y="740" as="sourcePoint" />
             <mxPoint x="180" y="810" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eW09PLhZNd3Z7wGGAa37-6" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="eW09PLhZNd3Z7wGGAa37-6" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="170" y="830" as="sourcePoint" />
             <mxPoint x="90" y="780" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eW09PLhZNd3Z7wGGAa37-7" value="" style="endArrow=classic;html=1;rounded=0;startArrow=none;" edge="1" parent="1" source="eW09PLhZNd3Z7wGGAa37-36">
+        <mxCell id="eW09PLhZNd3Z7wGGAa37-7" value="" style="endArrow=classic;html=1;rounded=0;startArrow=none;" parent="1" source="eW09PLhZNd3Z7wGGAa37-36" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="100" y="870" as="sourcePoint" />
             <mxPoint x="170" y="860" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eW09PLhZNd3Z7wGGAa37-8" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="eW09PLhZNd3Z7wGGAa37-8" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="160" y="890" as="sourcePoint" />
             <mxPoint x="100" y="900" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eW09PLhZNd3Z7wGGAa37-9" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="eW09PLhZNd3Z7wGGAa37-9" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="230" y="850" as="sourcePoint" />
             <mxPoint x="400" y="804.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eW09PLhZNd3Z7wGGAa37-10" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="eW09PLhZNd3Z7wGGAa37-10" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="400" y="830" as="sourcePoint" />
             <mxPoint x="230" y="880" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eW09PLhZNd3Z7wGGAa37-11" value="game svc" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="eW09PLhZNd3Z7wGGAa37-11" value="game svc" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="410" y="775" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="eW09PLhZNd3Z7wGGAa37-12" value="game svc" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="eW09PLhZNd3Z7wGGAa37-12" value="game svc" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="420" y="785" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="eW09PLhZNd3Z7wGGAa37-13" value="game svc" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="eW09PLhZNd3Z7wGGAa37-13" value="game svc" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="430" y="800" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="eW09PLhZNd3Z7wGGAa37-14" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="eW09PLhZNd3Z7wGGAa37-14" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="630" y="890" as="sourcePoint" />
             <mxPoint x="670" y="850" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eW09PLhZNd3Z7wGGAa37-15" value="db" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+        <mxCell id="eW09PLhZNd3Z7wGGAa37-15" value="db" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="1" vertex="1">
           <mxGeometry x="690" y="810" width="60" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="eW09PLhZNd3Z7wGGAa37-16" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="eW09PLhZNd3Z7wGGAa37-13">
+        <mxCell id="eW09PLhZNd3Z7wGGAa37-16" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="eW09PLhZNd3Z7wGGAa37-13" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="510" y="960" as="sourcePoint" />
             <mxPoint x="530" y="920" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eW09PLhZNd3Z7wGGAa37-17" value="redis" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="eW09PLhZNd3Z7wGGAa37-17" value="redis" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="540" y="910" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="eW09PLhZNd3Z7wGGAa37-18" value="redis" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="eW09PLhZNd3Z7wGGAa37-18" value="redis" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="550" y="920" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="eW09PLhZNd3Z7wGGAa37-19" value="redis" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="eW09PLhZNd3Z7wGGAa37-19" value="redis" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="560" y="930" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="eW09PLhZNd3Z7wGGAa37-20" value="db" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+        <mxCell id="eW09PLhZNd3Z7wGGAa37-20" value="db" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="1" vertex="1">
           <mxGeometry x="700" y="820" width="60" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="eW09PLhZNd3Z7wGGAa37-21" value="db" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+        <mxCell id="eW09PLhZNd3Z7wGGAa37-21" value="db" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" parent="1" vertex="1">
           <mxGeometry x="710" y="840" width="60" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="eW09PLhZNd3Z7wGGAa37-23" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="eW09PLhZNd3Z7wGGAa37-23" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="270" y="730" as="sourcePoint" />
             <mxPoint x="360" y="680" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eW09PLhZNd3Z7wGGAa37-24" value="user svc" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="eW09PLhZNd3Z7wGGAa37-24" value="user svc" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="330" y="620" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="eW09PLhZNd3Z7wGGAa37-25" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="eW09PLhZNd3Z7wGGAa37-13" target="eW09PLhZNd3Z7wGGAa37-26">
+        <mxCell id="eW09PLhZNd3Z7wGGAa37-25" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" parent="1" source="eW09PLhZNd3Z7wGGAa37-13" target="eW09PLhZNd3Z7wGGAa37-26" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="460" y="880" as="sourcePoint" />
             <mxPoint x="460" y="1060" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eW09PLhZNd3Z7wGGAa37-26" value="kafka" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+        <mxCell id="eW09PLhZNd3Z7wGGAa37-26" value="kafka" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
           <mxGeometry x="400" y="1030" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="eW09PLhZNd3Z7wGGAa37-27" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="eW09PLhZNd3Z7wGGAa37-27" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="410" y="1060" as="sourcePoint" />
             <mxPoint x="330" y="1100" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eW09PLhZNd3Z7wGGAa37-28" value="user history" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="eW09PLhZNd3Z7wGGAa37-28" value="user history" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="200" y="1109" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="eW09PLhZNd3Z7wGGAa37-29" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="eW09PLhZNd3Z7wGGAa37-26">
+        <mxCell id="eW09PLhZNd3Z7wGGAa37-29" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" parent="1" source="eW09PLhZNd3Z7wGGAa37-26" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="420" y="1070" as="sourcePoint" />
             <mxPoint x="430" y="1130" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eW09PLhZNd3Z7wGGAa37-30" value="replay svc" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="eW09PLhZNd3Z7wGGAa37-30" value="replay svc" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="400" y="1150" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="eW09PLhZNd3Z7wGGAa37-31" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="eW09PLhZNd3Z7wGGAa37-26">
+        <mxCell id="eW09PLhZNd3Z7wGGAa37-31" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" parent="1" source="eW09PLhZNd3Z7wGGAa37-26" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="440" y="1100" as="sourcePoint" />
             <mxPoint x="590" y="1120" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eW09PLhZNd3Z7wGGAa37-32" value="leaderboards" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="eW09PLhZNd3Z7wGGAa37-32" value="leaderboards" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="570" y="1130" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="eW09PLhZNd3Z7wGGAa37-33" value="&lt;div&gt;deepdive:&lt;/div&gt;&lt;div&gt;1. connections:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;polling&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;long polling&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;websocket&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;TCP？ UDP？ &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;NIO : async IO, huge enhancement. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;protocol?&amp;nbsp; protobuf bettern than http. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2. gw: &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;qps: low,&amp;nbsp; 10 srevers. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;retry: logic inside client side. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	websocket&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;tls offload&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;request routing. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;3. game service:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;no state! states are stored inside redis and db. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;db is the persist layer. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;use redis to speed up. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;interface:&amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;new_state&amp;nbsp; changeState(user , newMove) {&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;curState = getCurStateFromRedis(); &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	try:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;curState.applyMove(user,&amp;nbsp; newMove);&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;except:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;sendError(user, curState)&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;return&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;saveStateToRedis(curState)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;sendState(toP1, curState);&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;sendState(toP2, curState);&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;essential: player online function:&amp;nbsp; ping, redis, user state. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;fault tolerance: &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;if failed, pick up persisted state. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;if no resp from user, auto go / or change to robot / or halt the game. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;if 1 game is failed, other should not be affected. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;use docker/container to isolate games ( 100 games per docker ) .&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;4. redis:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;save all the state. fast read, fast write. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;easy to scale: redis cluster&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;fault tolerance: flush data every 5 sec. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;gossip protocol, consistent hashing to partition, sync replica. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;5. db: &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;schema:&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;game id | chess state | curP | status (finish, continue, paused) | winner | players (player1_player2)&amp;nbsp; | created time | last update time | finished time | &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;fault:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;racing condition: locking on id. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;scale up: consistent hashing. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;6. offline:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;kafka: high throughput, fast speed. &lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;latency low: seconds. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;no data loss. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="eW09PLhZNd3Z7wGGAa37-33" value="&lt;div&gt;deepdive:&lt;/div&gt;&lt;div&gt;1. connections:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;polling&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;long polling&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;websocket&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;TCP？ UDP？ &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;NIO : async IO, huge enhancement. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;protocol?&amp;nbsp; protobuf bettern than http. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2. gw: &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;qps: low,&amp;nbsp; 10 srevers. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;retry: logic inside client side. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; websocket&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;tls offload&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;request routing. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;3. game service:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;no state! states are stored inside redis and db. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;db is the persist layer. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;use redis to speed up. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;interface:&amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;new_state&amp;nbsp; changeState(user , newMove) {&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;curState = getCurStateFromRedis(); &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; try:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;curState.applyMove(user,&amp;nbsp; newMove);&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;except:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;sendError(user, curState)&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;return&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;saveStateToRedis(curState)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;sendState(toP1, curState);&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;sendState(toP2, curState);&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;}&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;essential: player online function:&amp;nbsp; ping, redis, user state. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;fault tolerance: &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;if failed, pick up persisted state. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;if no resp from user, auto go / or change to robot / or halt the game. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;if 1 game is failed, other should not be affected. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;use docker/container to isolate games ( 100 games per docker ) .&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;4. redis:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;save all the state. fast read, fast write. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;easy to scale: redis cluster&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;fault tolerance: flush data every 5 sec. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;gossip protocol, consistent hashing to partition, sync replica. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;5. db: &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;schema:&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;game id | chess state | curP | status (finish, continue, paused) | winner | players (player1_player2)&amp;nbsp; | created time | last update time | finished time | &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;fault:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;racing condition: locking on id. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;scale up: consistent hashing. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;6. offline:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;kafka: high throughput, fast speed. &lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;latency low: seconds. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;no data loss. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="30" y="1240" width="760" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="eW09PLhZNd3Z7wGGAa37-34" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="eW09PLhZNd3Z7wGGAa37-34" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="490" y="770" as="sourcePoint" />
             <mxPoint x="540" y="720" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eW09PLhZNd3Z7wGGAa37-35" value="game rule engine" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="eW09PLhZNd3Z7wGGAa37-35" value="game rule engine" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="530" y="650" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="eW09PLhZNd3Z7wGGAa37-36" value="ws server" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="eW09PLhZNd3Z7wGGAa37-36" value="ws server" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="170" y="800" width="50" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="eW09PLhZNd3Z7wGGAa37-37" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1" target="eW09PLhZNd3Z7wGGAa37-36">
+        <mxCell id="eW09PLhZNd3Z7wGGAa37-37" value="" style="endArrow=none;html=1;rounded=0;" parent="1" target="eW09PLhZNd3Z7wGGAa37-36" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="100" y="870" as="sourcePoint" />
             <mxPoint x="170" y="860" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eW09PLhZNd3Z7wGGAa37-38" value="login" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="eW09PLhZNd3Z7wGGAa37-38" value="login" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="90" y="710" as="sourcePoint" />
             <mxPoint x="200" y="720" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eW09PLhZNd3Z7wGGAa37-39" value="gw" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="eW09PLhZNd3Z7wGGAa37-39" value="gw" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="220" y="710" width="60" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="eW09PLhZNd3Z7wGGAa37-40" value="gw" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="eW09PLhZNd3Z7wGGAa37-40" value="gw" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="230" y="720" width="60" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="eW09PLhZNd3Z7wGGAa37-41" value="ws server" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="eW09PLhZNd3Z7wGGAa37-41" value="ws server" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="180" y="810" width="50" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="eW09PLhZNd3Z7wGGAa37-42" value="ws server" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="eW09PLhZNd3Z7wGGAa37-42" value="ws server" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="190" y="820" width="50" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="eW09PLhZNd3Z7wGGAa37-43" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="eW09PLhZNd3Z7wGGAa37-43" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="560" y="820" as="sourcePoint" />
             <mxPoint x="680" y="750" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="eW09PLhZNd3Z7wGGAa37-44" value="timer svc" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="eW09PLhZNd3Z7wGGAa37-44" value="timer svc" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="680" y="700" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="XN5D-tEtyyXCtmnWTJpk" name="Page-13">
-    <mxGraphModel dx="1153" dy="587" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+  <diagram id="XN5D-tEtyyXCtmnWTJpk" name="upstart">
+    <mxGraphModel dx="1038" dy="528" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="PjtR9K-not_MrZkwpJaf-1" value="&lt;div&gt;online chess game&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;FR:&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;play chess, 2 players&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;match players&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;place chess &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;see other people place chess&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;judge win or loose&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;if disconnect, resume game.&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;scores/ leaderboards&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;game replay&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;NFR:&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;consistency: 1p place chess and the other see it:&amp;nbsp; low, seconds of latency is tolerable&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;availability: high&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;data durability: yes, for resuming&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;span&gt;Capacity:&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;	&lt;/span&gt;DAU: 1M, 5 game per p -&amp;gt; 0.5*5 = 2.5M game per day , 1game 100 steps -&amp;gt; 250M steps /day -&amp;gt; qps: 2500 /s , req to place chess. &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;	&lt;/span&gt;storage:   2.5M game -&amp;gt; 2.5M * 10kb -&amp;gt; 25GB/ day -&amp;gt; 8TB/year&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;	&lt;/span&gt;network:  2500 qps * 1kb -&amp;gt; 2.5MBs -&amp;gt; 20Mbps &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;span&gt;data flow and API:&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;&lt;blockquote&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;	&lt;/span&gt;login&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;	&lt;/span&gt;POST api/v1/login, body {uname, pswd} -&amp;gt; resp: 200OK, body {token:, session id: }&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;	&lt;/span&gt;match player( async, keep polling)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;	&lt;/span&gt;POST api/v1/matchings, header {user}, body {location, timezone} -&amp;gt; find user&#39;s rank, score -&amp;gt; resp: 200OK, body {game: id}&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;	&lt;/span&gt;polling match:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;	&lt;/span&gt;GET api/v1/matchings/game_id ,  --&amp;gt; resp:  {state:, oponenent, game_url: }&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;	&lt;/span&gt;show game&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;	&lt;/span&gt;GET api/v1/game/id/states,  --&amp;gt; resp: body {current state, current player, remaining time}&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;	&lt;/span&gt;place chess&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;	&lt;/span&gt;post api/v1/game/id/states,  body {current change, current player}   -&amp;gt; resp:  {new state, current player, remaining time}&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;	&lt;/span&gt;get new state of game&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;GET api/v1/game/id/states,  --&amp;gt; resp: body {current state, current player, remaining time}&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt;	&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;	&lt;/span&gt;get leaderboard&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;GET api/v1/leaderboard&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;	&lt;/span&gt;get replay&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;GET api/v1/replays/game_id&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;div&gt;arch:&lt;br&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="PjtR9K-not_MrZkwpJaf-1" value="&lt;div&gt;online chess game&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;FR:&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt; &lt;/span&gt;play chess, 2 players&lt;/div&gt;&lt;div&gt;&lt;span&gt; &lt;/span&gt;match players&lt;/div&gt;&lt;div&gt;&lt;span&gt; &lt;/span&gt;place chess &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt; &lt;/span&gt;see other people place chess&lt;/div&gt;&lt;div&gt;&lt;span&gt; &lt;/span&gt;judge win or loose&lt;/div&gt;&lt;div&gt;&lt;span&gt; &lt;/span&gt;if disconnect, resume game.&lt;/div&gt;&lt;div&gt;&lt;span&gt; &lt;/span&gt;scores/ leaderboards&lt;/div&gt;&lt;div&gt;&lt;span&gt; &lt;/span&gt;game replay&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;NFR:&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt; &lt;/span&gt;consistency: 1p place chess and the other see it:&amp;nbsp; low, seconds of latency is tolerable&lt;/div&gt;&lt;div&gt;&lt;span&gt; &lt;/span&gt;availability: high&lt;/div&gt;&lt;div&gt;&lt;span&gt; &lt;/span&gt;data durability: yes, for resuming&lt;/div&gt;&lt;div&gt;&lt;span&gt; &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;span&gt;Capacity:&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt; &lt;/span&gt;DAU: 1M, 5 game per p -&amp;gt; 0.5*5 = 2.5M game per day , 1game 100 steps -&amp;gt; 250M steps /day -&amp;gt; qps: 2500 /s , req to place chess. &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt; &lt;/span&gt;storage:   2.5M game -&amp;gt; 2.5M * 10kb -&amp;gt; 25GB/ day -&amp;gt; 8TB/year&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt; &lt;/span&gt;network:  2500 qps * 1kb -&amp;gt; 2.5MBs -&amp;gt; 20Mbps &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;span&gt;data flow and API:&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;&lt;blockquote&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt; &lt;/span&gt;login&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt; &lt;/span&gt;POST api/v1/login, body {uname, pswd} -&amp;gt; resp: 200OK, body {token:, session id: }&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt; &lt;/span&gt;match player( async, keep polling)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt; &lt;/span&gt;POST api/v1/matchings, header {user}, body {location, timezone} -&amp;gt; find user&#39;s rank, score -&amp;gt; resp: 200OK, body {game: id}&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt; &lt;/span&gt;polling match:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt; &lt;/span&gt;GET api/v1/matchings/game_id ,  --&amp;gt; resp:  {state:, oponenent, game_url: }&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt; &lt;/span&gt;show game&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt; &lt;/span&gt;GET api/v1/game/id/states,  --&amp;gt; resp: body {current state, current player, remaining time}&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt; &lt;/span&gt;place chess&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt; &lt;/span&gt;post api/v1/game/id/states,  body {current change, current player}   -&amp;gt; resp:  {new state, current player, remaining time}&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt; &lt;/span&gt;get new state of game&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;GET api/v1/game/id/states,  --&amp;gt; resp: body {current state, current player, remaining time}&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;span&gt;&lt;span&gt; &lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt; &lt;/span&gt;get leaderboard&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;GET api/v1/leaderboard&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt; &lt;/span&gt;get replay&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;GET api/v1/replays/game_id&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;div&gt;arch:&lt;br&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="50" y="50" width="730" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="PjtR9K-not_MrZkwpJaf-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#3333FF;" edge="1" parent="1" source="PjtR9K-not_MrZkwpJaf-2" target="PjtR9K-not_MrZkwpJaf-4">
+        <mxCell id="PjtR9K-not_MrZkwpJaf-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#3333FF;" parent="1" source="PjtR9K-not_MrZkwpJaf-2" target="PjtR9K-not_MrZkwpJaf-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="PjtR9K-not_MrZkwpJaf-2" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;strokeColor=#3333FF;" vertex="1" parent="1">
+        <mxCell id="PjtR9K-not_MrZkwpJaf-2" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;strokeColor=#3333FF;" parent="1" vertex="1">
           <mxGeometry x="50" y="830" width="30" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="PjtR9K-not_MrZkwpJaf-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.008;entryY=0.367;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="PjtR9K-not_MrZkwpJaf-3" target="PjtR9K-not_MrZkwpJaf-4">
+        <mxCell id="PjtR9K-not_MrZkwpJaf-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.008;entryY=0.367;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="PjtR9K-not_MrZkwpJaf-3" target="PjtR9K-not_MrZkwpJaf-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="PjtR9K-not_MrZkwpJaf-3" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;strokeColor=#3333FF;" vertex="1" parent="1">
+        <mxCell id="PjtR9K-not_MrZkwpJaf-3" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;strokeColor=#3333FF;" parent="1" vertex="1">
           <mxGeometry x="50" y="1020" width="30" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="PjtR9K-not_MrZkwpJaf-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PjtR9K-not_MrZkwpJaf-4" target="PjtR9K-not_MrZkwpJaf-7">
+        <mxCell id="PjtR9K-not_MrZkwpJaf-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="PjtR9K-not_MrZkwpJaf-4" target="PjtR9K-not_MrZkwpJaf-7" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="320" y="800" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="PjtR9K-not_MrZkwpJaf-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PjtR9K-not_MrZkwpJaf-4" target="PjtR9K-not_MrZkwpJaf-9">
+        <mxCell id="PjtR9K-not_MrZkwpJaf-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="PjtR9K-not_MrZkwpJaf-4" target="PjtR9K-not_MrZkwpJaf-9" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="PjtR9K-not_MrZkwpJaf-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PjtR9K-not_MrZkwpJaf-4" target="PjtR9K-not_MrZkwpJaf-12">
+        <mxCell id="PjtR9K-not_MrZkwpJaf-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="PjtR9K-not_MrZkwpJaf-4" target="PjtR9K-not_MrZkwpJaf-12" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="450" y="910" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="PjtR9K-not_MrZkwpJaf-4" value="GW" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+        <mxCell id="PjtR9K-not_MrZkwpJaf-4" value="GW" style="whiteSpace=wrap;html=1;verticalAlign=top;" parent="1" vertex="1">
           <mxGeometry x="200" y="880" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="PjtR9K-not_MrZkwpJaf-7" value="user svc" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="PjtR9K-not_MrZkwpJaf-7" value="user svc" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="260" y="770" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="PjtR9K-not_MrZkwpJaf-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="PjtR9K-not_MrZkwpJaf-9" target="PjtR9K-not_MrZkwpJaf-17">
+        <mxCell id="PjtR9K-not_MrZkwpJaf-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" parent="1" source="PjtR9K-not_MrZkwpJaf-9" target="PjtR9K-not_MrZkwpJaf-17" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="PjtR9K-not_MrZkwpJaf-9" value="match svc" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+        <mxCell id="PjtR9K-not_MrZkwpJaf-9" value="match svc" style="whiteSpace=wrap;html=1;verticalAlign=top;" parent="1" vertex="1">
           <mxGeometry x="250" y="980" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="PjtR9K-not_MrZkwpJaf-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="PjtR9K-not_MrZkwpJaf-12" target="PjtR9K-not_MrZkwpJaf-13">
+        <mxCell id="PjtR9K-not_MrZkwpJaf-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="PjtR9K-not_MrZkwpJaf-12" target="PjtR9K-not_MrZkwpJaf-13" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="680" y="940" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="PjtR9K-not_MrZkwpJaf-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="PjtR9K-not_MrZkwpJaf-12" target="PjtR9K-not_MrZkwpJaf-17">
+        <mxCell id="PjtR9K-not_MrZkwpJaf-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="PjtR9K-not_MrZkwpJaf-12" target="PjtR9K-not_MrZkwpJaf-17" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="490" y="1130" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="PjtR9K-not_MrZkwpJaf-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;startFill=0;" edge="1" parent="1" source="PjtR9K-not_MrZkwpJaf-12" target="PjtR9K-not_MrZkwpJaf-22">
+        <mxCell id="PjtR9K-not_MrZkwpJaf-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;startFill=0;" parent="1" source="PjtR9K-not_MrZkwpJaf-12" target="PjtR9K-not_MrZkwpJaf-22" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="550" y="1210" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="PjtR9K-not_MrZkwpJaf-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;startFill=0;" edge="1" parent="1" source="PjtR9K-not_MrZkwpJaf-12" target="PjtR9K-not_MrZkwpJaf-30">
+        <mxCell id="PjtR9K-not_MrZkwpJaf-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;startFill=0;" parent="1" source="PjtR9K-not_MrZkwpJaf-12" target="PjtR9K-not_MrZkwpJaf-30" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Vys-x3-oDauHlWeav3wU-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="PjtR9K-not_MrZkwpJaf-12" target="Vys-x3-oDauHlWeav3wU-2">
+        <mxCell id="Vys-x3-oDauHlWeav3wU-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;startArrow=classic;startFill=1;" parent="1" source="PjtR9K-not_MrZkwpJaf-12" target="Vys-x3-oDauHlWeav3wU-2" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="660" y="800" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="PjtR9K-not_MrZkwpJaf-12" value="game svc" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#0000FF;" vertex="1" parent="1">
+        <mxCell id="PjtR9K-not_MrZkwpJaf-12" value="game svc" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#0000FF;" parent="1" vertex="1">
           <mxGeometry x="440" y="880" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="PjtR9K-not_MrZkwpJaf-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="PjtR9K-not_MrZkwpJaf-12" target="PjtR9K-not_MrZkwpJaf-15">
+        <mxCell id="PjtR9K-not_MrZkwpJaf-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="PjtR9K-not_MrZkwpJaf-12" target="PjtR9K-not_MrZkwpJaf-15" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="560" y="920" />
@@ -1307,61 +1307,61 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="PjtR9K-not_MrZkwpJaf-13" value="redis" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#0000FF;" vertex="1" parent="1">
+        <mxCell id="PjtR9K-not_MrZkwpJaf-13" value="redis" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#0000FF;" parent="1" vertex="1">
           <mxGeometry x="620" y="990" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="PjtR9K-not_MrZkwpJaf-15" value="&lt;div&gt;db&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#0000FF;" vertex="1" parent="1">
+        <mxCell id="PjtR9K-not_MrZkwpJaf-15" value="&lt;div&gt;db&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#0000FF;" parent="1" vertex="1">
           <mxGeometry x="800" y="880" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="PjtR9K-not_MrZkwpJaf-17" value="long conn svc" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000099;" vertex="1" parent="1">
+        <mxCell id="PjtR9K-not_MrZkwpJaf-17" value="long conn svc" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#000099;" parent="1" vertex="1">
           <mxGeometry x="210" y="1100" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="PjtR9K-not_MrZkwpJaf-19" value="" style="endArrow=classic;html=1;rounded=0;startArrow=classic;startFill=1;" edge="1" parent="1" target="PjtR9K-not_MrZkwpJaf-17">
+        <mxCell id="PjtR9K-not_MrZkwpJaf-19" value="" style="endArrow=classic;html=1;rounded=0;startArrow=classic;startFill=1;" parent="1" target="PjtR9K-not_MrZkwpJaf-17" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="90" y="940" as="sourcePoint" />
             <mxPoint x="140" y="890" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="PjtR9K-not_MrZkwpJaf-20" value="" style="endArrow=classic;html=1;rounded=0;startArrow=classic;startFill=1;entryX=0.083;entryY=0.167;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="PjtR9K-not_MrZkwpJaf-17">
+        <mxCell id="PjtR9K-not_MrZkwpJaf-20" value="" style="endArrow=classic;html=1;rounded=0;startArrow=classic;startFill=1;entryX=0.083;entryY=0.167;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="PjtR9K-not_MrZkwpJaf-17" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="90" y="1070" as="sourcePoint" />
             <mxPoint x="251.57894736842104" y="1110" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="PjtR9K-not_MrZkwpJaf-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.625;entryY=0.033;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=none;startFill=0;" edge="1" parent="1" source="PjtR9K-not_MrZkwpJaf-22" target="PjtR9K-not_MrZkwpJaf-25">
+        <mxCell id="PjtR9K-not_MrZkwpJaf-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.625;entryY=0.033;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=none;startFill=0;" parent="1" source="PjtR9K-not_MrZkwpJaf-22" target="PjtR9K-not_MrZkwpJaf-25" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="PjtR9K-not_MrZkwpJaf-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.4;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=none;startFill=0;" edge="1" parent="1" source="PjtR9K-not_MrZkwpJaf-22" target="PjtR9K-not_MrZkwpJaf-27">
+        <mxCell id="PjtR9K-not_MrZkwpJaf-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.4;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=none;startFill=0;" parent="1" source="PjtR9K-not_MrZkwpJaf-22" target="PjtR9K-not_MrZkwpJaf-27" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="PjtR9K-not_MrZkwpJaf-22" value="MQ" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+        <mxCell id="PjtR9K-not_MrZkwpJaf-22" value="MQ" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" parent="1" vertex="1">
           <mxGeometry x="490" y="1180" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="PjtR9K-not_MrZkwpJaf-23" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" target="PjtR9K-not_MrZkwpJaf-24">
+        <mxCell id="PjtR9K-not_MrZkwpJaf-23" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" target="PjtR9K-not_MrZkwpJaf-24" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="480" y="1240" as="sourcePoint" />
             <mxPoint x="430" y="1270" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="PjtR9K-not_MrZkwpJaf-24" value="user history" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="PjtR9K-not_MrZkwpJaf-24" value="user history" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="300" y="1260" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="PjtR9K-not_MrZkwpJaf-25" value="replays" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="PjtR9K-not_MrZkwpJaf-25" value="replays" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="510" y="1320" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="PjtR9K-not_MrZkwpJaf-27" value="analysis svc" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="PjtR9K-not_MrZkwpJaf-27" value="analysis svc" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="700" y="1270" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="PjtR9K-not_MrZkwpJaf-30" value="timer service" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="PjtR9K-not_MrZkwpJaf-30" value="timer service" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="440" y="740" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Vys-x3-oDauHlWeav3wU-2" value="game rule engine" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Vys-x3-oDauHlWeav3wU-2" value="game rule engine" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="600" y="740" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Vys-x3-oDauHlWeav3wU-3" value="Text" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="Vys-x3-oDauHlWeav3wU-3" value="Text" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="570" y="1220" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="Vys-x3-oDauHlWeav3wU-4" value="&lt;div&gt;deepdive:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;1. communication:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;we need server push to user:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;polling&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;long polling&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;websocket&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;we need ping req on L7 to get user state (online, offline)&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;ping req every 1-3 seconds.&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;protocol: &amp;nbsp; http, protobuf, thrift&amp;nbsp; : &amp;nbsp;&amp;nbsp; protobuf is good, smaller size, faster&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;in future:&amp;nbsp; if too many users, QUIC/HTTP3, on UDP, lower resources consuming.&amp;nbsp; no http2 here. &amp;nbsp; &amp;nbsp; not necessary. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;trade off b/w&amp;nbsp; :&amp;nbsp; compression &amp;amp; data storage &amp;amp; computation&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;2.&amp;nbsp; game service;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;IO:&amp;nbsp; get state of games&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;compute:&amp;nbsp; calc rules and judge if any one win&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;disk: persistent&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;IO:&amp;nbsp; nonblocking,&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;compute:&amp;nbsp; cache rules ,&amp;nbsp; calculate on specific threads that won&#39;t block IO threads &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;disk:&amp;nbsp; redis for fast r/w, db (mysql ) for persistency,&amp;nbsp; redis cluster for scaling up.&amp;nbsp;&amp;nbsp;&amp;nbsp; game service becomes no state, and easy to scale up. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;3. redis:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;store state:&amp;nbsp;&amp;nbsp; game id:&amp;nbsp; {state, curP, last_update_ts}&amp;nbsp; , &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;store only for live game, if game finishes, persisted to db. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;open persisted switch,&amp;nbsp; persist every sevral seconds &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;how to partition:&amp;nbsp; redis cluster,&amp;nbsp; consistent hashing.&amp;nbsp; OR using increment game id, appending to more redis instances. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;4. &amp;nbsp; db:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt;	&lt;/span&gt;schema:&amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="Vys-x3-oDauHlWeav3wU-4" value="&lt;div&gt;deepdive:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;1. communication:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;we need server push to user:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;polling&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;long polling&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;websocket&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;we need ping req on L7 to get user state (online, offline)&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;ping req every 1-3 seconds.&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;protocol: &amp;nbsp; http, protobuf, thrift&amp;nbsp; : &amp;nbsp;&amp;nbsp; protobuf is good, smaller size, faster&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;in future:&amp;nbsp; if too many users, QUIC/HTTP3, on UDP, lower resources consuming.&amp;nbsp; no http2 here. &amp;nbsp; &amp;nbsp; not necessary. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;trade off b/w&amp;nbsp; :&amp;nbsp; compression &amp;amp; data storage &amp;amp; computation&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;2.&amp;nbsp; game service;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;IO:&amp;nbsp; get state of games&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;compute:&amp;nbsp; calc rules and judge if any one win&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;disk: persistent&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;IO:&amp;nbsp; nonblocking,&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;compute:&amp;nbsp; cache rules ,&amp;nbsp; calculate on specific threads that won&#39;t block IO threads &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;disk:&amp;nbsp; redis for fast r/w, db (mysql ) for persistency,&amp;nbsp; redis cluster for scaling up.&amp;nbsp;&amp;nbsp;&amp;nbsp; game service becomes no state, and easy to scale up. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;3. redis:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;store state:&amp;nbsp;&amp;nbsp; game id:&amp;nbsp; {state, curP, last_update_ts}&amp;nbsp; , &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;store only for live game, if game finishes, persisted to db. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;open persisted switch,&amp;nbsp; persist every sevral seconds &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;how to partition:&amp;nbsp; redis cluster,&amp;nbsp; consistent hashing.&amp;nbsp; OR using increment game id, appending to more redis instances. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;4. &amp;nbsp; db:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;&lt;span style=&quot;white-space: pre&quot;&gt; &lt;/span&gt;schema:&amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="30" y="1420" width="1090" height="30" as="geometry" />
         </mxCell>
       </root>
