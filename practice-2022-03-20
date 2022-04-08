@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-04-08T17:29:51.492Z" agent="5.0 (Windows)" etag="Vs8D4VN9MZRe4hElciK_" version="17.4.1" type="github" pages="15">
+<mxfile host="app.diagrams.net" modified="2022-04-08T17:32:58.868Z" agent="5.0 (Windows)" etag="hTVBLtSq-R2VqDHeviR2" version="17.4.1" type="github" pages="15">
   <diagram id="uW7OsOjydMDewvjMiIQj" name="newsfeed">
     <mxGraphModel dx="1038" dy="556" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1488,8 +1488,42 @@
         <mxCell id="WMCqpl3Cgi7hsk11DNyX-2" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
           <mxGeometry x="80" y="960" width="30" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="WMCqpl3Cgi7hsk11DNyX-3" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="190" y="880" width="120" height="60" as="geometry" />
+        <mxCell id="WMCqpl3Cgi7hsk11DNyX-20" value="1login" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;strokeColor=default;" edge="1" parent="1" source="WMCqpl3Cgi7hsk11DNyX-3" target="WMCqpl3Cgi7hsk11DNyX-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WMCqpl3Cgi7hsk11DNyX-21" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;strokeColor=default;" edge="1" parent="1" source="WMCqpl3Cgi7hsk11DNyX-3" target="WMCqpl3Cgi7hsk11DNyX-22">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="830" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WMCqpl3Cgi7hsk11DNyX-3" value="gw" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="760" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WMCqpl3Cgi7hsk11DNyX-19" value="user svc" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="390" y="640" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WMCqpl3Cgi7hsk11DNyX-24" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;strokeColor=default;" edge="1" parent="1" source="WMCqpl3Cgi7hsk11DNyX-22" target="WMCqpl3Cgi7hsk11DNyX-25">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="980" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WMCqpl3Cgi7hsk11DNyX-22" value="game svc" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="530" y="850" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WMCqpl3Cgi7hsk11DNyX-25" value="long conn svc" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="260" y="930" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WMCqpl3Cgi7hsk11DNyX-28" value="duplex" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;strokeColor=default;entryX=0.033;entryY=0.133;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="WMCqpl3Cgi7hsk11DNyX-25">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="110" y="830" as="sourcePoint" />
+            <mxPoint x="220" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WMCqpl3Cgi7hsk11DNyX-29" value="duplex" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;strokeColor=default;entryX=0.033;entryY=0.133;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="WMCqpl3Cgi7hsk11DNyX-2">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="120" y="840" as="sourcePoint" />
+            <mxPoint x="273.96000000000004" y="947.98" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
