@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-04-08T17:40:09.160Z" agent="5.0 (Windows)" etag="XiqduGGEOCwbBCTCWCqu" version="17.4.1" type="github" pages="15">
+<mxfile host="app.diagrams.net" modified="2022-04-08T17:42:27.744Z" agent="5.0 (Windows)" etag="ZBeB-rgCi-gdZihOa0nr" version="17.4.1" type="github" pages="15">
   <diagram id="uW7OsOjydMDewvjMiIQj" name="newsfeed">
     <mxGraphModel dx="1038" dy="556" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1609,7 +1609,7 @@
         <mxCell id="WMCqpl3Cgi7hsk11DNyX-51" value="cdn: static, game installer, game patcher, etc.... " style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;" vertex="1" parent="1">
           <mxGeometry x="60" y="1110" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="WMCqpl3Cgi7hsk11DNyX-52" value="&lt;div&gt;game id: game status {&lt;/div&gt;&lt;blockquote&gt;&lt;blockquote&gt;&lt;div&gt;game cur state,&lt;/div&gt;&lt;div&gt;cur player&lt;/div&gt;&lt;div&gt;status: not started, running, finished&lt;/div&gt;&lt;div&gt;winner:&lt;/div&gt;&lt;div&gt;players. &lt;br&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;" vertex="1" parent="1">
+        <mxCell id="WMCqpl3Cgi7hsk11DNyX-52" value="&lt;div&gt;game id: game status {&lt;/div&gt;&lt;blockquote&gt;&lt;blockquote&gt;&lt;div&gt;game cur state,&lt;/div&gt;&lt;div&gt;cur player,&lt;/div&gt;&lt;div&gt;next turn time,&lt;br&gt;&lt;/div&gt;&lt;div&gt;status: not started, running, finished&lt;/div&gt;&lt;div&gt;winner:&lt;/div&gt;&lt;div&gt;players. &lt;br&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;" vertex="1" parent="1">
           <mxGeometry x="790" y="995" width="340" height="30" as="geometry" />
         </mxCell>
       </root>
