@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-04-08T18:34:08.335Z" agent="5.0 (Windows)" etag="-qM0vEU2u0J51ApcggUY" version="17.4.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-08T18:59:59.412Z" agent="5.0 (Windows)" etag="XFOM2iXkJ1WiTZgWxTP_" version="17.4.1" type="github">
   <diagram id="F93qstNQH2RDCQOcPOFn" name="Page-1">
     <mxGraphModel dx="1038" dy="556" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -6,6 +6,113 @@
         <mxCell id="1" parent="0" />
         <mxCell id="_EIu03rBJG7eRLGevVbL-1" value="&lt;div&gt;online chess system&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;FR:&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;play chess: user -&amp;gt; find opponent -&amp;gt; start game -&amp;gt; place a chess -&amp;gt; wait for opponent to pplace -&amp;gt; place ... -&amp;gt; win or lose. &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;replay: game is finished, user play the replay。 every move + ts .&amp;nbsp;&amp;nbsp;&amp;nbsp; -&amp;gt; save game every step in db.&amp;nbsp;&amp;nbsp; &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;optiona;:&amp;nbsp; login,&amp;nbsp; leaderboard,&amp;nbsp; user action history, &lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;NFR:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;	&lt;/span&gt;cap:  best player,  millions , 100 con, big scale,  small --&amp;gt; best,   &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;	&lt;/span&gt;avail &amp;gt; consitency , &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;	&lt;/span&gt;user exp: medium low latency&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;	&lt;/span&gt;security:  player can not cheat, can not mody score, game status,   follow rule. &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;	&lt;/span&gt;data durablity: replay store:  forever,    &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;	&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;Cap : &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;	&lt;/span&gt;DAU  10M  user,s, 5game/user/day , 1game: 100steps,  10M x 5 x 100 = 5B steps/day, -&amp;gt; 50k qps --&amp;gt; place a chess qps, &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;	&lt;/span&gt;data storage:  50M games , 1 game 1KB, , --&amp;gt; 50GB /day , -&amp;gt; yaearly 15TB &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;external API:&lt;/span&gt;&lt;/div&gt;&lt;blockquote&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;	&lt;/span&gt;place a chess: &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;&lt;span&gt;	&lt;/span&gt;POST api/v1/game/id/state,  head: user toekn, , body: move payload {place of the chess} -&amp;gt; resp: 200, 4xx, 5xx, , 200 { new state: , if it is a win or lose}	&lt;/span&gt;&lt;span&gt;	&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;	&lt;/span&gt;watch replay:&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;span&gt;	&lt;/span&gt;GET api/v1/replays? game_id =xxxx, header: token -&amp;gt; response: { full history: a file ( lines of movements, each movenment: state of game ()) } &lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;	&lt;/span&gt;GET &lt;span&gt;api/v1/replays? game_id =xxxx &amp;amp;&amp;amp; offset=?? and cur)pos =??&amp;nbsp; &lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;login:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;POST api/v1/login , header, body : {uanme: , pasword:l: } -- https -&amp;gt; response, redirect , respon {sessionID, JWT token}&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;registration&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;span&gt;POST api/v1/register, header, body : {uanme: , pasword:l: } -- https -&amp;gt; response, redirect , respon {sessionID, JWT token}&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br&gt;create game:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;POST api/v1/games, header: token, --&amp;gt; respons: body{ game_id:, game_link: }&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;div&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;arch:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="40" y="50" width="730" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_EIu03rBJG7eRLGevVbL-8" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;strokeColor=default;" edge="1" parent="1" source="_EIu03rBJG7eRLGevVbL-4" target="_EIu03rBJG7eRLGevVbL-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_EIu03rBJG7eRLGevVbL-4" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontFamily=Helvetica;fontSize=11;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="80" y="730" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_EIu03rBJG7eRLGevVbL-9" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;strokeColor=default;" edge="1" parent="1" source="_EIu03rBJG7eRLGevVbL-5" target="_EIu03rBJG7eRLGevVbL-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_EIu03rBJG7eRLGevVbL-5" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontFamily=Helvetica;fontSize=11;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="80" y="910" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_EIu03rBJG7eRLGevVbL-13" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;strokeColor=default;" edge="1" parent="1" source="_EIu03rBJG7eRLGevVbL-6" target="_EIu03rBJG7eRLGevVbL-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_EIu03rBJG7eRLGevVbL-16" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;strokeColor=default;" edge="1" parent="1" source="_EIu03rBJG7eRLGevVbL-6" target="_EIu03rBJG7eRLGevVbL-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_EIu03rBJG7eRLGevVbL-28" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;strokeColor=default;" edge="1" parent="1" source="_EIu03rBJG7eRLGevVbL-6" target="_EIu03rBJG7eRLGevVbL-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_EIu03rBJG7eRLGevVbL-6" value="gw" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="200" y="780" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_EIu03rBJG7eRLGevVbL-7" value="long conn service" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="220" y="920" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_EIu03rBJG7eRLGevVbL-10" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;strokeColor=default;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="_EIu03rBJG7eRLGevVbL-4" target="_EIu03rBJG7eRLGevVbL-7">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="100" y="920" as="sourcePoint" />
+            <mxPoint x="200" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_EIu03rBJG7eRLGevVbL-11" value="" style="shape=flexArrow;endArrow=classic;startArrow=classic;html=1;rounded=0;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;strokeColor=default;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" target="_EIu03rBJG7eRLGevVbL-7">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="110" y="930" as="sourcePoint" />
+            <mxPoint x="260" y="1010" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_EIu03rBJG7eRLGevVbL-12" value="user service" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="280" y="650" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_EIu03rBJG7eRLGevVbL-29" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.95;entryY=0.933;entryDx=0;entryDy=0;entryPerimeter=0;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;strokeColor=default;" edge="1" parent="1" source="_EIu03rBJG7eRLGevVbL-14" target="_EIu03rBJG7eRLGevVbL-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_EIu03rBJG7eRLGevVbL-31" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;strokeColor=default;" edge="1" parent="1" source="_EIu03rBJG7eRLGevVbL-14" target="_EIu03rBJG7eRLGevVbL-32">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="1060" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_EIu03rBJG7eRLGevVbL-14" value="game matching svc" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="420" y="940" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_EIu03rBJG7eRLGevVbL-17" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;strokeColor=default;" edge="1" parent="1" source="_EIu03rBJG7eRLGevVbL-15" target="_EIu03rBJG7eRLGevVbL-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_EIu03rBJG7eRLGevVbL-19" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;strokeColor=default;" edge="1" parent="1" source="_EIu03rBJG7eRLGevVbL-15" target="_EIu03rBJG7eRLGevVbL-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="_EIu03rBJG7eRLGevVbL-15" value="game svc" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="560" y="810" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_EIu03rBJG7eRLGevVbL-20" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;strokeColor=default;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="_EIu03rBJG7eRLGevVbL-25" target="_EIu03rBJG7eRLGevVbL-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="840" y="850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_EIu03rBJG7eRLGevVbL-24" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;strokeColor=default;" edge="1" parent="1" source="_EIu03rBJG7eRLGevVbL-18" target="_EIu03rBJG7eRLGevVbL-25">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="810" y="960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_EIu03rBJG7eRLGevVbL-18" value="redis" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="640" y="930" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_EIu03rBJG7eRLGevVbL-21" value="db " style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="830" y="820" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_EIu03rBJG7eRLGevVbL-22" value="golden standard of gaem states" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="810" y="760" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_EIu03rBJG7eRLGevVbL-25" value="mq" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontFamily=Helvetica;fontSize=11;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="840" y="930" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_EIu03rBJG7eRLGevVbL-26" value="game svc" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="570" y="820" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_EIu03rBJG7eRLGevVbL-35" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=default;fontFamily=Helvetica;fontSize=11;fontColor=default;endArrow=classic;strokeColor=default;" edge="1" parent="1" source="_EIu03rBJG7eRLGevVbL-27" target="_EIu03rBJG7eRLGevVbL-36">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="710" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="_EIu03rBJG7eRLGevVbL-27" value="game svc" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="580" y="830" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_EIu03rBJG7eRLGevVbL-30" value="ping -&amp;gt; " style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="50" y="1020" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_EIu03rBJG7eRLGevVbL-32" value="user score service" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="290" y="1040" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="_EIu03rBJG7eRLGevVbL-34" value="&lt;div&gt;get NewMove(p, m) {&lt;/div&gt;&lt;div&gt;stateofgame = getFromRedis(gameId)&lt;br&gt;&lt;/div&gt;&lt;div&gt;validte(p, m, stateof game);&lt;br&gt;&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;fontSize=11;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="400" y="710" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="_EIu03rBJG7eRLGevVbL-36" value="game rule db" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=11;fontColor=default;" vertex="1" parent="1">
+          <mxGeometry x="650" y="680" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
